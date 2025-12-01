@@ -68,6 +68,24 @@ export default function SpecialOfferLayout({
 }) {
   return (
     <>
+      {/* Google tag (gtag.js) */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17763560213"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-ads-gtag"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17763560213');
+          `
+        }}
+      />
+      
       {/* Structured Data for Special Offer */}
       <Script
         id="special-offer-schema"
@@ -162,14 +180,12 @@ export default function SpecialOfferLayout({
         }}
       />
 
-      {/* Google Ads Conversion Tracking */}
+      {/* Facebook Pixel Conversion Tracking */}
       <Script
-        id="conversion-tracking"
+        id="facebook-pixel-tracking"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-            if (typeof gtag !== 'undefined') {
-              gtag('config', 'AW-XXXXXXXXX');
-            }
             if (typeof fbq !== 'undefined') {
               fbq('track', 'ViewContent', {
                 content_type: 'product',
