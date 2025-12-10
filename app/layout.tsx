@@ -99,6 +99,7 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={poppins.variable}>
       <head>
+        <meta name="google-site-verification" content="l8ZfvIY9wUeZiyzCRFhthl1KvzjwVCwP-tLXa4uQtZA" />
         <StructuredData />
         <link rel="icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
         <link rel="shortcut icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
