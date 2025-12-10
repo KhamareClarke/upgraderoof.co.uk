@@ -5,18 +5,18 @@ export function StructuredData() {
     name: 'Upgrade Roofing Solutions',
     alternateName: 'Upgrade Roofing',
     image: [
-      'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      'https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200'
+      'https://upgraderoof.co.uk/images/6.jpeg',
+      'https://upgraderoof.co.uk/images/2.jpeg'
     ],
-    '@id': 'https://upgrade-main.vercel.app/#organization',
-    url: 'https://upgrade-main.vercel.app',
-    telephone: '01782 123456',
+    '@id': 'https://upgraderoof.co.uk/#organization',
+    url: 'https://upgraderoof.co.uk',
+    telephone: '01270 897606',
     alternativeTelephone: '07379 440583',
     email: 'upgradehomeimp@yahoo.com',
     priceRange: '££-£££',
-    description: 'Professional roofing company serving Stoke-on-Trent and Staffordshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
+    description: 'Professional roofing company serving Cheshire and Staffordshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
     foundingDate: '1999',
-    slogan: 'Your Trusted Roofing Specialists in Stoke-on-Trent',
+    slogan: 'Your Trusted Roofing Specialists in Cheshire & Staffordshire',
     knowsAbout: [
       'Roof Repairs',
       'Roof Installation', 
@@ -61,41 +61,43 @@ export function StructuredData() {
     ],
     sameAs: [
       'https://www.facebook.com/upgraderoofingsolutions',
-      'https://www.instagram.com/upgraderoofingsolutions'
+      'https://www.instagram.com/upgraderoofingsolutions',
+      'https://share.google/FMxRgYIO71KPR4QR3'
     ],
     areaServed: [
       {
         '@type': 'City',
-        name: 'Stoke-on-Trent',
-        sameAs: 'https://en.wikipedia.org/wiki/Stoke-on-Trent'
+        name: 'Sandbach',
+        sameAs: 'https://en.wikipedia.org/wiki/Sandbach'
       },
       {
         '@type': 'City', 
-        name: 'Newcastle-under-Lyme'
+        name: 'Crewe'
       },
       {
         '@type': 'City',
-        name: 'Stafford'
+        name: 'Congleton'
       },
       {
         '@type': 'City',
-        name: 'Stone'
+        name: 'Nantwich'
       },
       {
         '@type': 'City',
-        name: 'Leek'
+        name: 'Middlewich'
       },
       {
         '@type': 'City',
-        name: 'Cheadle'
+        name: 'Alsager'
       },
       {
         '@type': 'City',
-        name: 'Biddulph'
+        name: 'Holmes Chapel'
       },
       {
-        '@type': 'City',
-        name: 'Kidsgrove'
+        '@type': 'State',
+        name: 'Cheshire',
+        sameAs: 'https://en.wikipedia.org/wiki/Cheshire'
       },
       {
         '@type': 'State',
@@ -188,15 +190,15 @@ export function StructuredData() {
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://eliteroofingcheshire.co.uk/#website',
-    url: 'https://eliteroofingcheshire.co.uk',
-    name: 'Elite Roofing Cheshire',
+    '@id': 'https://upgraderoof.co.uk/#website',
+    url: 'https://upgraderoof.co.uk',
+    name: 'Upgrade Roofing Solutions',
     publisher: {
-      '@id': 'https://eliteroofingcheshire.co.uk/#organization'
+      '@id': 'https://upgraderoof.co.uk/#organization'
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://eliteroofingcheshire.co.uk/search?q={search_term_string}',
+      target: 'https://upgraderoof.co.uk/search?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -209,37 +211,37 @@ export function StructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://eliteroofingcheshire.co.uk'
+        item: 'https://upgraderoof.co.uk'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'About',
-        item: 'https://eliteroofingcheshire.co.uk/about'
+        item: 'https://upgraderoof.co.uk/about'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Services',
-        item: 'https://eliteroofingcheshire.co.uk/services'
+        item: 'https://upgraderoof.co.uk/services'
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: 'Gallery',
-        item: 'https://eliteroofingcheshire.co.uk/gallery'
+        item: 'https://upgraderoof.co.uk/gallery'
       },
       {
         '@type': 'ListItem',
         position: 5,
         name: 'Blog',
-        item: 'https://eliteroofingcheshire.co.uk/blog'
+        item: 'https://upgraderoof.co.uk/blog'
       },
       {
         '@type': 'ListItem',
         position: 6,
         name: 'Contact',
-        item: 'https://eliteroofingcheshire.co.uk/contact'
+        item: 'https://upgraderoof.co.uk/contact'
       }
     ]
   };
