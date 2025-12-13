@@ -83,6 +83,7 @@ export function PerformanceOptimizations() {
       });
     };
 
+
     // Critical resource hints
     const addResourceHints = () => {
       // DNS prefetch for external domains
