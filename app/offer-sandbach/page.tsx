@@ -150,10 +150,10 @@ export default function OfferSandbachPage() {
                 <p className="text-xl font-semibold text-brand-orange">
                   Emergency Roof Repairs • Leak Fixes • New Roofs
                 </p>
-                <p className="text-lg text-white/90">
+                <p className="text-lg text-white">
                   25+ Years Experience • FREE Same-Day Quotes
                 </p>
-                <p className="text-lg text-white/80">
+                <p className="text-lg text-white">
                   Serving Sandbach & Surrounding Areas
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function OfferSandbachPage() {
                   <div className="text-2xl font-bold mb-2">
                     📞 FASTEST: Call 01270 897606
                   </div>
-                  <div className="text-lg opacity-90">
+                  <div className="text-lg font-semibold">
                     Instant quote in 2 minutes!
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export default function OfferSandbachPage() {
                   <span className="!text-white">{isSubmitting ? 'Submitting...' : 'Request Callback'}</span>
                 </Button>
 
-                <p className="text-xs text-gray-500 text-center leading-relaxed">
+                <p className="text-xs text-gray-600 text-center leading-relaxed">
                   By submitting, you agree to be contacted about our services.<br />
                   No spam, unsubscribe anytime.
                 </p>
@@ -343,7 +343,7 @@ export default function OfferSandbachPage() {
       {/* Trust Badges */}
       <section className="py-8 bg-white border-b">
         <div className="container-custom">
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
+          <div className="flex flex-wrap justify-center items-center gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
                 <CheckCircle className="w-8 h-8 text-green-600" />
@@ -438,7 +438,7 @@ export default function OfferSandbachPage() {
           <p className="text-xl mb-2 max-w-2xl mx-auto">
             Don't wait until leaks become damage.
           </p>
-          <p className="text-lg mb-8 max-w-2xl mx-auto text-white/80">
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-white">
             We'll call you within 10 minutes to confirm your booking.
           </p>
           
