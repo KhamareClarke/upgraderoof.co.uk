@@ -60,12 +60,18 @@ export function StructuredData() {
       }
     ],
     sameAs: [
-      'https://www.facebook.com/upgraderoofingsolutions',
-      'https://www.instagram.com/upgraderoofingsolutions',
-      'https://twitter.com/upgraderoofing',
-      'https://www.youtube.com/@upgraderoofingsolutions',
-      'https://share.google/FMxRgYIO71KPR4QR3'
+      'https://www.facebook.com/people/Upgrade-Roofs/61564099403039/',
+      'https://www.instagram.com/upgraderoofs',
+      'https://www.x.com/upgraderoofs',
+      'https://www.youtube.com/@upgraderoofs',
+      'https://www.pinterest.com/upgraderoofs',
+      'https://share.google/EkNuUQIZgxYuyzVpu'
     ],
+    identifier: {
+      '@type': 'PropertyValue',
+      name: 'Google Business Profile ID',
+      value: '17098915606572808840'
+    },
     areaServed: [
       {
         '@type': 'City',
