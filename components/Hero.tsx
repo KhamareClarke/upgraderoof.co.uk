@@ -9,6 +9,7 @@ import Link from 'next/link';
 const slides = [
   {
     image: '/images/6.jpeg',
+    alt: 'Professional tile roof installation by Upgrade Roofing in Sandbach Cheshire',
     gradient: 'from-slate-900/85 via-slate-800/60 to-slate-700/30',
     title: "Cheshire's Trusted",
     highlight: 'Tile & Slate',
@@ -17,6 +18,7 @@ const slides = [
   },
   {
     image: '/images/7.jpeg',
+    alt: 'Welsh slate roof repair completed by expert roofers in Alsager Cheshire',
     gradient: 'from-slate-900/85 via-slate-800/60 to-slate-700/30',
     title: "Cheshire's Trusted",
     highlight: 'Tile & Slate',
@@ -25,19 +27,21 @@ const slides = [
   },
   {
     image: '/images/3.jpeg',
+    alt: 'GRP fibreglass flat roof installation in Middlewich by Upgrade Roofing',
     gradient: 'from-slate-900/85 via-slate-800/60 to-slate-700/30',
     title: "Cheshire's Trusted",
-    highlight: 'Tile & Slate',
-    subtitle: 'Roofing Specialists',
-    description: 'Authentic materials. Traditional craftsmanship. Weather-resistant roofing built to stand the test of time.',
+    highlight: 'Flat Roofing',
+    subtitle: 'Experts',
+    description: 'Modern flat roofing solutions with EPDM and GRP systems. Waterproof guarantees up to 20 years.',
   },
   {
     image: '/images/1.jpeg',
+    alt: 'Emergency roof repair service in Cheshire by Upgrade Roofing Solutions',
     gradient: 'from-slate-900/85 via-slate-800/60 to-slate-700/30',
-    title: "Cheshire's Trusted",
-    highlight: 'Tile & Slate',
-    subtitle: 'Roofing Specialists',
-    description: 'Authentic materials. Traditional craftsmanship. Weather-resistant roofing built to stand the test of time.',
+    title: "24/7 Emergency",
+    highlight: 'Roof Repairs',
+    subtitle: 'When You Need Us',
+    description: 'Storm damage? Leaking roof? Our emergency team responds fast across Cheshire and Staffordshire.',
   },
 ];
 

@@ -306,6 +306,56 @@ export default function BlogPage() {
         </div>
       </section>
 
+      {/* Photo Gallery Section */}
+      <section className="section-padding bg-brand-grey">
+        <div className="container-custom">
+          <div className="text-center mb-8 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">
+              See Our Work in Action
+            </h2>
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto">
+              Browse our portfolio of completed roofing projects across Cheshire
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+            {[
+              { src: '/images/1.jpeg', alt: 'Tile roof replacement in Sandbach showing professional workmanship', title: 'Tile Roof - Sandbach' },
+              { src: '/images/2.jpeg', alt: 'EPDM flat roof installation in Crewe with 20 year guarantee', title: 'Flat Roof - Crewe' },
+              { src: '/images/3.jpeg', alt: 'GRP fibreglass flat roof in Middlewich seamless finish', title: 'GRP Roof - Middlewich' },
+              { src: '/images/4.jpeg', alt: 'Chimney rebuild in Congleton with lead flashing', title: 'Chimney - Congleton' },
+              { src: '/images/5.jpeg', alt: 'Gutter replacement in Nantwich with leaf guards', title: 'Gutters - Nantwich' },
+              { src: '/images/6.jpeg', alt: 'Velux skylight installation in Holmes Chapel loft', title: 'Skylight - Holmes Chapel' },
+              { src: '/images/7.jpeg', alt: 'Welsh slate roof repair in Alsager reclaimed slates', title: 'Slate Roof - Alsager' },
+              { src: '/images/8.jpeg', alt: 'Composite cladding installation commercial property Crewe', title: 'Cladding - Crewe' },
+            ].map((img, i) => (
+              <div key={i} className="group relative aspect-square overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  title={img.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute bottom-0 left-0 right-0 p-3">
+                    <p className="text-white text-xs sm:text-sm font-medium">{img.title}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link href="/gallery">
+              <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-6 py-3">
+                View Full Gallery
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-gradient-to-br from-brand-navy to-brand-navy/90 text-white">
         <div className="container-custom text-center px-2">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Need Expert Roofing Advice?</h2>
