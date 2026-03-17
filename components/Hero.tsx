@@ -78,14 +78,12 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[55vh] sm:min-h-[70vh] lg:min-h-[85vh] flex items-start sm:items-center justify-center overflow-hidden pt-12 sm:pt-0">
-      {/* Only render current slide and adjacent slides for performance */}
+      {/* Only render current slide initially for best LCP */}
       {slides.map((slide, index) => {
-        // Only render current, previous, and next slides
+        // Only render the current slide
         const isVisible = index === currentSlide;
-        const isAdjacent = index === (currentSlide + 1) % slides.length || 
-                          index === (currentSlide - 1 + slides.length) % slides.length;
         
-        if (!isVisible && !isAdjacent) return null;
+        if (!isVisible) return null;
         
         return (
           <div
@@ -100,12 +98,12 @@ export function Hero() {
                 alt={slide.alt}
                 fill
                 priority={index === 0}
-                loading={index === 0 ? 'eager' : 'lazy'}
-                quality={60}
+                loading="eager"
+                quality={50}
                 sizes="100vw"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/ANF6d1qC+1O5tIbWRFhRCXZgd25mHAx8wKKUqxNxJYBuf//Z"
-                className="object-cover scale-105"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-slate-900/75" />
               <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/70" />

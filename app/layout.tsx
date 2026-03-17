@@ -6,7 +6,6 @@ import { ConditionalLayout } from '@/components/ConditionalLayout';
 import { WhatsAppButton } from '@/components/WhatsAppButton';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { MobileContactBar } from '@/components/MobileContactBar';
-import { PerformanceOptimizations } from '@/components/PerformanceOptimizations';
 import { Analytics } from '@/components/Analytics';
 import { CookieConsent } from '@/components/CookieConsent';
 
@@ -133,7 +132,6 @@ export default function RootLayout({
           />
         </noscript>
         <Analytics />
-        <PerformanceOptimizations />
         <ConditionalLayout>{children}</ConditionalLayout>
         <WhatsAppButton />
         <MobileContactBar />
