@@ -405,7 +405,11 @@ export function GallerySlider() {
                 transform: `translateX(-${currentIndex * (100 / slidesPerView)}%)`,
               }}
             >
-              {galleryImages.map((image, index) => (
+              {galleryImages.map((image, index) => {
+                // Only render images near the current view for performance
+                const isNearView = index >= currentIndex - slidesPerView && index <= currentIndex + (slidesPerView * 2);
+                
+                return (
                 <div
                   key={index}
                   className="flex-shrink-0 px-2"
@@ -421,16 +425,22 @@ export function GallerySlider() {
                     <meta itemProp="contentLocation" content={image.location} />
                     
                     <div className="aspect-[4/3] overflow-hidden bg-gray-200 relative">
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        title={image.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        loading={index < 4 ? 'eager' : 'lazy'}
-                        quality={60}
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
+                      {isNearView ? (
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          title={image.title}
+                          fill
+                          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                          loading="lazy"
+                          quality={50}
+                          placeholder="blur"
+                          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/ANF6d1qC+1O5tIbWRFhRCXZgd25mHAx8wKKUqxNxJYBuf//Z"
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                      ) : (
+                        <div className="w-full h-full bg-gray-300 animate-pulse" />
+                      )}
                     </div>
                     
                     <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -451,7 +461,8 @@ export function GallerySlider() {
                     </div>
                   </article>
                 </div>
-              ))}
+              );
+              })}
             </div>
           </div>
 
