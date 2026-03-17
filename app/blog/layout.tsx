@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Blog | Tips & Advice | Upgrade Roofing',
     description: 'Expert roofing tips and advice from Cheshire roofing specialists.',
-    url: 'https://upgraderoof.co.uk/blog',
+    url: 'https://upgraderoofs.co.uk/blog',
     siteName: 'Upgrade Roofing Solutions',
     images: [
       {
-        url: 'https://upgraderoof.co.uk/images/7.jpeg',
+        url: 'https://upgraderoofs.co.uk/images/7.jpeg',
         width: 1200,
         height: 630,
         alt: 'Roofing Blog - Expert Tips and Advice from Upgrade Roofing Cheshire',
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Roofing Blog | Upgrade Roofing Cheshire',
     description: 'Expert roofing tips and advice.',
-    images: ['https://upgraderoof.co.uk/images/7.jpeg'],
+    images: ['https://upgraderoofs.co.uk/images/7.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/blog',
+    canonical: 'https://upgraderoofs.co.uk/blog',
   },
   robots: {
     index: true,

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'How to Choose a Reliable Roofing Contractor',
     description: 'Avoid cowboy builders with our expert guide to hiring roofers.',
     type: 'article',
-    url: 'https://upgraderoof.co.uk/blog/choosing-roofing-contractor',
+    url: 'https://upgraderoofs.co.uk/blog/choosing-roofing-contractor',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Expert guide to hiring reliable roofers.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/blog/choosing-roofing-contractor',
+    canonical: 'https://upgraderoofs.co.uk/blog/choosing-roofing-contractor',
   },
   robots: {
     index: true,

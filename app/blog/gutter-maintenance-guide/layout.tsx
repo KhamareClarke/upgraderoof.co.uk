@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Complete Guide to Gutter Maintenance in Cheshire',
     description: 'Keep your gutters flowing freely and protect your home from water damage.',
     type: 'article',
-    url: 'https://upgraderoof.co.uk/blog/gutter-maintenance-guide',
+    url: 'https://upgraderoofs.co.uk/blog/gutter-maintenance-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Gutter care guide for Cheshire homeowners.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/blog/gutter-maintenance-guide',
+    canonical: 'https://upgraderoofs.co.uk/blog/gutter-maintenance-guide',
   },
   robots: {
     index: true,

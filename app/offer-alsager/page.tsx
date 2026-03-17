@@ -570,7 +570,7 @@ export default function OfferAlsagerPage() {
         "name": "Upgrade Roofing Solutions - Alsager",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
-        "url": "https://upgraderoof.co.uk/offer-alsager",
+        "url": "https://upgraderoofs.co.uk/offer-alsager",
         "areaServed": "Alsager"
       })}} />
     </div>

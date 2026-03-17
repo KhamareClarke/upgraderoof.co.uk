@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Roof Maintenance Checklist for Cheshire Homeowners',
     description: 'Keep your roof in top condition with our seasonal maintenance guide.',
     type: 'article',
-    url: 'https://upgraderoof.co.uk/blog/roof-maintenance-checklist',
+    url: 'https://upgraderoofs.co.uk/blog/roof-maintenance-checklist',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Seasonal roof maintenance guide for Cheshire.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/blog/roof-maintenance-checklist',
+    canonical: 'https://upgraderoofs.co.uk/blog/roof-maintenance-checklist',
   },
   robots: {
     index: true,

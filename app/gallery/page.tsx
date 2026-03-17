@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Gallery | Completed Projects Cheshire',
     description: 'View our portfolio of completed roofing projects. Before and after photos.',
-    url: 'https://upgraderoof.co.uk/gallery',
+    url: 'https://upgraderoofs.co.uk/gallery',
     siteName: 'Upgrade Roofing Solutions',
     locale: 'en_GB',
     type: 'website',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: 'View our completed roofing projects across Cheshire.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/gallery',
+    canonical: 'https://upgraderoofs.co.uk/gallery',
   },
   robots: {
     index: true,

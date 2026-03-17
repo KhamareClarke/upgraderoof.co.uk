@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cladding Installation Cheshire | Residential & Commercial',
     description: 'Professional cladding solutions. Composite, timber, metal. Free quotes. Call 01270 897606.',
-    url: 'https://upgraderoof.co.uk/services/cladding',
+    url: 'https://upgraderoofs.co.uk/services/cladding',
     siteName: 'Upgrade Roofing Solutions',
     locale: 'en_GB',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Expert cladding installation in Cheshire. Free quotes.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/services/cladding',
+    canonical: 'https://upgraderoofs.co.uk/services/cladding',
   },
   robots: {
     index: true,

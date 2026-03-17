@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Services Cheshire | Expert Installation & Repairs',
     description: 'Complete roofing solutions. Tile, slate, flat roofs, chimneys, gutters, skylights. Free quotes.',
-    url: 'https://upgraderoof.co.uk/services',
+    url: 'https://upgraderoofs.co.uk/services',
     siteName: 'Upgrade Roofing Solutions',
     locale: 'en_GB',
     type: 'website',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Expert roofing services. Free quotes, 10-year guarantee.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/services',
+    canonical: 'https://upgraderoofs.co.uk/services',
   },
   robots: {
     index: true,

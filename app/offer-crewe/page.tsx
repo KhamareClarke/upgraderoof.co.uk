@@ -571,7 +571,7 @@ export default function OfferCrewePage() {
         "name": "Upgrade Roofing Solutions - Crewe",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
-        "url": "https://upgraderoof.co.uk/offer-crewe",
+        "url": "https://upgraderoofs.co.uk/offer-crewe",
         "areaServed": "Crewe"
       })}} />
     </div>

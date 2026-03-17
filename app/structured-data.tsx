@@ -5,11 +5,11 @@ export function StructuredData() {
     name: 'Upgrade Roofing Solutions',
     alternateName: 'Upgrade Roofing',
     image: [
-      'https://upgraderoof.co.uk/images/6.jpeg',
-      'https://upgraderoof.co.uk/images/2.jpeg'
+      'https://upgraderoofs.co.uk/images/6.jpeg',
+      'https://upgraderoofs.co.uk/images/2.jpeg'
     ],
-    '@id': 'https://upgraderoof.co.uk/#organization',
-    url: 'https://upgraderoof.co.uk',
+    '@id': 'https://upgraderoofs.co.uk/#organization',
+    url: 'https://upgraderoofs.co.uk',
     telephone: '01270 897606',
     alternativeTelephone: '07379 440583',
     email: 'upgraderoofs@yahoo.com',
@@ -198,15 +198,15 @@ export function StructuredData() {
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://upgraderoof.co.uk/#website',
-    url: 'https://upgraderoof.co.uk',
+    '@id': 'https://upgraderoofs.co.uk/#website',
+    url: 'https://upgraderoofs.co.uk',
     name: 'Upgrade Roofing Solutions',
     publisher: {
-      '@id': 'https://upgraderoof.co.uk/#organization'
+      '@id': 'https://upgraderoofs.co.uk/#organization'
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://upgraderoof.co.uk/search?q={search_term_string}',
+      target: 'https://upgraderoofs.co.uk/search?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -219,37 +219,37 @@ export function StructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://upgraderoof.co.uk'
+        item: 'https://upgraderoofs.co.uk'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'About',
-        item: 'https://upgraderoof.co.uk/about'
+        item: 'https://upgraderoofs.co.uk/about'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Services',
-        item: 'https://upgraderoof.co.uk/services'
+        item: 'https://upgraderoofs.co.uk/services'
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: 'Gallery',
-        item: 'https://upgraderoof.co.uk/gallery'
+        item: 'https://upgraderoofs.co.uk/gallery'
       },
       {
         '@type': 'ListItem',
         position: 5,
         name: 'Blog',
-        item: 'https://upgraderoof.co.uk/blog'
+        item: 'https://upgraderoofs.co.uk/blog'
       },
       {
         '@type': 'ListItem',
         position: 6,
         name: 'Contact',
-        item: 'https://upgraderoof.co.uk/contact'
+        item: 'https://upgraderoofs.co.uk/contact'
       }
     ]
   };

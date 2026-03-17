@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Tile & Slate Roofing Cheshire | Expert Installation & Repairs',
     description: 'Professional tile and slate roofing services. Traditional craftsmanship, premium materials, 10-year guarantee. Call 01270 897606.',
-    url: 'https://upgraderoof.co.uk/services/tile-slate-roofing',
+    url: 'https://upgraderoofs.co.uk/services/tile-slate-roofing',
     siteName: 'Upgrade Roofing Solutions',
     locale: 'en_GB',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Expert tile and slate roofing in Cheshire. Free quotes, 10-year guarantee.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/services/tile-slate-roofing',
+    canonical: 'https://upgraderoofs.co.uk/services/tile-slate-roofing',
   },
   robots: {
     index: true,

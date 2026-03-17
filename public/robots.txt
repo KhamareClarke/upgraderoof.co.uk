@@ -1,4 +1,4 @@
-# robots.txt for upgraderoof.co.uk
+# robots.txt for upgraderoofs.co.uk
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -7,8 +7,7 @@ Disallow: /_next/
 Disallow: /thank-you/
 
 # Sitemaps
-Sitemap: https://upgraderoof.co.uk/sitemap.xml
-Sitemap: https://upgraderoof.co.uk/sitemap-0.xml
+Sitemap: https://upgraderoofs.co.uk/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0

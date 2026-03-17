@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Chimney Repairs in Cheshire: Complete Guide',
     description: 'Everything you need to know about chimney maintenance and repairs.',
     type: 'article',
-    url: 'https://upgraderoof.co.uk/blog/chimney-repair-guide',
+    url: 'https://upgraderoofs.co.uk/blog/chimney-repair-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Chimney repair guide for Cheshire homeowners.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/blog/chimney-repair-guide',
+    canonical: 'https://upgraderoofs.co.uk/blog/chimney-repair-guide',
   },
   robots: {
     index: true,

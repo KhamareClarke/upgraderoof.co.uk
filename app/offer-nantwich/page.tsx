@@ -569,7 +569,7 @@ export default function OfferNantwichPage() {
         "name": "Upgrade Roofing Solutions - Nantwich",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
-        "url": "https://upgraderoof.co.uk/offer-nantwich",
+        "url": "https://upgraderoofs.co.uk/offer-nantwich",
         "areaServed": "Nantwich"
       })}} />
     </div>

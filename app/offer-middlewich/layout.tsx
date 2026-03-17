@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Roof Inspection Middlewich | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Middlewich. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
-    url: 'https://upgraderoof.co.uk/offer-middlewich',
+    url: 'https://upgraderoofs.co.uk/offer-middlewich',
     siteName: 'Upgrade Roofing Solutions',
     images: [
       {
-        url: 'https://upgraderoof.co.uk/images/3.jpeg',
+        url: 'https://upgraderoofs.co.uk/images/3.jpeg',
         width: 1200,
         height: 630,
         alt: 'Professional Roofing Services Middlewich Cheshire - Free Inspection',
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Roof Inspection Middlewich | 01270 897606',
     description: 'FREE roof inspection in Middlewich. Expert local roofers, 25+ years experience. Call now!',
-    images: ['https://upgraderoof.co.uk/images/3.jpeg'],
+    images: ['https://upgraderoofs.co.uk/images/3.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/offer-middlewich',
+    canonical: 'https://upgraderoofs.co.uk/offer-middlewich',
   },
   robots: {
     index: true,

@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Upgrade Roofing Cheshire | 25+ Years Experience',
     description: 'Award-winning roofing company. 25+ years experience, CORC certified, £10M insured.',
-    url: 'https://upgraderoof.co.uk/about',
+    url: 'https://upgraderoofs.co.uk/about',
     siteName: 'Upgrade Roofing Solutions',
     images: [
       {
-        url: 'https://upgraderoof.co.uk/images/1.jpeg',
+        url: 'https://upgraderoofs.co.uk/images/1.jpeg',
         width: 1200,
         height: 630,
         alt: 'About Upgrade Roofing Solutions - Professional Roofers Cheshire',
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Upgrade Roofing Cheshire',
     description: '25+ years of roofing excellence. Meet our expert team.',
-    images: ['https://upgraderoof.co.uk/images/1.jpeg'],
+    images: ['https://upgraderoofs.co.uk/images/1.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/about',
+    canonical: 'https://upgraderoofs.co.uk/about',
   },
   robots: {
     index: true,

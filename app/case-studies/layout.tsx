@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Roofing Case Studies | Before & After Photos',
     description: 'Real roofing projects completed across Cheshire with customer testimonials.',
-    url: 'https://upgraderoof.co.uk/case-studies',
+    url: 'https://upgraderoofs.co.uk/case-studies',
     siteName: 'Upgrade Roofing Solutions',
     locale: 'en_GB',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Before and after roofing projects in Cheshire.',
   },
   alternates: {
-    canonical: 'https://upgraderoof.co.uk/case-studies',
+    canonical: 'https://upgraderoofs.co.uk/case-studies',
   },
   robots: {
     index: true,

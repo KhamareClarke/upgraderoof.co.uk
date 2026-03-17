@@ -52,18 +52,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://upgraderoof.co.uk'),
+  metadataBase: new URL('https://upgraderoofs.co.uk'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
     description: 'Expert roofing services in Cheshire & Staffordshire. Roof repairs, installations & replacements. 25+ years experience. Free quotes.',
-    url: 'https://upgraderoof.co.uk',
+    url: 'https://upgraderoofs.co.uk',
     siteName: 'Upgrade Roofing Solutions',
     images: [
       {
-        url: 'https://upgraderoof.co.uk/images/6.jpeg',
+        url: 'https://upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
         alt: 'Professional Roofing Services Cheshire - Upgrade Roofing',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
     description: 'Expert roofing services in Cheshire & Staffordshire. 25+ years experience. Free quotes.',
-    images: ['https://upgraderoof.co.uk/images/6.jpeg'],
+    images: ['https://upgraderoofs.co.uk/images/6.jpeg'],
     site: '@upgraderoofing',
     creator: '@upgraderoofing',
   },
