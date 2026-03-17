@@ -137,7 +137,7 @@ export function Services() {
               <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-brand-orange" />
             </div>
             <div className="text-center sm:text-left flex-1">
-              <p className="text-white/70 text-sm tracking-wide mb-1">Need a custom solution?</p>
+              <p className="text-white text-sm tracking-wide mb-1 font-medium">Need a custom solution?</p>
               <p className="text-lg sm:text-xl font-bold tracking-tight">We've got you covered!</p>
             </div>
             <Button

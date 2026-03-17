@@ -132,7 +132,7 @@ export function Hero() {
             {slides[currentSlide].subtitle}
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide slide-in-right px-4 sm:px-0 drop-shadow-lg">
+          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide slide-in-right px-4 sm:px-0 drop-shadow-lg">
             {slides[currentSlide].description}
           </p>
 
@@ -172,7 +172,7 @@ export function Hero() {
                   <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                 </div>
                 <div className="min-w-0 sm:text-left">
-                  <p className="text-white/80 text-xs sm:text-sm tracking-wide">{stat.label}</p>
+                  <p className="text-white text-xs sm:text-sm tracking-wide font-medium">{stat.label}</p>
                   <p className="text-white font-semibold text-sm sm:text-base mt-0.5">{stat.value}</p>
                 </div>
               </div>
