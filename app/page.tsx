@@ -4,7 +4,7 @@ import { Services } from '@/components/Services';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
 import { GoogleReviewsCarousel } from '@/components/GoogleReviewsCarousel';
 import { VideoTestimonials } from '@/components/VideoTestimonials';
-import { Gallery } from '@/components/Gallery';
+import { GallerySlider } from '@/components/GallerySlider';
 import { FAQ } from '@/components/FAQ';
 import { CTABanner } from '@/components/CTABanner';
 import { EnhancedContactSection } from '@/components/EnhancedContactSection';
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
       <div className="bg-gradient-to-b from-white via-gray-50 to-gray-100">
         <section id="gallery">
-          <Gallery />
+          <GallerySlider />
         </section>
         <FAQ />
       </div>
