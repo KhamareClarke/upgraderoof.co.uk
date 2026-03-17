@@ -44,14 +44,14 @@ export function Analytics() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           
-          // Set default consent state
+          // Set default consent state (denied until user grants consent)
           gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
             'functionality_storage': 'granted',
-            'personalization_storage': 'granted',
+            'personalization_storage': 'denied',
             'security_storage': 'granted',
             'wait_for_update': 500
           });
