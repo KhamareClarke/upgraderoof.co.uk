@@ -1,4 +1,4 @@
-// SEO Keyword Map for Upgrade Roofing Solutions
+// SEO Keyword Map for Upgrade Roofs
 export const keywordMap = {
   // Primary service areas
   primaryLocation: 'Stoke-on-Trent',

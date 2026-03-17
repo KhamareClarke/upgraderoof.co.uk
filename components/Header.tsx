@@ -114,7 +114,7 @@ export function Header() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/upgrade_logo.jpeg"
-              alt="Upgrade Roofing Solutions - Professional Roofers Cheshire"
+              alt="Upgrade Roofs - Professional Roofers Cheshire"
               width={72}
               height={72}
               className="w-16 h-16 lg:w-18 lg:h-18 object-contain transition-all duration-300"

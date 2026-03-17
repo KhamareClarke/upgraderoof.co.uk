@@ -2,7 +2,7 @@ export function StructuredData() {
   const organizationData = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'RoofingContractor', 'HomeAndConstructionBusiness'],
-    name: 'Upgrade Roofing Solutions',
+    name: 'Upgrade Roofs',
     alternateName: 'Upgrade Roofing',
     image: [
       'https://upgraderoofs.co.uk/images/6.jpeg',
@@ -200,7 +200,7 @@ export function StructuredData() {
     '@type': 'WebSite',
     '@id': 'https://upgraderoofs.co.uk/#website',
     url: 'https://upgraderoofs.co.uk',
-    name: 'Upgrade Roofing Solutions',
+    name: 'Upgrade Roofs',
     publisher: {
       '@id': 'https://upgraderoofs.co.uk/#organization'
     },

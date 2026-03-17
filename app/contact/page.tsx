@@ -4,19 +4,19 @@ import { ContactForm } from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Free Roofing Quote Cheshire | 01270 897606',
-  description: 'Contact Upgrade Roofing Solutions for free quotes. Call 01270 897606 or WhatsApp 07379 440583. Serving Sandbach, Crewe, Middlewich, Congleton and all Cheshire. Fast response guaranteed.',
+  description: 'Contact Upgrade Roofs for free quotes. Call 01270 897606 or WhatsApp 07379 440583. Serving Sandbach, Crewe, Middlewich, Congleton and all Cheshire. Fast response guaranteed.',
   keywords: 'contact roofer Cheshire, roofing quote Cheshire, roofing enquiry, free roof quote, Cheshire roofing contact, emergency roofer contact',
   openGraph: {
     title: 'Contact Upgrade Roofing | Free Quote Cheshire',
     description: 'Get a free roofing quote. Call 01270 897606. Fast response guaranteed.',
     url: 'https://upgraderoofs.co.uk/contact',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Contact Upgrade Roofing Solutions Cheshire - Free Quotes',
+        alt: 'Contact Upgrade Roofs Cheshire - Free Quotes',
       },
     ],
     locale: 'en_GB',
@@ -165,7 +165,7 @@ export default function ContactPage() {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-6 text-center">Why Choose Upgrade Roofing Solutions?</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-6 text-center">Why Choose Upgrade Roofs?</h2>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-brand-grey p-6 rounded-xl">
                 <h3 className="text-lg font-semibold text-brand-navy mb-3">25+ Years of Experience</h3>
@@ -196,7 +196,7 @@ export default function ContactPage() {
             <div className="bg-brand-navy/5 p-6 rounded-xl mb-8">
               <h3 className="text-lg font-semibold text-brand-navy mb-3">Our Roofing Services</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                Upgrade Roofing Solutions offers a comprehensive range of roofing services to meet all your needs. Whether you require emergency roof repairs, a complete roof replacement, or routine maintenance, our skilled team is ready to help.
+                Upgrade Roofs offers a comprehensive range of roofing services to meet all your needs. Whether you require emergency roof repairs, a complete roof replacement, or routine maintenance, our skilled team is ready to help.
               </p>
               <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
                 <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Tile and slate roof repairs</li>

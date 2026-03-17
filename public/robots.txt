@@ -7,7 +7,7 @@ Disallow: /_next/
 Disallow: /thank-you/
 
 # Sitemaps
-Sitemap: https://upgraderoofs.co.uk/sitemap.xml
+Sitemap: https://www.upgraderoofs.co.uk/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 0

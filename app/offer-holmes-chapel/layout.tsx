@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Free Roof Inspection Holmes Chapel | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Holmes Chapel. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/offer-holmes-chapel',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/10.jpeg',

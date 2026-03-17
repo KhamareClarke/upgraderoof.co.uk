@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Signs of Roof Damage | When to Call a Roofer',
     description: 'Learn the warning signs of roof damage and when to call a professional.',
     url: 'https://upgraderoofs.co.uk/blog/roof-damage-signs',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'article',
   },

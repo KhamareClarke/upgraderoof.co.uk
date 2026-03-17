@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Free Roof Inspection Cheshire | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Cheshire. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/offer-cheshire',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/6.jpeg',

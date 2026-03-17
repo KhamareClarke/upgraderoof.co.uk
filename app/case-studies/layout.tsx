@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Roofing Case Studies | Before & After Photos',
     description: 'Real roofing projects completed across Cheshire with customer testimonials.',
     url: 'https://upgraderoofs.co.uk/case-studies',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Skylights & Roof Windows Cheshire | Velux Certified',
     description: 'Professional skylight installation. Velux certified. Sun tunnels, roof windows. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/services/skylights-roof-windows',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

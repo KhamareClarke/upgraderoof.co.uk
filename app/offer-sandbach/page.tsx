@@ -567,7 +567,7 @@ export default function OfferSandbachPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Upgrade Roofing Solutions - Sandbach",
+        "name": "Upgrade Roofs - Sandbach",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
         "url": "https://upgraderoofs.co.uk/offer-sandbach",

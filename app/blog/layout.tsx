@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Roofing Blog | Tips & Advice | Upgrade Roofing Cheshire',
-  description: 'Expert roofing tips, advice and guides from Upgrade Roofing Solutions. Learn about roof maintenance, repairs, materials and more. Serving Cheshire homeowners.',
+  description: 'Expert roofing tips, advice and guides from Upgrade Roofs. Learn about roof maintenance, repairs, materials and more. Serving Cheshire homeowners.',
   keywords: 'roofing blog, roofing tips, roof maintenance advice, roofing guides Cheshire, roof repair tips, roofing materials guide',
   openGraph: {
     title: 'Roofing Blog | Tips & Advice | Upgrade Roofing',
     description: 'Expert roofing tips and advice from Cheshire roofing specialists.',
     url: 'https://upgraderoofs.co.uk/blog',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/7.jpeg',

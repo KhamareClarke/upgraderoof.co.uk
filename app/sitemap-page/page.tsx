@@ -17,8 +17,8 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Sitemap | Upgrade Roofing Solutions - All Pages',
-  description: 'Complete sitemap of all pages on Upgrade Roofing Solutions website. Easy navigation to all our roofing services, areas, and information.',
+  title: 'Sitemap | Upgrade Roofs - All Pages',
+  description: 'Complete sitemap of all pages on Upgrade Roofs website. Easy navigation to all our roofing services, areas, and information.',
   robots: {
     index: true,
     follow: true,
@@ -122,7 +122,7 @@ export default function SitemapPage() {
               Website Sitemap
             </h1>
             <p className="text-xl text-white/90 mb-8">
-              Complete navigation guide to all pages on Upgrade Roofing Solutions website. 
+              Complete navigation guide to all pages on Upgrade Roofs website. 
               Find exactly what you're looking for.
             </p>
           </div>

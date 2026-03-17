@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Gutters & Fascias Cheshire | Installation & Repairs',
     description: 'Professional gutter and fascia services. uPVC, cast iron, aluminium. Free quotes. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/services/gutters-fascias',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

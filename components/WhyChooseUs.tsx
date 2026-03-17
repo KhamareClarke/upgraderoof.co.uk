@@ -18,7 +18,7 @@ export function WhyChooseUs() {
           <div className="relative h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg bg-gray-200">
             <img
               src="/images/2.jpeg"
-              alt="Upgrade Roofing Solutions professional roofers installing gutters and fascias in Cheshire"
+              alt="Upgrade Roofs professional roofers installing gutters and fascias in Cheshire"
               loading="lazy"
               className="w-full h-full object-cover scale-125"
               style={{ objectPosition: 'center center' }}

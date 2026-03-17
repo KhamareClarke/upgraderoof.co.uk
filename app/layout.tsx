@@ -18,8 +18,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
-  description: 'Expert roofing services in Cheshire & Staffordshire. Roof repairs, installations & replacements. 25+ years experience. Free quotes. Call 01270 897606',
+  title: 'Expert Roofers Cheshire | Upgrade Roofs | 01270 897606',
+  description: 'Professional roofing in Cheshire. Tile roofs, flat roofs, repairs & installations. 25+ years experience. Free quotes. Call 01270 897606',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -48,26 +48,26 @@ export const metadata: Metadata = {
     'roof replacement Cheshire',
     'commercial roofing Cheshire'
   ],
-  authors: [{ name: 'Upgrade Roofing Solutions' }],
-  creator: 'Upgrade Roofing Solutions',
-  publisher: 'Upgrade Roofing Solutions',
+  authors: [{ name: 'Upgrade Roofs' }],
+  creator: 'Upgrade Roofs',
+  publisher: 'Upgrade Roofs',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://upgraderoofs.co.uk'),
+  metadataBase: new URL('https://www.upgraderoofs.co.uk'),
   alternates: {
-    canonical: '/',
+    canonical: 'https://www.upgraderoofs.co.uk',
   },
   openGraph: {
-    title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
-    description: 'Expert roofing services in Cheshire & Staffordshire. Roof repairs, installations & replacements. 25+ years experience. Free quotes.',
-    url: 'https://upgraderoofs.co.uk',
-    siteName: 'Upgrade Roofing Solutions',
+    title: 'Expert Roofers Cheshire | Upgrade Roofs',
+    description: 'Professional roofing in Cheshire. Tile roofs, flat roofs, repairs & installations. 25+ years experience. Free quotes.',
+    url: 'https://www.upgraderoofs.co.uk',
+    siteName: 'Upgrade Roofs',
     images: [
       {
-        url: 'https://upgraderoofs.co.uk/images/6.jpeg',
+        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
         alt: 'Professional Roofing Services Cheshire - Upgrade Roofing',
@@ -78,9 +78,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
-    description: 'Expert roofing services in Cheshire & Staffordshire. 25+ years experience. Free quotes.',
-    images: ['https://upgraderoofs.co.uk/images/6.jpeg'],
+    title: 'Expert Roofers Cheshire | Upgrade Roofs',
+    description: 'Professional roofing in Cheshire. 25+ years experience. Free quotes.',
+    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
     site: '@upgraderoofing',
     creator: '@upgraderoofing',
   },

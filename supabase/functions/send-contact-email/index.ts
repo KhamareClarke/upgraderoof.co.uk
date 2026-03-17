@@ -32,7 +32,7 @@ async function sendEmailViaSMTP(
           user_id: emailjsPublicKey,
           template_params: {
             to_email: to,
-            to_name: 'Upgrade Roofing Solutions',
+            to_name: 'Upgrade Roofs',
             from_email: user,
             subject: subject,
             message_html: html,

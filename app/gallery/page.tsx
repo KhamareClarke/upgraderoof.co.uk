@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: 'Roofing Gallery | Completed Projects Cheshire',
     description: 'View our portfolio of completed roofing projects. Before and after photos.',
     url: 'https://upgraderoofs.co.uk/gallery',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

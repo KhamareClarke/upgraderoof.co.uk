@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Flat Roofing Cheshire | EPDM, GRP & Felt Systems',
     description: 'Professional flat roofing solutions. EPDM, GRP, felt systems. 20-year warranty. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/services/flat-roofing',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

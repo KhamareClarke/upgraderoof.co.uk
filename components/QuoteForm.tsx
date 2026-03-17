@@ -219,7 +219,7 @@ export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
             </Button>
 
             <p className="text-xs text-center text-gray-500">
-              By submitting this form, you agree to be contacted by Upgrade Roofing Solutions regarding your quote.
+              By submitting this form, you agree to be contacted by Upgrade Roofs regarding your quote.
             </p>
           </form>
         )}

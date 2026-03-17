@@ -186,7 +186,7 @@ export default function ChoosingRoofingContractorPost() {
               </ul>
 
               <h2 className="text-2xl font-bold text-brand-navy mb-4">
-                Why Choose Upgrade Roofing Solutions
+                Why Choose Upgrade Roofs
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">

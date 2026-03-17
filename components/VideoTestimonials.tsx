@@ -35,7 +35,7 @@ export function VideoTestimonials() {
             See Our Roofing in Action
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto mb-6 sm:mb-8 px-4">
-            From leaks to full roof replacements, see why locals trust Upgrade Roofing Solutions.
+            From leaks to full roof replacements, see why locals trust Upgrade Roofs.
           </p>
         </div>
 

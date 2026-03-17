@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Free Roof Inspection Alsager | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Alsager. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/offer-alsager',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/7.jpeg',

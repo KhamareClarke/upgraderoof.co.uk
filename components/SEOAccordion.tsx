@@ -18,7 +18,7 @@ export function SEOAccordion() {
               <Award className="w-6 h-6 text-brand-orange" />
             </div>
             <div className="text-left">
-              <h2 className="text-2xl font-bold text-brand-navy">About Upgrade Roofing Solutions</h2>
+              <h2 className="text-2xl font-bold text-brand-navy">About Upgrade Roofs</h2>
               <p className="text-gray-600 text-sm mt-1">Learn more about our services and expertise</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export function SEOAccordion() {
                 Professional Roofing Services in <span className="text-brand-orange">Cheshire</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Upgrade Roofing Solutions is Cheshire's trusted roofing company with over 25 years of experience. We provide expert roofing services across Sandbach, Crewe, Congleton, Middlewich, Nantwich, Alsager, and throughout Cheshire and Staffordshire.
+                Upgrade Roofs is Cheshire's trusted roofing company with over 25 years of experience. We provide expert roofing services across Sandbach, Crewe, Congleton, Middlewich, Nantwich, Alsager, and throughout Cheshire and Staffordshire.
               </p>
             </div>
 

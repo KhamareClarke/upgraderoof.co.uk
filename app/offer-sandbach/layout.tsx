@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Free Roof Inspection Sandbach | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Sandbach. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoofs.co.uk/offer-sandbach',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://upgraderoofs.co.uk/images/6.jpeg',

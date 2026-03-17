@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Flat vs Tile Roofs | Which is Best for Your Home?',
     description: 'Expert comparison of flat roofs vs tile roofs. Pros, cons, costs.',
     url: 'https://upgraderoofs.co.uk/blog/flat-vs-tile-roofs',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'article',
   },

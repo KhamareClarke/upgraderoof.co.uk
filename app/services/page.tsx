@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Roofing Services Cheshire | Expert Installation & Repairs',
     description: 'Complete roofing solutions. Tile, slate, flat roofs, chimneys, gutters, skylights. Free quotes.',
     url: 'https://upgraderoofs.co.uk/services',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
   },

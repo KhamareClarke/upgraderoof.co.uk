@@ -12,20 +12,20 @@ import { SEOAccordion } from '@/components/SEOAccordion';
 import { CheckCircle, Star, Award, Shield, Home as HomeIcon, Layers } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Upgrade Roofing Solutions | Expert Roofers Cheshire | 01270 897606',
-  description: 'Professional roofing services in Cheshire. 25+ years experience, CORC certified, £10M insured. Tile roofs, flat roofs, repairs, guttering. Free quotes. Emergency service available. Call 01270 897606.',
+  title: 'Upgrade Roofs | Expert Roofers Cheshire | 01270 897606',
+  description: 'Professional roofers in Cheshire. 25+ years experience, CORC certified, £10M insured. Tile & flat roofs, repairs, guttering. Free quotes. Call 01270 897606.',
   keywords: 'roofers Cheshire, roofing company Cheshire, roof repairs Cheshire, flat roofing, tile roofing, emergency roofer, Sandbach roofer, Crewe roofer, Congleton roofer',
   openGraph: {
-    title: 'Upgrade Roofing Solutions | Expert Roofers Cheshire',
-    description: 'Professional roofing services in Cheshire. 25+ years experience, CORC certified, £10M insured. Free quotes available.',
-    url: 'https://upgraderoofs.co.uk',
-    siteName: 'Upgrade Roofing Solutions',
+    title: 'Upgrade Roofs | Expert Roofers Cheshire',
+    description: 'Professional roofers in Cheshire. 25+ years experience, CORC certified, £10M insured. Free quotes available.',
+    url: 'https://www.upgraderoofs.co.uk',
+    siteName: 'Upgrade Roofs',
     images: [
       {
-        url: 'https://upgraderoofs.co.uk/images/6.jpeg',
+        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Upgrade Roofing Solutions - Professional Roofers Cheshire',
+        alt: 'Upgrade Roofs - Professional Roofers Cheshire',
       },
     ],
     locale: 'en_GB',
@@ -33,12 +33,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Upgrade Roofing Solutions | Expert Roofers Cheshire',
-    description: 'Professional roofing services in Cheshire. 25+ years experience. Free quotes.',
-    images: ['https://upgraderoofs.co.uk/images/6.jpeg'],
+    title: 'Upgrade Roofs | Expert Roofers Cheshire',
+    description: 'Professional roofers in Cheshire. 25+ years experience. Free quotes.',
+    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk',
+    canonical: 'https://www.upgraderoofs.co.uk',
   },
   robots: {
     index: true,

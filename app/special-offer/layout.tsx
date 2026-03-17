@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Free Roof Inspection | Upgrade Roofing Solutions Cheshire & Staffordshire',
-  description: 'Claim your free roof inspection from Upgrade Roofing Solutions. Trusted roofers serving Stoke-on-Trent, Cheshire & Staffordshire. No obligation. Limited time offer.',
+  title: 'Free Roof Inspection | Upgrade Roofs Cheshire & Staffordshire',
+  description: 'Claim your free roof inspection from Upgrade Roofs. Trusted roofers serving Stoke-on-Trent, Cheshire & Staffordshire. No obligation. Limited time offer.',
   keywords: [
     'free roof inspection Stoke-on-Trent',
     'roof repairs near me',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     'roofing company near me',
     'roof survey Staffordshire'
   ],
-  authors: [{ name: 'Upgrade Roofing Solutions' }],
-  creator: 'Upgrade Roofing Solutions',
-  publisher: 'Upgrade Roofing Solutions',
+  authors: [{ name: 'Upgrade Roofs' }],
+  creator: 'Upgrade Roofs',
+  publisher: 'Upgrade Roofs',
   metadataBase: new URL('https://upgrade-main.vercel.app'),
   alternates: {
     canonical: '/special-offer',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Free Roof Inspection | Limited Time Offer - Upgrade Roofing',
     description: 'Get a FREE professional roof inspection from experienced roofers. Serving Stoke-on-Trent & Staffordshire. No obligation, no hidden fees.',
     url: 'https://upgrade-main.vercel.app/special-offer',
-    siteName: 'Upgrade Roofing Solutions',
+    siteName: 'Upgrade Roofs',
     images: [
       {
         url: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -102,7 +102,7 @@ export default function SpecialOfferLayout({
             validThrough: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
             seller: {
               '@type': 'LocalBusiness',
-              name: 'Upgrade Roofing Solutions',
+              name: 'Upgrade Roofs',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '1 Hutchins Close',
@@ -144,7 +144,7 @@ export default function SpecialOfferLayout({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': ['LocalBusiness', 'RoofingContractor'],
-            name: 'Upgrade Roofing Solutions',
+            name: 'Upgrade Roofs',
             image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1200',
             '@id': 'https://upgrade-main.vercel.app/#organization',
             url: 'https://upgrade-main.vercel.app/special-offer',

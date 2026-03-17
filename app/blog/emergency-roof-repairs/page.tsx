@@ -124,7 +124,7 @@ export default function EmergencyRoofRepairsPost() {
               </h2>
 
               <p className="mb-4">
-                When you call Upgrade Roofing Solutions for an emergency in Cheshire, here's what happens:
+                When you call Upgrade Roofs for an emergency in Cheshire, here's what happens:
               </p>
 
               <ol className="list-decimal pl-6 mb-6 space-y-3">

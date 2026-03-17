@@ -320,7 +320,7 @@ export default function BlogPage() {
           
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             {[
-              { src: '/images/1.jpeg', alt: 'Professional roof repair completed in Sandbach Cheshire by Upgrade Roofing Solutions', title: 'Roof Repair - Sandbach, CW11', category: 'Tile Roofs' },
+              { src: '/images/1.jpeg', alt: 'Professional roof repair completed in Sandbach Cheshire by Upgrade Roofs', title: 'Roof Repair - Sandbach, CW11', category: 'Tile Roofs' },
               { src: '/images/2.jpeg', alt: 'EPDM rubber flat roof installation on garage extension in Crewe with 20 year guarantee', title: 'Flat Roof - Crewe, CW1', category: 'Flat Roofs' },
               { src: '/images/3.jpeg', alt: 'GRP fibreglass flat roof in Middlewich showing seamless waterproof finish', title: 'GRP Flat Roof - Middlewich, CW10', category: 'Flat Roofs' },
               { src: '/images/4.jpeg', alt: 'Chimney stack rebuild with lead flashing in Congleton heritage style finish', title: 'Chimney Rebuild - Congleton, CW12', category: 'Chimneys' },

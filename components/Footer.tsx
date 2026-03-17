@@ -37,14 +37,14 @@ export function Footer() {
             <Link href="/" className="flex items-center mb-6">
               <Image
                 src="/images/upgrade_logo.jpeg"
-                alt="Upgrade Roofing Solutions"
+                alt="Upgrade Roofs"
                 width={96}
                 height={96}
                 className="w-24 h-24 object-contain"
               />
             </Link>
             <p className="text-white/70 leading-relaxed tracking-wide text-sm sm:text-base">
-              Upgrade Roofing Solutions offers expert roof repair, replacement, and installation across
+              Upgrade Roofs offers expert roof repair, replacement, and installation across
               Cheshire and the North West. Accredited, insured, and trusted by local homeowners.
             </p>
           </div>
