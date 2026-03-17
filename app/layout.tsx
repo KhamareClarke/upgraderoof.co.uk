@@ -20,6 +20,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Professional Roofing Company Cheshire & Staffordshire | Upgrade Roofing',
   description: 'Expert roofing services in Cheshire & Staffordshire. Roof repairs, installations & replacements. 25+ years experience. Free quotes. Call 01270 897606',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   icons: {
     icon: '/images/upgrade_logo.jpeg',
     shortcut: '/images/upgrade_logo.jpeg',
