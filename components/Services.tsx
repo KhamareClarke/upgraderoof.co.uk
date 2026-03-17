@@ -63,86 +63,81 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="section-padding bg-gradient-to-b from-blue-50 via-blue-100/50 to-white relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(59,130,246,0.08),transparent_60%)]" />
-
+    <section id="services" className="section-padding bg-white relative overflow-hidden">
       <div className="container-custom relative">
-        <div className="text-center mb-10 sm:mb-12 md:mb-14">
-          <div className="inline-flex items-center gap-2.5 px-5 py-2.5 mb-6 sm:mb-8 rounded-full bg-brand-orange/5 border border-brand-orange/10 text-brand-orange text-xs sm:text-sm font-medium tracking-wide">
-            <Sparkles className="w-4 h-4" />
-            <span>Our Roofing Services</span>
+        <div className="text-center mb-16">
+          <div className="inline-block px-4 py-2 bg-brand-orange/10 rounded-full mb-4">
+            <span className="text-brand-orange font-semibold text-sm">Our Roofing Services</span>
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-navy mb-5 sm:mb-6 px-2 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-brand-navy mb-6">
             Every Roofing Need. <span className="text-brand-orange">One Trusted Team.</span>
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600/80 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From minor repairs to complete roof replacements, we deliver comprehensive roofing solutions
             tailored to your property — using premium materials and cutting-edge techniques.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200/60 hover:border-gray-300 transition-all duration-700 hover:shadow-xl hover:-translate-y-1"
+                className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 hover:border-brand-orange/50 transition-all duration-300 hover:shadow-lg"
               >
-                <div className="relative h-56 sm:h-64 md:h-72 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img
                     src={service.image}
                     alt={service.alt}
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/50 to-slate-900/20" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/50 to-transparent" />
 
-                  <div className="absolute top-4 right-4 sm:top-5 sm:right-5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center group-hover:scale-105 transition-all duration-500">
-                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                  <div className="absolute top-4 right-4">
+                    <div className="w-12 h-12 rounded-xl bg-brand-orange/10 backdrop-blur-sm flex items-center justify-center">
+                      <Icon className="w-6 h-6 text-white" />
                     </div>
                   </div>
 
-                  <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5">
-                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">{service.title}</h3>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <h3 className="text-2xl font-bold text-white">{service.title}</h3>
                   </div>
                 </div>
 
-                <div className="p-6 sm:p-7 md:p-8">
-                  <p className="text-lg sm:text-xl text-gray-600/80 leading-relaxed mb-6 sm:mb-8 line-clamp-3">
+                <div className="p-6">
+                  <p className="text-gray-600 leading-relaxed mb-6">
                     {service.description}
                   </p>
 
                   <Link href={service.href}>
                     <Button
                       variant="ghost"
-                      className="group/btn w-full justify-between text-brand-navy/80 hover:text-brand-orange hover:bg-transparent font-semibold transition-all duration-500 text-sm tracking-wide"
+                      className="group/btn w-full justify-between text-brand-navy hover:text-brand-orange hover:bg-transparent font-semibold transition-all"
                     >
                       <span>Learn More</span>
-                      <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-500" />
+                      <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </Link>
                 </div>
-
-                <div className="absolute top-0 left-0 w-full h-0.5 bg-brand-orange transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700 origin-left" />
               </div>
             );
           })}
         </div>
 
-        <div className="mt-10 sm:mt-12 md:mt-14 text-center px-2">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-7 md:p-8 rounded-2xl bg-brand-navy text-white w-full sm:w-auto">
-            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-brand-orange/15 flex items-center justify-center flex-shrink-0">
+        <div className="mt-12 text-center">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 rounded-2xl bg-brand-navy text-white w-full sm:w-auto shadow-lg">
+            <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-brand-orange/20 flex items-center justify-center flex-shrink-0">
               <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-brand-orange" />
             </div>
             <div className="text-center sm:text-left flex-1">
               <p className="text-white text-sm tracking-wide mb-1 font-medium">Need a custom solution?</p>
-              <p className="text-lg sm:text-xl font-bold tracking-tight">We've got you covered!</p>
+              <p className="text-lg sm:text-xl font-bold">We've got you covered!</p>
             </div>
             <Button
               size="lg"
-              className="bg-brand-orange hover:bg-brand-orange/95 text-white font-semibold w-full sm:w-auto sm:ml-4 text-sm sm:text-base tracking-wide transition-all duration-500"
+              className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold w-full sm:w-auto transition-all"
               asChild
             >
               <Link href="/contact" className="flex items-center justify-center">
