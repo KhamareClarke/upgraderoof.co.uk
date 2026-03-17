@@ -41,7 +41,7 @@ export function MobileContactBar() {
         </a>
         
         <a
-          href="mailto:upgradehomeimp@yahoo.com"
+          href="mailto:upgraderoofs@yahoo.com"
           className="flex flex-col items-center gap-1 text-brand-navy hover:text-blue-500 transition-colors group"
           aria-label="Email us"
         >

@@ -89,8 +89,8 @@ Deno.serve(async (req: Request) => {
 
     const data: SpecialOfferRequest = await req.json();
 
-    // Send email notification to Upgradehomeimp@yahoo.com
-    const recipientEmail = 'Upgradehomeimp@yahoo.com';
+    // Send email notification to upgraderoofs@yahoo.com
+    const recipientEmail = 'upgraderoofs@yahoo.com';
     const emailUser = Deno.env.get('EMAIL_USER') || 'khamareclarke@gmail.com';
     const emailPass = Deno.env.get('EMAIL_PASS') || 'ovga hgzy rltc ifyh'.replace(/\s/g, '');
 

@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
     // Send email
     const mailOptions = {
       from: 'khamareclarke@gmail.com',
-      to: 'Upgradehomeimp@yahoo.com',
+      to: 'upgraderoofs@yahoo.com',
       subject: `New Contact Form Submission - ${formData.subject} (${formData.name})`,
       html: emailHtml,
     };

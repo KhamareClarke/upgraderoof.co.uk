@@ -12,7 +12,7 @@ export function StructuredData() {
     url: 'https://upgraderoof.co.uk',
     telephone: '01270 897606',
     alternativeTelephone: '07379 440583',
-    email: 'upgradehomeimp@yahoo.com',
+    email: 'upgraderoofs@yahoo.com',
     priceRange: '££-£££',
     description: 'Professional roofing company serving Cheshire and Staffordshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
     foundingDate: '1999',

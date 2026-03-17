@@ -1,6 +1,6 @@
 # Special Offer Form Email Function
 
-This Edge Function handles form submissions from the `/special-offer` page and sends email notifications to `Upgradehomeimp@yahoo.com`.
+This Edge Function handles form submissions from the `/special-offer` page and sends email notifications to `upgraderoofs@yahoo.com`.
 
 ## Email Configuration
 
@@ -19,7 +19,7 @@ For SMTP credentials (used as fallback/defaults):
 
 ### Recipient Email
 
-All form submissions are sent to: **Upgradehomeimp@yahoo.com**
+All form submissions are sent to: **upgraderoofs@yahoo.com**
 
 ## Form Data Collected
 
@@ -36,8 +36,4 @@ The function collects and sends the following form fields:
 1. Deploy this function to your Supabase project
 2. Set the environment variables in your Supabase project settings
 3. Configure EmailJS service to connect to Gmail (if using EmailJS)
-4. The function will automatically send emails to `Upgradehomeimp@yahoo.com` when the form is submitted
-
-
-
-
+4. The function will automatically send emails to `upgraderoofs@yahoo.com` when the form is submitted
