@@ -87,6 +87,9 @@ export function Analytics() {
             send_page_view: true
           });
           
+          // Google Tag (Server-side)
+          gtag('config', 'GT-MKPC2G22');
+          
           // Google Ads
           gtag('config', 'AW-17763560213');
         `}
