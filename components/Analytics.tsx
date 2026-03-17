@@ -55,6 +55,12 @@ export function Analytics() {
             'security_storage': 'granted',
             'wait_for_update': 500
           });
+          
+          // Enable URL passthrough for better measurement when cookies are denied
+          gtag('set', 'url_passthrough', true);
+          
+          // Redact ads data when ad_storage is denied
+          gtag('set', 'ads_data_redaction', true);
         `}
       </Script>
 

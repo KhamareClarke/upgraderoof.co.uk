@@ -8,6 +8,7 @@ import { ScrollToTop } from '@/components/ScrollToTop';
 import { MobileContactBar } from '@/components/MobileContactBar';
 import { PerformanceOptimizations } from '@/components/PerformanceOptimizations';
 import { Analytics } from '@/components/Analytics';
+import { CookieConsent } from '@/components/CookieConsent';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -119,6 +120,7 @@ export default function RootLayout({
         <WhatsAppButton />
         <MobileContactBar />
         <ScrollToTop />
+        <CookieConsent />
       </body>
     </html>
   );
