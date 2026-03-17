@@ -38,13 +38,13 @@ export function Analytics() {
 
   return (
     <>
-      {/* Google Consent Mode - Must be first */}
+      {/* Google Consent Mode v2 - Must load first */}
       <Script id="google-consent-mode" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           
-          // Set default consent state (denied until user grants consent)
+          // Set default consent state to denied (GDPR compliant)
           gtag('consent', 'default', {
             'ad_storage': 'denied',
             'ad_user_data': 'denied',
@@ -64,12 +64,23 @@ export function Analytics() {
         `}
       </Script>
 
+      {/* Google Tag Manager */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MKPC2G22');
+        `}
+      </Script>
+
       {/* Google Analytics - Load after page is interactive */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7V452FMYFY"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -81,9 +92,6 @@ export function Analytics() {
             page_title: document.title,
             send_page_view: true
           });
-          
-          // Google Tag (Server-side)
-          gtag('config', 'GT-MKPC2G22');
           
           // Google Ads
           gtag('config', 'AW-17763560213');
