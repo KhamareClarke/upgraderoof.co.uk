@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     description: 'Claim your FREE roof inspection in Sandbach. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoof.co.uk/offer-sandbach',
     siteName: 'Upgrade Roofing Solutions',
+    images: [
+      {
+        url: 'https://upgraderoof.co.uk/images/6.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Professional Roofing Services Sandbach Cheshire - Free Inspection',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
@@ -16,6 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Roof Inspection Sandbach | 01270 897606',
     description: 'FREE roof inspection in Sandbach. Expert local roofers, 25+ years experience. Call now!',
+    images: ['https://upgraderoof.co.uk/images/6.jpeg'],
   },
   alternates: {
     canonical: 'https://upgraderoof.co.uk/offer-sandbach',

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
     description: 'Claim your FREE roof inspection in Crewe. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
     url: 'https://upgraderoof.co.uk/offer-crewe',
     siteName: 'Upgrade Roofing Solutions',
+    images: [
+      {
+        url: 'https://upgraderoof.co.uk/images/2.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Professional Roofing Services Crewe Cheshire - Free Inspection',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
@@ -16,6 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Roof Inspection Crewe | 01270 897606',
     description: 'FREE roof inspection in Crewe. Expert local roofers, 25+ years experience. Call now!',
+    images: ['https://upgraderoof.co.uk/images/2.jpeg'],
   },
   alternates: {
     canonical: 'https://upgraderoof.co.uk/offer-crewe',

@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     description: 'Get a free roofing quote. Call 01270 897606. Fast response guaranteed.',
     url: 'https://upgraderoof.co.uk/contact',
     siteName: 'Upgrade Roofing Solutions',
+    images: [
+      {
+        url: 'https://upgraderoof.co.uk/images/6.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Upgrade Roofing Solutions Cheshire - Free Quotes',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
@@ -18,6 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Upgrade Roofing | 01270 897606',
     description: 'Free roofing quotes. Fast response guaranteed.',
+    images: ['https://upgraderoof.co.uk/images/6.jpeg'],
   },
   alternates: {
     canonical: 'https://upgraderoof.co.uk/contact',

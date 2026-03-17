@@ -13,6 +13,14 @@ export const metadata: Metadata = {
     description: 'Award-winning roofing company. 25+ years experience, CORC certified, £10M insured.',
     url: 'https://upgraderoof.co.uk/about',
     siteName: 'Upgrade Roofing Solutions',
+    images: [
+      {
+        url: 'https://upgraderoof.co.uk/images/1.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'About Upgrade Roofing Solutions - Professional Roofers Cheshire',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
@@ -20,6 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'About Upgrade Roofing Cheshire',
     description: '25+ years of roofing excellence. Meet our expert team.',
+    images: ['https://upgraderoof.co.uk/images/1.jpeg'],
   },
   alternates: {
     canonical: 'https://upgraderoof.co.uk/about',
