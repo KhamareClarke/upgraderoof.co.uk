@@ -1,0 +1,35 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Skylights & Roof Windows Cheshire | Velux Installers | 01270 897606',
+  description: 'Professional skylight and roof window installation in Cheshire. Velux certified installers. Sun tunnels, flat roof windows, loft conversions. CORC certified, £10M insured. Call 01270 897606.',
+  keywords: 'skylights Cheshire, roof windows Cheshire, Velux installation, sun tunnels, flat roof windows, loft windows, skylight repair Cheshire',
+  openGraph: {
+    title: 'Skylights & Roof Windows Cheshire | Velux Certified',
+    description: 'Professional skylight installation. Velux certified. Sun tunnels, roof windows. Call 01270 897606.',
+    url: 'https://upgraderoof.co.uk/services/skylights-roof-windows',
+    siteName: 'Upgrade Roofing Solutions',
+    locale: 'en_GB',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Skylights & Roof Windows Cheshire | 01270 897606',
+    description: 'Expert skylight installation in Cheshire. Velux certified. Free quotes.',
+  },
+  alternates: {
+    canonical: 'https://upgraderoof.co.uk/services/skylights-roof-windows',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function SkylightsRoofWindowsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

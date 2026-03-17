@@ -1,0 +1,35 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Signs of Roof Damage | When to Call a Roofer | Upgrade Roofing',
+  description: 'Learn the warning signs of roof damage. Missing tiles, leaks, sagging, moss growth. Know when to call a professional roofer. Expert advice from Upgrade Roofing Cheshire.',
+  keywords: 'roof damage signs, when to repair roof, roof leak signs, missing roof tiles, roof inspection needed, roof damage Cheshire',
+  openGraph: {
+    title: 'Signs of Roof Damage | When to Call a Roofer',
+    description: 'Learn the warning signs of roof damage and when to call a professional.',
+    url: 'https://upgraderoof.co.uk/blog/roof-damage-signs',
+    siteName: 'Upgrade Roofing Solutions',
+    locale: 'en_GB',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Signs of Roof Damage | Upgrade Roofing',
+    description: 'Learn the warning signs of roof damage.',
+  },
+  alternates: {
+    canonical: 'https://upgraderoof.co.uk/blog/roof-damage-signs',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RoofDamageSignsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

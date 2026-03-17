@@ -1,0 +1,33 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Skylight Installation Guide Cheshire | Velux & Sun Tunnels | Upgrade Roofing',
+  description: 'Complete guide to skylight installation in Cheshire. Velux, sun tunnels, flat roof skylights. Types, costs, benefits. Professional installation across Cheshire.',
+  keywords: 'skylight installation Cheshire, Velux installer, sun tunnel, roof window, flat roof skylight, natural light',
+  openGraph: {
+    title: 'Skylight Installation Guide: Transform Your Home',
+    description: 'Everything about adding skylights to your Cheshire home.',
+    type: 'article',
+    url: 'https://upgraderoof.co.uk/blog/skylight-installation-guide',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Skylight Installation Guide | Upgrade Roofing',
+    description: 'Complete skylight guide for Cheshire homeowners.',
+  },
+  alternates: {
+    canonical: 'https://upgraderoof.co.uk/blog/skylight-installation-guide',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function SkylightInstallationGuideLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}
