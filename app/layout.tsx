@@ -118,13 +118,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        {/* Preload critical hero image */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/6.jpeg"
-          fetchPriority="high"
-        />
+        {/* Preload hero image for faster LCP */}
+        <link rel="preload" as="image" href="/images/6.jpeg" fetchPriority="high" />
       </head>
       <body className="font-sans antialiased">
         {/* Google Tag Manager (noscript) */}
