@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight, X, ZoomIn } from 'lucide-react';
+import Image from 'next/image';
 
 interface GalleryImage {
   src: string;
@@ -419,14 +420,16 @@ export function GallerySlider() {
                     <meta itemProp="name" content={image.title} />
                     <meta itemProp="contentLocation" content={image.location} />
                     
-                    <div className="aspect-[4/3] overflow-hidden bg-gray-200">
-                      <img
+                    <div className="aspect-[4/3] overflow-hidden bg-gray-200 relative">
+                      <Image
                         src={image.src}
                         alt={image.alt}
                         title={image.title}
-                        loading={index < 8 ? 'eager' : 'lazy'}
-                        itemProp="contentUrl"
-                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        loading={index < 4 ? 'eager' : 'lazy'}
+                        quality={60}
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
                     
@@ -493,12 +496,17 @@ export function GallerySlider() {
             className="max-w-5xl w-full bg-white rounded-xl overflow-hidden shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
-              src={lightboxImage.src}
-              alt={lightboxImage.alt}
-              title={lightboxImage.title}
-              className="w-full max-h-[70vh] object-contain bg-gray-100"
-            />
+            <div className="relative w-full h-[70vh]">
+              <Image
+                src={lightboxImage.src}
+                alt={lightboxImage.alt}
+                title={lightboxImage.title}
+                fill
+                sizes="100vw"
+                quality={85}
+                className="object-contain bg-gray-100"
+              />
+            </div>
             <div className="p-4 sm:p-6">
               <div className="flex items-center gap-2 mb-2">
                 <span className="px-3 py-1 bg-brand-orange text-white text-xs rounded-full">

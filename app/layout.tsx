@@ -14,6 +14,8 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
+  display: 'swap',
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -107,10 +109,17 @@ export default function RootLayout({
         <link rel="icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
         <link rel="shortcut icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
         <link rel="apple-touch-icon" href="/images/upgrade_logo.jpeg" />
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        {/* Preload critical hero image */}
         <link
           rel="preload"
           as="image"
-          href="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=1280&h=800"
+          href="/images/6.jpeg"
+          fetchPriority="high"
         />
       </head>
       <body className="font-sans antialiased">

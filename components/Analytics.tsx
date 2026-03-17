@@ -64,23 +64,12 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* Google Tag Manager */}
-      <Script id="google-tag-manager" strategy="afterInteractive">
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-XXXXXXX');
-        `}
-      </Script>
-
-      {/* Google Analytics */}
+      {/* Google Analytics - Load after page is interactive */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7V452FMYFY"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -101,8 +90,8 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* Facebook Pixel */}
-      <Script id="facebook-pixel" strategy="afterInteractive">
+      {/* Facebook Pixel - Load lazily */}
+      <Script id="facebook-pixel" strategy="lazyOnload">
         {`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

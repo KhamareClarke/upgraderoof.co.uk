@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Video, Shield, Award, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import { QuoteForm } from '@/components/QuoteForm';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const slides = [
   {
@@ -60,9 +61,8 @@ export function Hero() {
   }, [isAutoPlaying]);
 
   useEffect(() => {
-    const nextSlideIndex = (currentSlide + 1) % slides.length;
-    const img = new Image();
-    img.src = slides[nextSlideIndex].image;
+    // Next.js Image handles preloading automatically with priority prop
+    // No manual preloading needed
   }, [currentSlide]);
 
   const nextSlide = () => {
@@ -89,12 +89,17 @@ export function Hero() {
             index === currentSlide ? 'opacity-100 z-0' : 'opacity-0 z-0'
           }`}
         >
-          <div
-            className="absolute inset-0 bg-cover bg-center scale-105"
-            style={{
-              backgroundImage: `url(${slide.image})`,
-            }}
-          >
+          <div className="absolute inset-0">
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              loading={index === 0 ? 'eager' : 'lazy'}
+              quality={75}
+              sizes="100vw"
+              className="object-cover scale-105"
+            />
             <div className="absolute inset-0 bg-slate-900/75" />
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/70" />
           </div>
