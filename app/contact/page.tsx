@@ -162,12 +162,84 @@ export default function ContactPage() {
         </div>
       </section>
 
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-6 text-center">Why Choose Upgrade Roofing Solutions?</h2>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-brand-grey p-6 rounded-xl">
+                <h3 className="text-lg font-semibold text-brand-navy mb-3">25+ Years of Experience</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Our team brings over two decades of roofing expertise to every project. We've completed thousands of roofing jobs across Cheshire, from simple repairs to complete roof replacements. Our experience means we can handle any roofing challenge efficiently and professionally.
+                </p>
+              </div>
+              <div className="bg-brand-grey p-6 rounded-xl">
+                <h3 className="text-lg font-semibold text-brand-navy mb-3">Fully Insured & CORC Certified</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We carry £10 million public liability insurance for your complete peace of mind. As CORC (Confederation of Roofing Contractors) certified professionals, we adhere to the highest industry standards and best practices in all our roofing work.
+                </p>
+              </div>
+              <div className="bg-brand-grey p-6 rounded-xl">
+                <h3 className="text-lg font-semibold text-brand-navy mb-3">Free No-Obligation Quotes</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We provide detailed, transparent quotes at no cost to you. Our estimates include a full breakdown of materials, labour, and timescales. There's never any pressure to proceed - we believe in letting our quality work and fair pricing speak for themselves.
+                </p>
+              </div>
+              <div className="bg-brand-grey p-6 rounded-xl">
+                <h3 className="text-lg font-semibold text-brand-navy mb-3">Local Cheshire Roofers</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Based in Sandbach, we serve homeowners and businesses throughout Cheshire and Staffordshire. Being local means faster response times, knowledge of local building regulations, and a reputation we're proud to maintain in our community.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-brand-navy/5 p-6 rounded-xl mb-8">
+              <h3 className="text-lg font-semibold text-brand-navy mb-3">Our Roofing Services</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                Upgrade Roofing Solutions offers a comprehensive range of roofing services to meet all your needs. Whether you require emergency roof repairs, a complete roof replacement, or routine maintenance, our skilled team is ready to help.
+              </p>
+              <ul className="grid sm:grid-cols-2 gap-2 text-sm text-gray-600">
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Tile and slate roof repairs</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Flat roof installations (EPDM, GRP)</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Chimney repairs and rebuilds</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Guttering and fascia replacement</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Velux skylight installation</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Roof cleaning and moss removal</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Lead work and flashing</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 bg-brand-orange rounded-full"></span>Emergency storm damage repairs</li>
+              </ul>
+            </div>
+
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-brand-navy mb-3">What Happens After You Contact Us?</h3>
+              <div className="grid sm:grid-cols-3 gap-4 text-sm">
+                <div className="p-4">
+                  <div className="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold mx-auto mb-3">1</div>
+                  <h4 className="font-semibold text-brand-navy mb-2">Quick Response</h4>
+                  <p className="text-gray-600">We'll respond to your enquiry within 24 hours, often much sooner. For emergencies, call us directly for immediate assistance.</p>
+                </div>
+                <div className="p-4">
+                  <div className="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold mx-auto mb-3">2</div>
+                  <h4 className="font-semibold text-brand-navy mb-2">Free Survey</h4>
+                  <p className="text-gray-600">We'll arrange a convenient time to inspect your roof, assess the work needed, and discuss your options with no obligation.</p>
+                </div>
+                <div className="p-4">
+                  <div className="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold mx-auto mb-3">3</div>
+                  <h4 className="font-semibold text-brand-navy mb-2">Detailed Quote</h4>
+                  <p className="text-gray-600">You'll receive a comprehensive written quote with clear pricing, materials specification, and estimated completion time.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section-padding bg-brand-grey">
         <div className="container-custom">
           <div className="bg-gradient-to-br from-brand-navy to-brand-navy/90 text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-center">
             <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">Emergency Roofing Services</h2>
             <p className="text-sm sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
-              Storm damage? Leak? We offer 24/7 emergency roofing services across Cheshire
+              Storm damage? Leak? We offer 24/7 emergency roofing services across Cheshire. Our emergency team can be with you within hours to secure your property and prevent further damage. Don't wait - water damage can quickly escalate and cause structural issues.
             </p>
             <a href="tel:07379440583" className="inline-block w-full sm:w-auto">
               <button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-6 sm:px-8 md:px-10 h-12 sm:h-14 text-base sm:text-lg rounded-md transition-colors w-full sm:w-auto">
