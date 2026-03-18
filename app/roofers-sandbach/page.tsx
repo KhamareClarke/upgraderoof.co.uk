@@ -3,6 +3,9 @@ import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
 import { CheckCircle, Phone, MapPin, Shield, Award, Clock, Star, ArrowRight, Home, Layers, Flame, Droplets, Zap, Wrench } from 'lucide-react';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default function RoofersSandbachPage() {
   return (
     <div className="min-h-screen bg-white">

@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: 'Roofing Service Areas Cheshire | Sandbach, Crewe, Congleton & More',
   description: 'Professional roofers serving Sandbach, Crewe, Middlewich, Congleton, Nantwich, Alsager & Holmes Chapel. 25+ years experience. CORC certified. Free quotes across Cheshire.',

@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
-import { Phone, CheckCircle, Home, Shield, Award, MapPin, ArrowRight } from 'lucide-react';
+import { Home, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Phone } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
 
 export const metadata: Metadata = {
   title: 'New Roofs & Re-Roofing Sandbach | Complete Replacements | 01270 897606',

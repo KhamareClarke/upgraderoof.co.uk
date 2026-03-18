@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
-import { Phone, Clock, Shield, Zap, MapPin, ArrowRight, AlertTriangle } from 'lucide-react';
+import { Zap, Phone, CheckCircle, Clock, Shield, AlertTriangle, MapPin, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
+
+export const dynamic = 'force-static';
+export const revalidate = false;
 
 export const metadata: Metadata = {
   title: '24/7 Emergency Roofing Sandbach | Storm Damage | 07379 440583',

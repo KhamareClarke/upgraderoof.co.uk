@@ -5,6 +5,9 @@ import { Phone, CheckCircle, Clock, Shield, Wrench, MapPin, ArrowRight } from 'l
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: 'Roof Repairs Sandbach & Cheshire | Fast Response | 01270 897606',
   description: 'Expert roof repairs in Sandbach and Cheshire. Leaks, storm damage, missing tiles, ridge repairs. Same-day service available. 25+ years experience. Call 01270 897606.',
