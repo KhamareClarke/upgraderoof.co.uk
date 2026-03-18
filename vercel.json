@@ -3,6 +3,76 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/all-services",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/offer-crewe",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-middlewich",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-congleton",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-alsager",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-nantwich",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-holmes-chapel",
+      "destination": "/special-offer",
+      "permanent": true
+    },
+    {
+      "source": "/offer-cheshire",
+      "destination": "/special-offer",
+      "permanent": true
+    }
+  ]
 }
 
