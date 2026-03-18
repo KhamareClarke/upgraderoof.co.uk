@@ -115,12 +115,12 @@ export default function RoofersSandbachPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: Home, title: 'New Roofs & Re-Roofing', desc: 'Complete roof replacements using premium tiles, slates, and modern materials. Sandbach properties of all sizes.', href: '/services/tile-slate-roofing' },
-              { icon: Wrench, title: 'Roof Repairs', desc: 'Fast, reliable repairs for leaks, storm damage, missing tiles, and ridge work across Sandbach.', href: '/contact' },
+              { icon: Home, title: 'New Roofs & Re-Roofing', desc: 'Complete roof replacements using premium tiles, slates, and modern materials. Sandbach properties of all sizes.', href: '/new-roofs' },
+              { icon: Wrench, title: 'Roof Repairs', desc: 'Fast, reliable repairs for leaks, storm damage, missing tiles, and ridge work across Sandbach.', href: '/roof-repairs' },
               { icon: Layers, title: 'Flat Roofing', desc: 'EPDM rubber and GRP fibreglass flat roofs for garages, extensions, and dormer roofs. 20-year guarantee.', href: '/services/flat-roofing' },
               { icon: Flame, title: 'Chimney Repairs', desc: 'Repointing, lead flashing, chimney stack repairs, and cowl fitting. Common need on older Sandbach properties.', href: '/services/chimney-repairs' },
               { icon: Droplets, title: 'Guttering & Fascias', desc: 'uPVC guttering, fascias, soffits, and downpipes. Repairs, cleaning, and full replacements.', href: '/services/gutters-fascias' },
-              { icon: Zap, title: 'Emergency Roofing', desc: '24/7 emergency call-outs across Sandbach. Storm damage, sudden leaks, and urgent make-safe work.', href: '/contact' },
+              { icon: Zap, title: 'Emergency Roofing', desc: '24/7 emergency call-outs across Sandbach. Storm damage, sudden leaks, and urgent make-safe work.', href: '/emergency-roofing' },
             ].map((service, i) => (
               <Link key={i} href={service.href} className="group bg-white rounded-2xl p-6 border border-gray-200 hover:border-brand-orange/50 hover:shadow-lg transition-all">
                 <div className="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center mb-4">
