@@ -7,7 +7,7 @@ export function Footer() {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: '🎯 Special Offer', href: '/special-offer' },
+    { name: 'Service Areas', href: '/service-areas' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Blog', href: '/blog' },
     { name: 'Reviews', href: '/reviews' },
@@ -134,25 +134,25 @@ export function Footer() {
           </div>
         </div>
         
-        {/* Service Area */}
+        {/* Service Areas */}
         <div className="mt-10 pt-8 border-t border-white/10">
-          <h3 className="text-lg font-semibold mb-4 tracking-wide">Service Area</h3>
+          <h3 className="text-lg font-semibold mb-4 tracking-wide">Areas We Serve</h3>
           <div className="flex flex-wrap gap-x-2 gap-y-1 text-sm tracking-wide leading-relaxed">
-            <Link href="/offer-sandbach" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Sandbach</Link>
+            <Link href="/roofers-sandbach" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Sandbach</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-crewe" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Crewe</Link>
+            <Link href="/roofers-crewe" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Crewe</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-middlewich" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Middlewich</Link>
+            <Link href="/roofers-middlewich" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Middlewich</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-congleton" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Congleton</Link>
+            <Link href="/roofers-congleton" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Congleton</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-alsager" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Alsager</Link>
+            <Link href="/roofers-alsager" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Alsager</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-nantwich" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Nantwich</Link>
+            <Link href="/roofers-nantwich" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Nantwich</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-holmes-chapel" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Holmes Chapel</Link>
+            <Link href="/roofers-holmes-chapel" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Holmes Chapel</Link>
             <span className="text-white/70">·</span>
-            <Link href="/offer-cheshire" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Cheshire & North West</Link>
+            <Link href="/service-areas" className="text-white/70 hover:text-brand-orange transition-colors duration-300">All Service Areas</Link>
           </div>
         </div>
       </div>

@@ -5,11 +5,11 @@ export function StructuredData() {
     name: 'Upgrade Roofs',
     alternateName: 'Upgrade Roofing',
     image: [
-      'https://upgraderoofs.co.uk/images/6.jpeg',
-      'https://upgraderoofs.co.uk/images/2.jpeg'
+      'https://www.upgraderoofs.co.uk/images/6.jpeg',
+      'https://www.upgraderoofs.co.uk/images/2.jpeg'
     ],
-    '@id': 'https://upgraderoofs.co.uk/#organization',
-    url: 'https://upgraderoofs.co.uk',
+    '@id': 'https://www.upgraderoofs.co.uk/#organization',
+    url: 'https://www.upgraderoofs.co.uk',
     telephone: '01270 897606',
     alternativeTelephone: '07379 440583',
     email: 'upgraderoofs@yahoo.com',
@@ -34,16 +34,16 @@ export function StructuredData() {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '1 Hutchins Close',
-      addressLocality: 'Middlewich',
+      streetAddress: '20 Crewe Rd',
+      addressLocality: 'Sandbach',
       addressRegion: 'Cheshire',
-      postalCode: 'CW10 0EX',
+      postalCode: 'CW11 4NE',
       addressCountry: 'GB'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 53.0273,
-      longitude: -2.1813
+      latitude: 53.1461,
+      longitude: -2.3679
     },
     openingHoursSpecification: [
       {
@@ -117,10 +117,10 @@ export function StructuredData() {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',
-        latitude: 53.0273,
-        longitude: -2.1813
+        latitude: 53.1461,
+        longitude: -2.3679
       },
-      geoRadius: '25000'
+      geoRadius: '30000'
     },
     paymentAccepted: ['Cash', 'Credit Card', 'Bank Transfer', 'Cheque'],
     currenciesAccepted: 'GBP',
@@ -130,7 +130,7 @@ export function StructuredData() {
         credentialCategory: 'Professional Certification',
         recognizedBy: {
           '@type': 'Organization',
-          name: 'National Federation of Roofing Contractors'
+          name: 'Confederation of Roofing Contractors (CORC)'
         }
       }
     ],
@@ -198,15 +198,15 @@ export function StructuredData() {
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://upgraderoofs.co.uk/#website',
-    url: 'https://upgraderoofs.co.uk',
+    '@id': 'https://www.upgraderoofs.co.uk/#website',
+    url: 'https://www.upgraderoofs.co.uk',
     name: 'Upgrade Roofs',
     publisher: {
-      '@id': 'https://upgraderoofs.co.uk/#organization'
+      '@id': 'https://www.upgraderoofs.co.uk/#organization'
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://upgraderoofs.co.uk/search?q={search_term_string}',
+      target: 'https://www.upgraderoofs.co.uk/search?q={search_term_string}',
       'query-input': 'required name=search_term_string'
     }
   };
@@ -219,37 +219,37 @@ export function StructuredData() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://upgraderoofs.co.uk'
+        item: 'https://www.upgraderoofs.co.uk'
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'About',
-        item: 'https://upgraderoofs.co.uk/about'
+        item: 'https://www.upgraderoofs.co.uk/about'
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: 'Services',
-        item: 'https://upgraderoofs.co.uk/services'
+        item: 'https://www.upgraderoofs.co.uk/services'
       },
       {
         '@type': 'ListItem',
         position: 4,
         name: 'Gallery',
-        item: 'https://upgraderoofs.co.uk/gallery'
+        item: 'https://www.upgraderoofs.co.uk/gallery'
       },
       {
         '@type': 'ListItem',
         position: 5,
         name: 'Blog',
-        item: 'https://upgraderoofs.co.uk/blog'
+        item: 'https://www.upgraderoofs.co.uk/blog'
       },
       {
         '@type': 'ListItem',
         position: 6,
         name: 'Contact',
-        item: 'https://upgraderoofs.co.uk/contact'
+        item: 'https://www.upgraderoofs.co.uk/contact'
       }
     ]
   };

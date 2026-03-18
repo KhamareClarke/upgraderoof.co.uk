@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Chimney Repairs Cheshire | Expert Maintenance & Rebuilds',
     description: 'Professional chimney repair services. Repointing, flashing, rebuilds. Free quotes. Call 01270 897606.',
-    url: 'https://upgraderoofs.co.uk/services/chimney-repairs',
+    url: 'https://www.upgraderoofs.co.uk/services/chimney-repairs',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Expert chimney repairs in Cheshire. Free quotes, 10-year guarantee.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/services/chimney-repairs',
+    canonical: 'https://www.upgraderoofs.co.uk/services/chimney-repairs',
   },
   robots: {
     index: true,

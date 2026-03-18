@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Customer Reviews | Upgrade Roofing Cheshire',
     description: '5 star rated roofing company. Read genuine customer reviews from Cheshire homeowners.',
-    url: 'https://upgraderoofs.co.uk/reviews',
+    url: 'https://www.upgraderoofs.co.uk/reviews',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: '5 star rated. Read genuine customer reviews.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/reviews',
+    canonical: 'https://www.upgraderoofs.co.uk/reviews',
   },
   robots: {
     index: true,

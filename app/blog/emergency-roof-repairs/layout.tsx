@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Emergency Roof Repairs Cheshire | 24/7 Response',
     description: 'Fast emergency roof repairs across Cheshire. Storm damage, leaks, missing tiles.',
     type: 'article',
-    url: 'https://upgraderoofs.co.uk/blog/emergency-roof-repairs',
+    url: 'https://www.upgraderoofs.co.uk/blog/emergency-roof-repairs',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Fast emergency roof repairs across Cheshire.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/emergency-roof-repairs',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/emergency-roof-repairs',
   },
   robots: {
     index: true,

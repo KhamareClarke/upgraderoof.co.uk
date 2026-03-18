@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/'],
       }
     ],
-    sitemap: 'https://upgraderoofs.co.uk/sitemap.xml',
-    host: 'https://upgraderoofs.co.uk',
+    sitemap: 'https://www.upgraderoofs.co.uk/sitemap.xml',
+    host: 'https://www.upgraderoofs.co.uk',
   }
 }

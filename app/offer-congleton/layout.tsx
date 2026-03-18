@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Roof Inspection Congleton | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Congleton. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
-    url: 'https://upgraderoofs.co.uk/offer-congleton',
+    url: 'https://www.upgraderoofs.co.uk/offer-congleton',
     siteName: 'Upgrade Roofs',
     images: [
       {
-        url: 'https://upgraderoofs.co.uk/images/4.jpeg',
+        url: 'https://www.upgraderoofs.co.uk/images/4.jpeg',
         width: 1200,
         height: 630,
         alt: 'Professional Roofing Services Congleton Cheshire - Free Inspection',
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Roof Inspection Congleton | 01270 897606',
     description: 'FREE roof inspection in Congleton. Expert local roofers, 25+ years experience. Call now!',
-    images: ['https://upgraderoofs.co.uk/images/4.jpeg'],
+    images: ['https://www.upgraderoofs.co.uk/images/4.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/offer-congleton',
+    canonical: 'https://www.upgraderoofs.co.uk/offer-congleton',
   },
   robots: {
     index: true,

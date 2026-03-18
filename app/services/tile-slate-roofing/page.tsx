@@ -4,6 +4,7 @@ import { Home, CheckCircle, Award, Clock, Shield, ChevronLeft, ChevronRight } fr
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 import { useState } from 'react';
 
 export default function TileSlateRoofingPage() {
@@ -67,7 +68,7 @@ export default function TileSlateRoofingPage() {
               <span>Premium Service</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">
-              Tile & Slate Roofing
+              Tile & Slate Roofing Cheshire
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 px-2">
               Traditional craftsmanship meets modern techniques for beautiful, long-lasting roofs
@@ -106,7 +107,7 @@ export default function TileSlateRoofingPage() {
                 <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src="/images/6.jpeg"
-                    alt="Tile roofing"
+                    alt="Natural clay tile roof installation on a Cheshire property by Upgrade Roofs"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -115,7 +116,7 @@ export default function TileSlateRoofingPage() {
                 <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src="/images/7.jpeg"
-                    alt="Slate roofing"
+                    alt="Welsh slate roof restoration on a period home in Sandbach by Upgrade Roofs"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -196,7 +197,7 @@ export default function TileSlateRoofingPage() {
                 <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                   <img
                     src={beforeAfterImages[currentGalleryImage].before}
-                    alt="Before renovation"
+                    alt="Damaged roof before restoration by Upgrade Roofs in Cheshire"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -206,7 +207,7 @@ export default function TileSlateRoofingPage() {
                 <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                   <img
                     src={beforeAfterImages[currentGalleryImage].after}
-                    alt="After renovation"
+                    alt="Completed tile roof restoration by Upgrade Roofs in Cheshire"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -276,10 +277,12 @@ export default function TileSlateRoofingPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks serviceName="Tile & Slate Roofing" />
+
       <section className="section-padding bg-white">
         <div className="container-custom text-center px-2">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">
-            Ready to Start Your Project?
+            Ready to Start Your Roofing Project?
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Get a free, no-obligation quote for your tile or slate roofing project

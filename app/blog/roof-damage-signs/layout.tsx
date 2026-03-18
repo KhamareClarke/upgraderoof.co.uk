@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Signs of Roof Damage | When to Call a Roofer',
     description: 'Learn the warning signs of roof damage and when to call a professional.',
-    url: 'https://upgraderoofs.co.uk/blog/roof-damage-signs',
+    url: 'https://www.upgraderoofs.co.uk/blog/roof-damage-signs',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'article',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Learn the warning signs of roof damage.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/roof-damage-signs',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/roof-damage-signs',
   },
   robots: {
     index: true,

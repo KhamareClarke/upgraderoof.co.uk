@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Skylight Installation Guide: Transform Your Home',
     description: 'Everything about adding skylights to your Cheshire home.',
     type: 'article',
-    url: 'https://upgraderoofs.co.uk/blog/skylight-installation-guide',
+    url: 'https://www.upgraderoofs.co.uk/blog/skylight-installation-guide',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Complete skylight guide for Cheshire homeowners.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/skylight-installation-guide',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/skylight-installation-guide',
   },
   robots: {
     index: true,

@@ -3,6 +3,7 @@ import { Layers, CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
 export const metadata: Metadata = {
   title: 'Flat Roofing Cheshire | EPDM & GRP Installation | Upgrade Roofs',
@@ -29,7 +30,7 @@ export default function FlatRoofingPage() {
               <Layers className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Modern Solutions</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Flat Roofing</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Flat Roofing Cheshire</h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 px-2">
               Superior waterproofing with modern materials and expert installation
             </p>
@@ -62,7 +63,7 @@ export default function FlatRoofingPage() {
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <img
                 src="/images/3.jpeg"
-                alt="Flat roofing"
+                alt="EPDM rubber flat roof installation on a garage extension in Cheshire by Upgrade Roofs"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -122,11 +123,13 @@ export default function FlatRoofingPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks serviceName="Flat Roofing" />
+
       <section className="section-padding bg-brand-grey">
         <div className="container-custom text-center px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Ready to Start Your Project?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Ready to Start Your Flat Roofing Project?</h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-            Get a free, no-obligation quote for your flat roofing project
+            Get a free, no-obligation quote for your flat roofing project in Cheshire
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <QuoteForm trigger={

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Flat vs Tile Roofs | Which is Best for Your Home?',
     description: 'Expert comparison of flat roofs vs tile roofs. Pros, cons, costs.',
-    url: 'https://upgraderoofs.co.uk/blog/flat-vs-tile-roofs',
+    url: 'https://www.upgraderoofs.co.uk/blog/flat-vs-tile-roofs',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
     type: 'article',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: 'Expert comparison of flat roofs vs tile roofs.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/flat-vs-tile-roofs',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/flat-vs-tile-roofs',
   },
   robots: {
     index: true,

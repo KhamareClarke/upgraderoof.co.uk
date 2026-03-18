@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'How Long Does a Roof Last? Complete UK Guide',
     description: 'Understanding roof lifespans for different materials in the UK climate.',
     type: 'article',
-    url: 'https://upgraderoofs.co.uk/blog/how-long-does-roof-last',
+    url: 'https://www.upgraderoofs.co.uk/blog/how-long-does-roof-last',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'UK roof lifespan guide for homeowners.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/how-long-does-roof-last',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/how-long-does-roof-last',
   },
   robots: {
     index: true,

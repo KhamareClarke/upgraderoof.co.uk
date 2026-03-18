@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Common Flat Roof Problems and How to Fix Them',
     description: 'Expert guide to flat roof issues and solutions.',
     type: 'article',
-    url: 'https://upgraderoofs.co.uk/blog/flat-roof-problems',
+    url: 'https://www.upgraderoofs.co.uk/blog/flat-roof-problems',
   },
   twitter: {
     card: 'summary_large_image',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Common flat roof issues and solutions.',
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/blog/flat-roof-problems',
+    canonical: 'https://www.upgraderoofs.co.uk/blog/flat-roof-problems',
   },
   robots: {
     index: true,

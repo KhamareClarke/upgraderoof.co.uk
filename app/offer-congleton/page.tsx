@@ -571,7 +571,7 @@ export default function OfferCongletonPage() {
         "name": "Upgrade Roofs - Congleton",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
-        "url": "https://upgraderoofs.co.uk/offer-congleton",
+        "url": "https://www.upgraderoofs.co.uk/offer-congleton",
         "areaServed": "Congleton"
       })}} />
     </div>

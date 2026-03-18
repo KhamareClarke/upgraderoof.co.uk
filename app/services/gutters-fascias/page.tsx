@@ -3,6 +3,7 @@ import { Droplets, CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
 export const metadata: Metadata = {
   title: 'Gutters & Fascias Cheshire | Installation & Repairs | Upgrade Roofs',
@@ -29,7 +30,7 @@ export default function GuttersFasciasPage() {
               <Droplets className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Essential Protection</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Gutters & Fascias</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Gutters & Fascias Cheshire</h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 px-2">
               Protect your property from water damage with quality materials
             </p>
@@ -62,7 +63,7 @@ export default function GuttersFasciasPage() {
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <img
                 src="/images/2.jpeg"
-                alt="Gutters and fascias"
+                alt="uPVC gutter and fascia installation on a Cheshire home by Upgrade Roofs"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -122,9 +123,11 @@ export default function GuttersFasciasPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks serviceName="Gutters & Fascias" />
+
       <section className="section-padding bg-brand-grey">
         <div className="container-custom text-center px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Need New Gutters or Fascias?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Need New Gutters or Fascias in Cheshire?</h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Get a free quote for your gutter and fascia project
           </p>

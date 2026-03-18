@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://upgraderoofs.co.uk'
+  const baseUrl = 'https://www.upgraderoofs.co.uk'
 
   // Static pages
   const staticPages = [
@@ -31,7 +31,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/cladding',
   ]
 
-  // Location offer pages (high priority for local SEO)
+  // SEO area pages (highest priority for local SEO rankings)
+  const areaPages = [
+    '/roofers-sandbach',
+    '/roofers-crewe',
+    '/roofers-middlewich',
+    '/roofers-congleton',
+    '/roofers-nantwich',
+    '/roofers-alsager',
+    '/roofers-holmes-chapel',
+  ]
+
+  // Location offer pages (conversion-focused)
   const offerPages = [
     '/offer-sandbach',
     '/offer-crewe',
@@ -62,25 +73,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}${page}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: page === '' ? 1 : 0.9,
+      priority: page === '' ? 1 : 0.8,
     })),
     ...servicePages.map((page) => ({
       url: `${baseUrl}${page}`,
       lastModified: new Date(),
       changeFrequency: 'monthly' as const,
-      priority: 0.8,
+      priority: 0.9,
+    })),
+    ...areaPages.map((page) => ({
+      url: `${baseUrl}${page}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: page === '/roofers-sandbach' ? 1 : 0.9,
     })),
     ...offerPages.map((page) => ({
       url: `${baseUrl}${page}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.9,
+      priority: 0.7,
     })),
     ...blogPages.map((page) => ({
       url: `${baseUrl}${page}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      priority: 0.6,
     })),
   ];
 }

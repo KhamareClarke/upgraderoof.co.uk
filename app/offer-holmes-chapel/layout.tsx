@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Roof Inspection Holmes Chapel | Local Expert Roofers',
     description: 'Claim your FREE roof inspection in Holmes Chapel. 25+ years experience, same day quotes, £10M insured. Call 01270 897606.',
-    url: 'https://upgraderoofs.co.uk/offer-holmes-chapel',
+    url: 'https://www.upgraderoofs.co.uk/offer-holmes-chapel',
     siteName: 'Upgrade Roofs',
     images: [
       {
-        url: 'https://upgraderoofs.co.uk/images/10.jpeg',
+        url: 'https://www.upgraderoofs.co.uk/images/10.jpeg',
         width: 1200,
         height: 630,
         alt: 'Professional Roofing Services Holmes Chapel Cheshire - Free Inspection',
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Roof Inspection Holmes Chapel | 01270 897606',
     description: 'FREE roof inspection in Holmes Chapel. Expert local roofers, 25+ years experience. Call now!',
-    images: ['https://upgraderoofs.co.uk/images/10.jpeg'],
+    images: ['https://www.upgraderoofs.co.uk/images/10.jpeg'],
   },
   alternates: {
-    canonical: 'https://upgraderoofs.co.uk/offer-holmes-chapel',
+    canonical: 'https://www.upgraderoofs.co.uk/offer-holmes-chapel',
   },
   robots: {
     index: true,

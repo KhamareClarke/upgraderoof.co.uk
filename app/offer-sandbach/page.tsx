@@ -570,7 +570,7 @@ export default function OfferSandbachPage() {
         "name": "Upgrade Roofs - Sandbach",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
-        "url": "https://upgraderoofs.co.uk/offer-sandbach",
+        "url": "https://www.upgraderoofs.co.uk/offer-sandbach",
         "areaServed": "Sandbach"
       })}} />
     </div>

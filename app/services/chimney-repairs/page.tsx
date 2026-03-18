@@ -3,6 +3,7 @@ import { Flame, CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
 export const metadata: Metadata = {
   title: 'Chimney Repairs Cheshire | Repointing & Rebuilds | Upgrade Roofs',
@@ -29,7 +30,7 @@ export default function ChimneyRepairsPage() {
               <Flame className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Specialist Service</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Chimney Repairs</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Chimney Repairs Cheshire</h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 px-2">
               Expert maintenance and repair to keep your chimney safe and functional
             </p>
@@ -62,7 +63,7 @@ export default function ChimneyRepairsPage() {
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <img
                 src="/images/1.jpeg"
-                alt="Chimney repairs"
+                alt="Professional chimney stack repointing and repair in Cheshire by Upgrade Roofs"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -122,9 +123,11 @@ export default function ChimneyRepairsPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks serviceName="Chimney Repairs" />
+
       <section className="section-padding bg-brand-grey">
         <div className="container-custom text-center px-2">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Need Chimney Repairs?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Need Chimney Repairs in Cheshire?</h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
             Contact us for a free inspection and quote
           </p>

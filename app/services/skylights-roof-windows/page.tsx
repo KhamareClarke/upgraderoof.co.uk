@@ -3,6 +3,7 @@ import { Sun, CheckCircle, Award, Clock, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
 export const metadata: Metadata = {
   title: 'Skylights & Roof Windows Cheshire | VELUX Installation | Upgrade Roofs',
@@ -29,7 +30,7 @@ export default function SkylightsRoofWindowsPage() {
               <Sun className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>Natural Light</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Skylights & Roof Windows</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 px-2">Skylights & Roof Windows Cheshire</h1>
             <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 px-2">
               Transform your home with natural light and expert installation
             </p>
@@ -62,7 +63,7 @@ export default function SkylightsRoofWindowsPage() {
             <div className="rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl order-1 lg:order-2">
               <img
                 src="/images/10.jpeg"
-                alt="Skylight installation"
+                alt="VELUX skylight installation in a Cheshire loft conversion by Upgrade Roofs"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -122,11 +123,13 @@ export default function SkylightsRoofWindowsPage() {
         </div>
       </section>
 
+      <ServiceAreaLinks serviceName="Skylights & Roof Windows" />
+
       <section className="section-padding bg-brand-grey">
         <div className="container-custom text-center px-2">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-3 sm:mb-4">Ready to Add Natural Light?</h2>
           <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-            Get a free quote for your skylight or roof window project
+            Get a free quote for your skylight or roof window project in Cheshire
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <QuoteForm trigger={

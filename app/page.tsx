@@ -9,7 +9,8 @@ import { FAQ } from '@/components/FAQ';
 import { CTABanner } from '@/components/CTABanner';
 import { EnhancedContactSection } from '@/components/EnhancedContactSection';
 import { SEOAccordion } from '@/components/SEOAccordion';
-import { CheckCircle, Star, Award, Shield, Home as HomeIcon, Layers } from 'lucide-react';
+import { CheckCircle, Star, Award, Shield, Home as HomeIcon, Layers, MapPin, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Upgrade Roofs | Expert Roofers Cheshire | 01270 897606',
@@ -149,6 +150,43 @@ export default function Home() {
         <FAQ />
       </div>
       <CTABanner />
+
+      {/* Local Service Areas — Internal Linking Hub */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-3">
+              Roofing Services Across <span className="text-brand-orange">Cheshire</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Based in Sandbach, we serve homeowners and businesses throughout south and mid-Cheshire.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+            {[
+              { name: 'Roofers Sandbach', href: '/roofers-sandbach' },
+              { name: 'Roofers Crewe', href: '/roofers-crewe' },
+              { name: 'Roofers Middlewich', href: '/roofers-middlewich' },
+              { name: 'Roofers Congleton', href: '/roofers-congleton' },
+              { name: 'Roofers Nantwich', href: '/roofers-nantwich' },
+              { name: 'Roofers Alsager', href: '/roofers-alsager' },
+              { name: 'Roofers Holmes Chapel', href: '/roofers-holmes-chapel' },
+              { name: 'All Service Areas', href: '/service-areas' },
+            ].map((area, i) => (
+              <Link key={i} href={area.href} className="group flex items-center gap-2 p-4 bg-white rounded-xl border border-gray-200 hover:border-brand-orange/50 hover:shadow-md transition-all">
+                <MapPin className="w-4 h-4 text-brand-orange flex-shrink-0" />
+                <span className="text-sm font-semibold text-brand-navy group-hover:text-brand-orange transition-colors">{area.name}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center">
+            <Link href="/service-areas" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline">
+              View all service areas <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <SEOAccordion />
       <section id="contact">
         <EnhancedContactSection />
