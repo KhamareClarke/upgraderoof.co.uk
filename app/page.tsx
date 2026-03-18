@@ -158,9 +158,19 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl font-bold text-brand-navy mb-3">
               Roofing Services Across <span className="text-brand-orange">Cheshire</span>
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
               Based in Sandbach, we serve homeowners and businesses throughout south and mid-Cheshire.
             </p>
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-brand-orange/10 border-2 border-brand-orange/30 rounded-xl">
+              <MapPin className="w-5 h-5 text-brand-orange" />
+              <span className="text-sm font-semibold text-brand-navy">
+                Looking for{' '}
+                <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-bold">
+                  roofers in Sandbach
+                </Link>
+                ? We're based on Crewe Road, CW11 4NE
+              </span>
+            </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
             {[

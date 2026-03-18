@@ -12,10 +12,10 @@ const slides = [
     image: '/images/6.jpeg',
     alt: 'Professional tile roof installation by Upgrade Roofs in Sandbach Cheshire',
     gradient: 'from-slate-900/85 via-slate-800/60 to-slate-700/30',
-    title: "Expert Roofers",
-    highlight: 'Cheshire',
-    subtitle: '25+ Years Experience',
-    description: 'Professional tile & slate roofing. CORC certified. £10M insured. Free quotes across Cheshire.',
+    title: "Sandbach's Trusted",
+    highlight: 'Roofers',
+    subtitle: '25+ Years Local Experience',
+    description: 'Based in Sandbach, serving Cheshire. CORC certified. £10M insured. Free quotes across CW11 and surrounding areas.',
   },
   {
     image: '/images/7.jpeg',
@@ -42,7 +42,7 @@ const slides = [
     title: "24/7 Emergency",
     highlight: 'Roof Repairs',
     subtitle: 'Fast Response',
-    description: 'Storm damage? Leaking roof? Our emergency team responds fast across Cheshire and Staffordshire.',
+    description: 'Storm damage? Leaking roof? Our emergency team responds fast across Cheshire.',
   },
 ];
 
