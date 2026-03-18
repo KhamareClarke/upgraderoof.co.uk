@@ -52,7 +52,7 @@ export default function ChimneyRepairsPage() {
               </h2>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed">
                 <p>
-                  A well-maintained chimney is essential for safety and functionality. We provide comprehensive chimney repair and maintenance services for residential and commercial properties.
+                  A well-maintained chimney is essential for safety and functionality. We provide comprehensive chimney repair and maintenance services for residential and commercial properties. For <Link href="/roofers-sandbach" className="text-brand-orange font-semibold hover:underline">chimney repairs in Sandbach</Link>, we offer fast local response times and have extensive experience with older Cheshire properties.
                 </p>
                 <p>
                   From minor repointing to complete rebuilds, our skilled craftsmen use traditional techniques combined with modern materials for lasting results.

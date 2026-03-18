@@ -47,15 +47,12 @@ export default function FlatRoofingPage() {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center mb-10 sm:mb-12 md:mb-16">
             <div className="order-2 lg:order-1">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brand-navy mb-4 sm:mb-6">
-                Modern Flat Roofing Solutions
-              </h2>
-              <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed">
-                <p>
-                  Flat roofing has evolved significantly with modern materials offering superior performance and longevity. We specialize in three main systems: EPDM rubber, GRP fibreglass, and traditional felt roofing.
+              <div className="prose prose-lg max-w-none">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed mb-4 sm:mb-6">
+                  Whether you need a new flat roof for your extension, garage, or commercial property, we deliver reliable, long-lasting solutions using the latest materials and techniques. For homeowners looking for <Link href="/roofers-sandbach" className="text-brand-orange font-semibold hover:underline">flat roof specialists in Sandbach</Link>, we're based on Crewe Road and serve all CW11 areas.
                 </p>
-                <p>
-                  Perfect for extensions, garages, commercial buildings, and any flat or low-pitch roof application. Our expert installation ensures perfect waterproofing and durability.
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  From EPDM rubber systems to GRP fibreglass, our experienced team ensures your flat roof is watertight and built to last.
                 </p>
               </div>
             </div>

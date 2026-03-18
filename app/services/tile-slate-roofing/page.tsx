@@ -94,7 +94,7 @@ export default function TileSlateRoofingPage() {
                   Tile and slate roofing represents the pinnacle of traditional roofing craftsmanship. With proper installation and maintenance, these beautiful roofing materials can last 50-100 years, making them an excellent long-term investment for your property.
                 </p>
                 <p>
-                  Our experienced team specializes in both new installations and expert repairs of tile and slate roofs. We work with a wide range of materials including clay tiles, concrete tiles, natural slate, and synthetic slate alternatives.
+                  Our experienced team specializes in both new installations and expert repairs of tile and slate roofs. We work with a wide range of materials including clay tiles, concrete tiles, natural slate, and synthetic slate alternatives. For <Link href="/roofers-sandbach" className="text-brand-orange font-semibold hover:underline">tile and slate roofing in Sandbach</Link>, we're based locally on Crewe Road and have completed hundreds of projects across CW11.
                 </p>
                 <p>
                   Whether you're looking to restore a historic property or add timeless elegance to a new build, our craftsmen have the skills and experience to deliver exceptional results.
