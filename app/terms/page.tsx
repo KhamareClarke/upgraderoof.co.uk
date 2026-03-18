@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { FileText, AlertTriangle, Scale, CheckCircle, XCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions | Upgrade Roofs Cheshire - Service Agreement',
+  title: 'Terms and Conditions | Upgrade Roofs - Service Agreement',
   description: 'Read our terms and conditions for roofing services. Clear, transparent terms for all our roofing projects in Cheshire and surrounding areas.',
   keywords: 'terms and conditions, roofing terms, service agreement, Cheshire roofing terms, roofing contract',
   openGraph: {
-    title: 'Terms and Conditions | Upgrade Roofs Cheshire',
+    title: 'Terms and Conditions | Upgrade Roofs',
     description: 'Our service terms and conditions for roofing projects.',
     type: 'website',
   },
@@ -39,7 +39,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold text-brand-navy">1. Introduction</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                These Terms and Conditions ("Terms") govern your use of Upgrade Roofs Cheshire's services and website. By engaging our services or using our website, you agree to be bound by these Terms. Please read them carefully before proceeding.
+                These Terms and Conditions ("Terms") govern your use of Upgrade Roofs' services and website. By engaging our services or using our website, you agree to be bound by these Terms. Please read them carefully before proceeding.
               </p>
             </section>
 
@@ -51,7 +51,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold text-brand-navy">2. Services</h2>
               </div>
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>Upgrade Roofs Cheshire provides professional roofing services including but not limited to:</p>
+                <p>Upgrade Roofs provides professional roofing services including but not limited to:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Roof installations, repairs, and replacements</li>
                   <li>Tile and slate roofing</li>

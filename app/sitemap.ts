@@ -29,6 +29,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/gutters-fascias',
     '/services/skylights-roof-windows',
     '/services/cladding',
+    '/roof-repairs',
+    '/new-roofs',
+    '/emergency-roofing',
   ]
 
   // SEO area pages (highest priority for local SEO rankings)

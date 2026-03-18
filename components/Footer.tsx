@@ -162,7 +162,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex flex-col items-center md:items-start gap-4">
               <p className="text-white/50 text-sm tracking-wide">
-                © {new Date().getFullYear()} Upgrade Roofs Cheshire. All rights reserved.
+                © {new Date().getFullYear()} Upgrade Roofs. All rights reserved.
               </p>
               <div className="flex items-center gap-5 text-sm">
                 {legalLinks.map((link) => (
