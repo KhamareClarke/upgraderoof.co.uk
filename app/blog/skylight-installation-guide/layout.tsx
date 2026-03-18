@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Skylight Installation Guide Cheshire | Velux & Sun Tunnels | Upgrade Roofing',
+  title: 'Skylight Installation Guide Cheshire | Velux & Sun Tunnels | Upgrade Roofs',
   description: 'Complete guide to skylight installation in Cheshire. Velux, sun tunnels, flat roof skylights. Types, costs, benefits. Professional installation across Cheshire.',
   keywords: 'skylight installation Cheshire, Velux installer, sun tunnel, roof window, flat roof skylight, natural light',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Skylight Installation Guide | Upgrade Roofing',
+    title: 'Skylight Installation Guide | Upgrade Roofs',
     description: 'Complete skylight guide for Cheshire homeowners.',
   },
   alternates: {

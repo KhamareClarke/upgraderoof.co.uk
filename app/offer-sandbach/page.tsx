@@ -493,11 +493,11 @@ export default function OfferSandbachPage() {
           'Lead flashings and valleys',
         ]}
         nearbyAreas={[
-          { name: 'Crewe', href: '/offer-crewe' },
-          { name: 'Middlewich', href: '/offer-middlewich' },
-          { name: 'Congleton', href: '/offer-congleton' },
-          { name: 'Holmes Chapel', href: '/offer-holmes-chapel' },
-          { name: 'Alsager', href: '/offer-alsager' },
+          { name: 'Crewe', href: '/roofers-crewe' },
+          { name: 'Middlewich', href: '/roofers-middlewich' },
+          { name: 'Congleton', href: '/roofers-congleton' },
+          { name: 'Holmes Chapel', href: '/roofers-holmes-chapel' },
+          { name: 'Alsager', href: '/roofers-alsager' },
         ]}
       />
 
@@ -506,21 +506,21 @@ export default function OfferSandbachPage() {
         <div className="container-custom">
           <h3 className="text-lg font-semibold text-brand-navy mb-4 text-center">We Also Serve</h3>
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
-            <Link href="/offer-sandbach" className="text-brand-orange font-semibold">Sandbach</Link>
+            <Link href="/roofers-sandbach" className="text-brand-orange font-semibold">Sandbach</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-crewe" className="text-gray-600 hover:text-brand-orange transition-colors">Crewe</Link>
+            <Link href="/roofers-crewe" className="text-gray-600 hover:text-brand-orange transition-colors">Crewe</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-middlewich" className="text-gray-600 hover:text-brand-orange transition-colors">Middlewich</Link>
+            <Link href="/roofers-middlewich" className="text-gray-600 hover:text-brand-orange transition-colors">Middlewich</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-congleton" className="text-gray-600 hover:text-brand-orange transition-colors">Congleton</Link>
+            <Link href="/roofers-congleton" className="text-gray-600 hover:text-brand-orange transition-colors">Congleton</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-alsager" className="text-gray-600 hover:text-brand-orange transition-colors">Alsager</Link>
+            <Link href="/roofers-alsager" className="text-gray-600 hover:text-brand-orange transition-colors">Alsager</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-nantwich" className="text-gray-600 hover:text-brand-orange transition-colors">Nantwich</Link>
+            <Link href="/roofers-nantwich" className="text-gray-600 hover:text-brand-orange transition-colors">Nantwich</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-holmes-chapel" className="text-gray-600 hover:text-brand-orange transition-colors">Holmes Chapel</Link>
+            <Link href="/roofers-holmes-chapel" className="text-gray-600 hover:text-brand-orange transition-colors">Holmes Chapel</Link>
             <span className="text-gray-400">·</span>
-            <Link href="/offer-cheshire" className="text-gray-600 hover:text-brand-orange transition-colors">Cheshire & North West</Link>
+            <Link href="/service-areas" className="text-gray-600 hover:text-brand-orange transition-colors">All Service Areas</Link>
           </div>
         </div>
       </section>

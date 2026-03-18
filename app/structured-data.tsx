@@ -14,9 +14,9 @@ export function StructuredData() {
     alternativeTelephone: '07379 440583',
     email: 'upgraderoofs@yahoo.com',
     priceRange: '££-£££',
-    description: 'Professional roofing company serving Cheshire and Staffordshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
+    description: 'Professional roofing company based in Sandbach, serving Cheshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
     foundingDate: '1999',
-    slogan: 'Your Trusted Roofing Specialists in Cheshire & Staffordshire',
+    slogan: 'Sandbach-Based Roofers Serving Cheshire',
     knowsAbout: [
       'Roof Repairs',
       'Roof Installation', 
@@ -107,11 +107,6 @@ export function StructuredData() {
         name: 'Cheshire',
         sameAs: 'https://en.wikipedia.org/wiki/Cheshire'
       },
-      {
-        '@type': 'State',
-        name: 'Staffordshire',
-        sameAs: 'https://en.wikipedia.org/wiki/Staffordshire'
-      }
     ],
     serviceArea: {
       '@type': 'GeoCircle',

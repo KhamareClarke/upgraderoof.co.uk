@@ -127,7 +127,7 @@ export default function SpecialOfferPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/6.jpeg"
-            alt="Professional roof inspection Cheshire Staffordshire"
+            alt="Professional roof inspection Sandbach Cheshire"
             fill
             className="object-cover scale-110"
             priority
@@ -169,7 +169,7 @@ export default function SpecialOfferPage() {
                   25+ Years Experience • FREE Same-Day Quotes
                 </p>
                 <p className="text-lg text-white/80">
-                  Serving Cheshire & Staffordshire
+                  Based in Sandbach, Serving Cheshire
                 </p>
               </div>
 

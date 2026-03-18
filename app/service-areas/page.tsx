@@ -199,7 +199,7 @@ export default function ServiceAreasPage() {
           <div className="bg-brand-navy rounded-3xl p-8 md:p-12 text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Not Sure If We Cover Your Area?</h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              We serve most of Cheshire and parts of Staffordshire. Give us a call and we'll confirm we can help.
+              Based in Sandbach, we serve most of Cheshire and surrounding areas. Give us a call and we'll confirm we can help.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <QuoteForm trigger={

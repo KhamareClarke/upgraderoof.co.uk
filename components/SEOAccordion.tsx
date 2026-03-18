@@ -40,7 +40,7 @@ export function SEOAccordion() {
                 Professional Roofing Services in <span className="text-brand-orange">Cheshire</span>
               </h3>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                Upgrade Roofs is Cheshire's trusted roofing company with over 25 years of experience. We provide expert roofing services across Sandbach, Crewe, Congleton, Middlewich, Nantwich, Alsager, and throughout Cheshire and Staffordshire.
+                Upgrade Roofs is Cheshire's trusted roofing company with over 25 years of experience. Based in Sandbach, we provide expert roofing services across Crewe, Congleton, Middlewich, Nantwich, Alsager, Holmes Chapel, and throughout Cheshire.
               </p>
             </div>
 

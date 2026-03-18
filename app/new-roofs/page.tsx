@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
-import { Home, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Phone } from 'lucide-react';
+import { Home, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Phone, Star } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
@@ -171,6 +171,41 @@ export default function NewRoofsPage() {
               <h3 className="text-2xl font-bold text-brand-navy mb-6">Get Your Free Quote</h3>
               <QuoteForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New Roof Reviews */}
+      <section className="py-12 bg-gray-50">
+        <div className="container-custom">
+          <h2 className="text-2xl font-bold text-brand-navy mb-6 text-center">What Customers Say About Our New Roofs</h2>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {[
+              { text: 'Complete re-roof on our 1930s semi. New Marley tiles, new felt, new battens — the lot. Team were brilliant, tidy, and finished in 4 days. Our house looks brand new from the street.', name: 'Sarah & David P.', location: 'Elworth, Sandbach' },
+              { text: 'Had three quotes for a full re-roof. Upgrade Roofs were the most detailed — they explained everything, showed us tile samples, and the final result is outstanding. 10-year guarantee too.', name: 'Graham T.', location: 'Congleton Road, Sandbach' },
+              { text: 'New slate roof on our Victorian terrace. They matched the original Welsh slate perfectly. Neighbours have been asking who did the work. Very happy with the result.', name: 'Helen & James M.', location: 'Middlewich' },
+            ].map((r, i) => (
+              <div key={i} className="bg-white rounded-xl p-5 border border-gray-200">
+                <div className="flex gap-1 mb-2">{[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 text-yellow-400 fill-current" />)}</div>
+                <p className="text-sm text-gray-700 italic mb-3">"{r.text}"</p>
+                <p className="text-sm font-semibold text-brand-navy">{r.name}</p>
+                <p className="text-xs text-gray-500">{r.location}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contextual Cross-Links */}
+      <section className="py-10 bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-600 leading-relaxed">
+            <p>
+              Not sure if you need a full replacement? Our team can assess whether <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">targeted roof repairs</Link> could 
+              extend your existing roof's life. For Sandbach homeowners, visit our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">dedicated Sandbach roofing page</Link> to 
+              see recent re-roofing projects in your area. We also specialise in <Link href="/services/flat-roofing" className="text-brand-orange hover:underline font-medium">flat roofing systems</Link> for 
+              extensions and garages, and <Link href="/services/chimney-repairs" className="text-brand-orange hover:underline font-medium">chimney repairs</Link> that are often needed alongside a new roof.
+            </p>
           </div>
         </div>
       </section>

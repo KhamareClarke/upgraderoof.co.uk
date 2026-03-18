@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Flat vs. Tile Roofs – Which Lasts Longer in the UK? | Staffordshire Guide',
-  description: 'Compare flat roofing vs tile roofing durability in UK weather. Expert analysis from Stoke-on-Trent roofers on lifespan, costs, and best choice for your property.',
-  keywords: 'flat roof vs tile roof, roof lifespan UK, best roofing materials Staffordshire, flat roofing durability, tile roof longevity',
+  title: 'Flat vs. Tile Roofs – Which Lasts Longer in the UK? | Cheshire Guide',
+  description: 'Compare flat roofing vs tile roofing durability in UK weather. Expert analysis from Sandbach roofers on lifespan, costs, and best choice for your property.',
+  keywords: 'flat roof vs tile roof, roof lifespan UK, best roofing materials Cheshire, flat roofing durability Sandbach, tile roof longevity',
   openGraph: {
     title: 'Flat vs. Tile Roofs – Which Lasts Longer in the UK?',
     description: 'Expert comparison of flat and tile roofing systems for UK properties.',
@@ -36,7 +36,7 @@ export default function FlatVsTileRoofsPost() {
               Flat vs. Tile Roofs – Which Lasts Longer in the UK?
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-3xl">
-              A comprehensive comparison of flat and tile roofing systems from experienced Staffordshire roofers. 
+              A comprehensive comparison of flat and tile roofing systems from experienced Cheshire roofers. 
               Discover which option offers the best longevity for your property.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function FlatVsTileRoofsPost() {
               <div className="mb-8">
                 <Image
                   src="/images/7.jpeg"
-                  alt="Comparison of flat roof and tile roof systems in Staffordshire"
+                  alt="Comparison of flat roof and tile roof systems in Cheshire"
                   width={800}
                   height={400}
                   className="rounded-xl shadow-lg w-full object-cover"
@@ -59,7 +59,7 @@ export default function FlatVsTileRoofsPost() {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                When choosing roofing materials for properties in <strong>Stoke-on-Trent and Staffordshire</strong>, 
+                When choosing roofing materials for properties in <strong>Sandbach and Cheshire</strong>, 
                 longevity is a crucial factor. As professional roofing contractors with over 25 years of experience, 
                 we're frequently asked: "Which lasts longer – flat roofs or tile roofs?" The answer depends on several factors.
               </p>
@@ -95,7 +95,7 @@ export default function FlatVsTileRoofsPost() {
                 <li><strong>Installation quality</strong> - Professional installation crucial for longevity</li>
                 <li><strong>Roof pitch</strong> - Steeper pitches shed water more effectively</li>
                 <li><strong>Maintenance</strong> - Regular inspections and minor repairs extend lifespan</li>
-                <li><strong>Local weather</strong> - Staffordshire's freeze-thaw cycles can affect some materials</li>
+                <li><strong>Local weather</strong> - Cheshire's freeze-thaw cycles can affect some materials</li>
               </ul>
 
               <h2 className="text-2xl font-bold text-brand-navy mb-4">
@@ -182,7 +182,7 @@ export default function FlatVsTileRoofsPost() {
               </h2>
 
               <p className="mb-4">
-                Staffordshire's climate presents unique challenges for both roofing types:
+                Cheshire's climate presents unique challenges for both roofing types:
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -302,7 +302,7 @@ export default function FlatVsTileRoofsPost() {
               <p className="mb-8">
                 Our experienced team provides expert installation of both <Link href="/services/tile-slate-roofing" className="text-brand-orange hover:underline">tile roofing systems</Link> and 
                 <Link href="/services/flat-roofing" className="text-brand-orange hover:underline"> modern flat roofing solutions</Link> throughout 
-                Stoke-on-Trent and Staffordshire.
+                Sandbach and Cheshire.
               </p>
 
               <div className="bg-brand-orange/10 border border-brand-orange p-8 rounded-xl mb-8">
@@ -330,7 +330,7 @@ export default function FlatVsTileRoofsPost() {
               </p>
 
               <p className="mb-8">
-                For expert advice on the best roofing solution for your Staffordshire property, contact our experienced team. 
+                For expert advice on the best roofing solution for your Cheshire property, contact our experienced team. 
                 We provide honest assessments and quality installations backed by comprehensive warranties.
               </p>
             </div>

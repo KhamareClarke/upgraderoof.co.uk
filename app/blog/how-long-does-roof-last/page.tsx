@@ -195,6 +195,17 @@ export default function HowLongDoesRoofLastPost() {
               </p>
             </div>
 
+            {/* Money Page Links */}
+            <div className="bg-brand-navy/5 border border-brand-navy/10 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-brand-navy mb-3">Thinking About a New Roof?</h3>
+              <p className="text-gray-600 text-sm mb-3">
+                If your roof is nearing the end of its lifespan, explore our <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof installation service</Link> — 
+                we offer tile, slate, and flat roofing with 10-year workmanship guarantees. For minor issues, our 
+                <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium"> roof repair service</Link> can extend your roof's life. 
+                See <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">roofers in Sandbach</Link> for local project examples.
+              </p>
+            </div>
+
             <div className="border-t pt-8 mt-8">
               <h3 className="text-xl font-bold text-brand-navy mb-6">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">

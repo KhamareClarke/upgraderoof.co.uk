@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roof Maintenance Checklist Cheshire | Seasonal Guide | Upgrade Roofing',
+  title: 'Roof Maintenance Checklist Cheshire | Seasonal Guide | Upgrade Roofs',
   description: 'Complete roof maintenance checklist for Cheshire homeowners. Spring and autumn tasks, monthly checks, and when to call professionals. Extend your roof lifespan.',
   keywords: 'roof maintenance checklist, roof care Cheshire, seasonal roof maintenance, roof inspection guide, prevent roof damage',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roof Maintenance Checklist | Upgrade Roofing',
+    title: 'Roof Maintenance Checklist | Upgrade Roofs',
     description: 'Seasonal roof maintenance guide for Cheshire.',
   },
   alternates: {

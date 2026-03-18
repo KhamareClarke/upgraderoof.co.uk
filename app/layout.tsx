@@ -18,8 +18,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Expert Roofers Cheshire | Upgrade Roofs | 01270 897606',
-  description: 'Professional roofing in Cheshire. Tile roofs, flat roofs, repairs & installations. 25+ years experience. Free quotes. Call 01270 897606',
+  title: 'Roofers Sandbach & Cheshire | Upgrade Roofs | 01270 897606',
+  description: 'Sandbach-based roofers serving Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. 25+ years experience, CORC certified, £10M insured. Free quotes. Call 01270 897606.',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   keywords: [
     'roofing company Cheshire',
     'roof repairs Cheshire',
-    'roofing Staffordshire', 
+    'roofers Sandbach',
     'flat roofing Cheshire',
     'tile roofs Cheshire',
     'guttering Cheshire',
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.upgraderoofs.co.uk',
   },
   openGraph: {
-    title: 'Expert Roofers Cheshire | Upgrade Roofs',
-    description: 'Professional roofing in Cheshire. Tile roofs, flat roofs, repairs & installations. 25+ years experience. Free quotes.',
+    title: 'Roofers Sandbach & Cheshire | Upgrade Roofs',
+    description: 'Sandbach-based roofers serving Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. 25+ years experience. Free quotes.',
     url: 'https://www.upgraderoofs.co.uk',
     siteName: 'Upgrade Roofs',
     images: [
@@ -78,8 +78,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Expert Roofers Cheshire | Upgrade Roofs',
-    description: 'Professional roofing in Cheshire. 25+ years experience. Free quotes.',
+    title: 'Roofers Sandbach & Cheshire | Upgrade Roofs',
+    description: 'Sandbach-based roofers serving Cheshire. 25+ years experience. Free quotes.',
     images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
     site: '@upgraderoofing',
     creator: '@upgraderoofing',

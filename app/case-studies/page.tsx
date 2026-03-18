@@ -8,8 +8,8 @@ import Image from 'next/image';
 const caseStudies = [
   {
     id: 1,
-    title: 'Complete Roof Replacement in Sandbach',
-    location: 'Sandbach, Cheshire',
+    title: 'Complete Roof Replacement on Congleton Road, Sandbach',
+    location: 'Congleton Road, Sandbach, CW11',
     date: 'February 2026',
     duration: '5 days',
     type: 'Tile Roof Replacement',
@@ -32,8 +32,8 @@ const caseStudies = [
   },
   {
     id: 2,
-    title: 'Flat Roof Extension in Crewe',
-    location: 'Crewe, Cheshire',
+    title: 'Flat Roof Extension on Nantwich Road, Crewe',
+    location: 'Nantwich Road, Crewe, CW2',
     date: 'January 2026',
     duration: '2 days',
     type: 'GRP Fibreglass Flat Roof',
@@ -56,8 +56,8 @@ const caseStudies = [
   },
   {
     id: 3,
-    title: 'Emergency Storm Damage Repair in Middlewich',
-    location: 'Middlewich, Cheshire',
+    title: 'Emergency Storm Damage Repair on Lewin Street, Middlewich',
+    location: 'Lewin Street, Middlewich, CW10',
     date: 'December 2025',
     duration: '1 day emergency + 3 days full repair',
     type: 'Storm Damage Repair',
@@ -80,8 +80,8 @@ const caseStudies = [
   },
   {
     id: 4,
-    title: 'Chimney Rebuild in Congleton',
-    location: 'Congleton, Cheshire',
+    title: 'Chimney Rebuild on West Road, Congleton',
+    location: 'West Road, Congleton, CW12',
     date: 'November 2025',
     duration: '3 days',
     type: 'Chimney Repair & Rebuild',
@@ -104,8 +104,8 @@ const caseStudies = [
   },
   {
     id: 5,
-    title: 'Full Gutter & Fascia Replacement in Alsager',
-    location: 'Alsager, Cheshire',
+    title: 'Full Gutter & Fascia Replacement on Crewe Road, Alsager',
+    location: 'Crewe Road, Alsager, ST7',
     date: 'October 2025',
     duration: '2 days',
     type: 'Gutters & Fascias',
@@ -128,8 +128,8 @@ const caseStudies = [
   },
   {
     id: 6,
-    title: 'Velux Skylight Installation in Nantwich',
-    location: 'Nantwich, Cheshire',
+    title: 'Velux Skylight Installation on Welsh Row, Nantwich',
+    location: 'Welsh Row, Nantwich, CW5',
     date: 'September 2025',
     duration: '1 day',
     type: 'Skylight Installation',
@@ -253,11 +253,50 @@ export default function CaseStudiesPage() {
                       </div>
                     </div>
 
-                    <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="bg-gray-50 p-4 rounded-lg mb-4">
                       <p className="text-gray-700 italic text-sm mb-2">"{study.testimonial.text}"</p>
                       <p className="text-brand-navy font-semibold text-sm">
                         — {study.testimonial.author}, {study.testimonial.location}
                       </p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      {study.type === 'Tile Roof Replacement' && (
+                        <Link href="/new-roofs" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View New Roofs Service →</Link>
+                      )}
+                      {study.type === 'GRP Fibreglass Flat Roof' && (
+                        <Link href="/services/flat-roofing" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View Flat Roofing Service →</Link>
+                      )}
+                      {study.type === 'Storm Damage Repair' && (
+                        <Link href="/emergency-roofing" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View Emergency Roofing →</Link>
+                      )}
+                      {study.type === 'Chimney Repair & Rebuild' && (
+                        <Link href="/services/chimney-repairs" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View Chimney Repairs →</Link>
+                      )}
+                      {study.type === 'Gutters & Fascias' && (
+                        <Link href="/services/gutters-fascias" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View Guttering Service →</Link>
+                      )}
+                      {study.type === 'Skylight Installation' && (
+                        <Link href="/services/skylights-roof-windows" className="text-xs bg-brand-orange/10 text-brand-orange px-3 py-1.5 rounded-full font-medium hover:bg-brand-orange/20 transition-colors">View Skylight Service →</Link>
+                      )}
+                      {study.testimonial.location === 'Sandbach' && (
+                        <Link href="/roofers-sandbach" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Sandbach →</Link>
+                      )}
+                      {study.testimonial.location === 'Crewe' && (
+                        <Link href="/roofers-crewe" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Crewe →</Link>
+                      )}
+                      {study.testimonial.location === 'Middlewich' && (
+                        <Link href="/roofers-middlewich" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Middlewich →</Link>
+                      )}
+                      {study.testimonial.location === 'Congleton' && (
+                        <Link href="/roofers-congleton" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Congleton →</Link>
+                      )}
+                      {study.testimonial.location === 'Alsager' && (
+                        <Link href="/roofers-alsager" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Alsager →</Link>
+                      )}
+                      {study.testimonial.location === 'Nantwich' && (
+                        <Link href="/roofers-nantwich" className="text-xs bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full font-medium hover:bg-blue-100 transition-colors">Roofers in Nantwich →</Link>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -286,6 +325,17 @@ export default function CaseStudiesPage() {
                     View Full Gallery
                   </Link>
                 </Button>
+              </div>
+              <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+                <Link href="/roofers-sandbach" className="text-white/70 hover:text-white transition-colors">Sandbach</Link>
+                <span className="text-white/30">·</span>
+                <Link href="/roof-repairs" className="text-white/70 hover:text-white transition-colors">Roof Repairs</Link>
+                <span className="text-white/30">·</span>
+                <Link href="/new-roofs" className="text-white/70 hover:text-white transition-colors">New Roofs</Link>
+                <span className="text-white/30">·</span>
+                <Link href="/emergency-roofing" className="text-white/70 hover:text-white transition-colors">Emergency</Link>
+                <span className="text-white/30">·</span>
+                <Link href="/services" className="text-white/70 hover:text-white transition-colors">All Services</Link>
               </div>
             </div>
           </div>

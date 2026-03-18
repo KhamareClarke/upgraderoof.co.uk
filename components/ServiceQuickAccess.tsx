@@ -18,7 +18,7 @@ const quickServices = [
     title: 'Emergency Roof Repairs',
     icon: Wrench,
     link: '/services/roof-repairs',
-    keywords: ['roof repairs Stoke-on-Trent', 'emergency roof repairs', 'roof leak repairs'],
+    keywords: ['roof repairs Sandbach', 'emergency roof repairs Cheshire', 'roof leak repairs'],
     urgent: true,
     color: 'bg-red-500'
   },
@@ -26,14 +26,14 @@ const quickServices = [
     title: 'Tile & Slate Roofing',
     icon: Home,
     link: '/services/tile-slate-roofing',
-    keywords: ['tile roofs Cheshire', 'slate roofing Staffordshire', 'traditional roofing'],
+    keywords: ['tile roofs Cheshire', 'slate roofing Sandbach', 'traditional roofing'],
     color: 'bg-blue-500'
   },
   {
     title: 'Flat Roofing',
     icon: Shield,
     link: '/services/flat-roofing',
-    keywords: ['flat roofing Stoke-on-Trent', 'EPDM roofing', 'flat roof specialists'],
+    keywords: ['flat roofing Cheshire', 'EPDM roofing Sandbach', 'flat roof specialists'],
     color: 'bg-green-500'
   },
   {
@@ -54,14 +54,14 @@ const quickServices = [
     title: 'Chimney Repairs',
     icon: Zap,
     link: '/services/chimney-repairs',
-    keywords: ['chimney repairs Staffordshire', 'chimney restoration', 'pointing'],
+    keywords: ['chimney repairs Cheshire', 'chimney restoration Sandbach', 'pointing'],
     color: 'bg-orange-500'
   },
   {
     title: 'Cladding',
     icon: Building,
     link: '/services/cladding',
-    keywords: ['cladding Stoke-on-Trent', 'wall cladding', 'external cladding'],
+    keywords: ['cladding Cheshire', 'wall cladding Sandbach', 'external cladding'],
     color: 'bg-purple-500'
   }
 ];
@@ -77,7 +77,7 @@ export function ServiceQuickAccess({
   variant = 'grid', 
   showKeywords = true,
   title = "Our Services",
-  description = "Professional roofing services across Cheshire & Staffordshire"
+  description = "Professional roofing services based in Sandbach, serving Cheshire"
 }: ServiceQuickAccessProps) {
   
   if (variant === 'compact') {
@@ -102,7 +102,7 @@ export function ServiceQuickAccess({
         </div>
         <div className="mt-4">
           <Button size="sm" className="bg-brand-orange hover:bg-brand-orange/90 text-white" asChild>
-            <Link href="/all-services">
+            <Link href="/services">
               View All Services
               <ArrowRight className="w-3 h-3 ml-1" />
             </Link>
@@ -152,7 +152,7 @@ export function ServiceQuickAccess({
         
         <div className="text-center mt-8">
           <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold" asChild>
-            <Link href="/all-services">
+            <Link href="/services">
               View Complete Service List
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
@@ -214,7 +214,7 @@ export function ServiceQuickAccess({
 
       <div className="text-center">
         <Button size="lg" className="bg-brand-navy hover:bg-brand-navy/90 text-white font-bold px-8 py-4" asChild>
-          <Link href="/all-services">
+          <Link href="/services">
             View All Services & Keywords
             <ArrowRight className="w-5 h-5 ml-2" />
           </Link>
@@ -236,24 +236,24 @@ export const locationKeywords = {
     'chimney repairs Cheshire',
     'cladding Cheshire'
   ],
-  staffordshire: [
-    'roofing services Staffordshire',
-    'roof repairs Staffordshire',
-    'flat roofing Staffordshire', 
-    'tile roofs Staffordshire',
-    'guttering Staffordshire',
-    'skylight installation Staffordshire',
-    'chimney repairs Staffordshire',
-    'cladding Staffordshire'
+  sandbach: [
+    'roofers Sandbach',
+    'roof repairs Sandbach',
+    'flat roofing Sandbach', 
+    'tile roofs Sandbach',
+    'guttering Sandbach',
+    'skylight installation Sandbach',
+    'chimney repairs Sandbach',
+    'cladding Sandbach'
   ],
-  stokeOnTrent: [
-    'roofing company Stoke-on-Trent',
-    'roof repairs Stoke-on-Trent',
-    'flat roofing Stoke-on-Trent',
-    'tile roofs Stoke-on-Trent', 
-    'guttering Stoke-on-Trent',
-    'skylight installation Stoke-on-Trent',
-    'chimney repairs Stoke-on-Trent',
-    'cladding Stoke-on-Trent'
+  crewe: [
+    'roofing company Crewe',
+    'roof repairs Crewe',
+    'flat roofing Crewe',
+    'roofers Crewe', 
+    'guttering Crewe',
+    'skylight installation Crewe',
+    'chimney repairs Crewe',
+    'cladding Crewe'
   ]
 };

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roofing Case Studies Cheshire | Before & After | Upgrade Roofing',
-  description: 'Real roofing projects completed across Cheshire. Before and after photos, customer testimonials. Tile roofs, flat roofs, chimneys, gutters. See our quality work.',
-  keywords: 'roofing case studies, before after roofing, roofing projects Cheshire, roof replacement examples, roofing testimonials',
+  title: 'Roofing Case Studies Sandbach & Cheshire | Before & After | Upgrade Roofs',
+  description: 'Real roofing projects in Sandbach, Crewe, Middlewich & Cheshire. Before/after photos, customer reviews. Re-roofs, flat roofs, chimney repairs, emergency work. 25+ years experience.',
+  keywords: 'roofing case studies Sandbach, before after roofing Cheshire, roofing projects CW11, roof replacement examples, roofing testimonials Sandbach',
   openGraph: {
     title: 'Roofing Case Studies | Before & After Photos',
     description: 'Real roofing projects completed across Cheshire with customer testimonials.',

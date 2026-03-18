@@ -84,21 +84,26 @@ export default function RoofersSandbachPage() {
             </h2>
             <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-4">
               <p>
-                Based on Crewe Road in the heart of Sandbach, Upgrade Roofs is a family-run roofing company 
+                Based at 20 Crewe Road in the heart of Sandbach (CW11 4NE), Upgrade Roofs is a family-run roofing company 
                 with deep roots in the local community. We've completed hundreds of roofing projects across 
-                Sandbach — from period properties on the High Street to modern estates around Elworth and 
-                Wheelock.
+                Sandbach — from period properties on the High Street and Hightown to modern estates around Elworth, 
+                Wheelock, and the Abbeyfields development off Middlewich Road.
               </p>
               <p>
                 We hold full CORC (Confederation of Roofing Contractors) certification, carry £10 million 
                 public liability insurance, and provide a 10-year workmanship guarantee on every job. 
-                Whether you need a single tile replaced or a full roof strip and re-tile, we deliver the 
+                Whether you need a single tile replaced, a full <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">roof strip and re-tile</Link>, or 
+                an <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">emergency leak repair</Link> at 2am, we deliver the 
                 same standard of care.
               </p>
               <p>
                 As Sandbach locals ourselves, we understand the specific roofing challenges in this area — 
                 from the exposed conditions along the A534 corridor to the older rooflines around Sandbach 
-                Heath and the conservation considerations near the town centre's listed buildings.
+                Heath and Ettiley Heath, and the conservation considerations near the town centre's listed buildings. 
+                We also handle <Link href="/services/flat-roofing" className="text-brand-orange hover:underline font-medium">flat roofing</Link> on 
+                the many 1960s–70s garage and extension roofs found across the CW11 postcode, and 
+                <Link href="/services/chimney-repairs" className="text-brand-orange hover:underline font-medium"> chimney repairs</Link> on 
+                the Victorian terraces along Congleton Road and Middlewich Road.
               </p>
             </div>
           </div>
@@ -136,6 +141,169 @@ export default function RoofersSandbachPage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sandbach Case Studies */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-4 text-center">
+              Recent Roofing Projects in <span className="text-brand-orange">Sandbach</span>
+            </h2>
+            <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
+              Real jobs we've completed for Sandbach homeowners. Every project backed by our 10-year guarantee.
+            </p>
+            <div className="space-y-8">
+              {[
+                {
+                  title: 'Full Re-Roof on Congleton Road, Sandbach',
+                  service: 'New Roof Installation',
+                  location: 'Congleton Road, CW11',
+                  issue: 'A 1930s semi-detached with original concrete tiles showing widespread cracking and water ingress into the loft space. The homeowner noticed damp patches on the bedroom ceiling after heavy rain.',
+                  solution: 'Complete strip and re-tile using Marley Edgemere interlocking tiles. Replaced all felt and battens, upgraded ventilation to current building regulations, and renewed lead flashings around the chimney stack and soil vent pipe.',
+                  result: 'Fully watertight roof with 10-year workmanship guarantee and 15-year manufacturer warranty. Completed in 4 working days with minimal disruption.',
+                  href: '/new-roofs',
+                  serviceLabel: 'New Roofs',
+                },
+                {
+                  title: 'Emergency Leak Repair on Elworth, Sandbach',
+                  service: 'Emergency Roof Repair',
+                  location: 'Warmingham Lane, Elworth, CW11',
+                  issue: 'Urgent call-out after Storm Ciarán caused wind damage, lifting ridge tiles and allowing water to pour into the upstairs hallway. Homeowner called at 7pm on a Friday evening.',
+                  solution: 'Same-evening make-safe visit. Temporary tarpaulin secured within 90 minutes. Full repair completed the following Monday — re-bedded ridge tiles with a modern dry ridge system, replaced 8 slipped tiles, and re-sealed the lead valley.',
+                  result: 'No further water ingress. Dry ridge system eliminates future mortar deterioration. Insurance claim documentation provided.',
+                  href: '/emergency-roofing',
+                  serviceLabel: 'Emergency Roofing',
+                },
+                {
+                  title: 'Flat Roof Replacement in Sandbach Heath',
+                  service: 'Flat Roofing',
+                  location: 'Crewe Road, Sandbach Heath, CW11',
+                  issue: 'A 1970s detached bungalow with a large flat roof over the rear extension. The original felt roof was bubbling and pooling water, causing persistent damp in the kitchen and utility room.',
+                  solution: 'Full strip of the old felt system. Installed new Firestone EPDM rubber membrane with tapered insulation boards to create positive drainage. New aluminium edge trims and upstand detailing throughout.',
+                  result: '20-year waterproof guarantee. Energy efficiency improved by the tapered insulation. No more pooling or damp. Completed in 2 days.',
+                  href: '/services/flat-roofing',
+                  serviceLabel: 'Flat Roofing',
+                },
+                {
+                  title: 'Chimney Rebuild & Lead Work on Wheelock',
+                  service: 'Chimney Repairs',
+                  location: 'Crewe Road, Wheelock, CW11',
+                  issue: 'A Victorian end-terrace with a chimney stack that had deteriorated badly — crumbling mortar joints, cracked pots, and failed lead flashings causing damp on the party wall.',
+                  solution: 'Scaffolded and rebuilt the top 6 courses of the chimney stack using matching reclaimed bricks. Installed new clay pots and cowls, re-pointed with lime mortar, and fitted new code 4 lead stepped and back-gutter flashings.',
+                  result: 'Chimney structurally sound and weathertight. Damp issue resolved within weeks of completion. 10-year guarantee on all work.',
+                  href: '/services/chimney-repairs',
+                  serviceLabel: 'Chimney Repairs',
+                },
+              ].map((study, i) => (
+                <div key={i} className="bg-white rounded-2xl border border-gray-200 p-6 sm:p-8 hover:shadow-lg transition-shadow">
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <span className="px-3 py-1 bg-brand-orange/10 text-brand-orange font-semibold text-sm rounded-full">{study.service}</span>
+                    <span className="flex items-center gap-1 text-sm text-gray-500">
+                      <MapPin className="w-3.5 h-3.5" /> {study.location}
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-brand-navy mb-4">{study.title}</h3>
+                  <div className="grid sm:grid-cols-3 gap-4 mb-4">
+                    <div>
+                      <p className="text-xs font-semibold text-brand-navy uppercase tracking-wide mb-1">The Problem</p>
+                      <p className="text-sm text-gray-600 leading-relaxed">{study.issue}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-brand-navy uppercase tracking-wide mb-1">What We Did</p>
+                      <p className="text-sm text-gray-600 leading-relaxed">{study.solution}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-brand-navy uppercase tracking-wide mb-1">The Result</p>
+                      <p className="text-sm text-gray-600 leading-relaxed">{study.result}</p>
+                    </div>
+                  </div>
+                  <Link href={study.href} className="text-brand-orange font-semibold text-sm hover:underline inline-flex items-center gap-1">
+                    Learn more about our {study.serviceLabel} service <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sandbach Review Snippets */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+              What Sandbach Customers Say
+            </h2>
+            <div className="flex items-center justify-center gap-2 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+              ))}
+            </div>
+            <p className="text-gray-600">5.0 average from 127+ Google reviews</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {[
+              {
+                text: 'Had a leak above our bedroom after the big storm. Called Upgrade Roofs and they were at our house on Middlewich Road within the hour. Temporary fix that night, full repair done by Wednesday. Brilliant service.',
+                name: 'James H.',
+                location: 'Middlewich Road, Sandbach',
+                service: 'Emergency Roof Repair',
+              },
+              {
+                text: 'Complete re-roof on our 1950s semi in Elworth. The team were punctual, tidy, and finished in under a week. New Marley tiles look fantastic and the price was very fair compared to other quotes we had.',
+                name: 'Sarah & David P.',
+                location: 'Elworth, Sandbach',
+                service: 'New Roof',
+              },
+              {
+                text: 'Replaced our flat garage roof with EPDM rubber. No more leaks after 10 years of patching the old felt roof. Quick, clean job with a 20-year guarantee. Would definitely recommend to anyone in Sandbach.',
+                name: 'Mark T.',
+                location: 'Sandbach Heath',
+                service: 'Flat Roofing',
+              },
+              {
+                text: 'Our chimney had been leaking for months. Upgrade Roofs re-pointed the stack and replaced all the lead flashings. The damp patch in the bedroom has completely gone. Really pleased with the work.',
+                name: 'Christine L.',
+                location: 'Hightown, Sandbach',
+                service: 'Chimney Repair',
+              },
+              {
+                text: 'Used Upgrade Roofs for new guttering and fascias on our detached house. The old wooden fascias were rotten. New uPVC looks smart and should last decades. Fair price, no hard sell, great team.',
+                name: 'Robert & Anne K.',
+                location: 'Wheelock, Sandbach',
+                service: 'Guttering & Fascias',
+              },
+              {
+                text: 'Needed a few slipped tiles fixed and some ridge pointing done. Other companies wanted to charge a fortune or wouldn\'t come out for a small job. Upgrade Roofs came the next day and sorted it in a couple of hours. Very reasonable.',
+                name: 'Paul S.',
+                location: 'Ettiley Heath, Sandbach',
+                service: 'Roof Repair',
+              },
+            ].map((review, i) => (
+              <div key={i} className="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, j) => (
+                    <Star key={j} className="w-4 h-4 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed mb-4 italic">"{review.text}"</p>
+                <div className="border-t pt-3">
+                  <p className="font-semibold text-brand-navy text-sm">{review.name}</p>
+                  <p className="text-xs text-gray-500 flex items-center gap-1">
+                    <MapPin className="w-3 h-3" /> {review.location}
+                  </p>
+                  <p className="text-xs text-brand-orange font-medium mt-1">{review.service}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/reviews" className="text-brand-orange font-semibold hover:underline inline-flex items-center gap-1">
+              Read all reviews <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

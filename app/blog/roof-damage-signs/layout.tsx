@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Signs of Roof Damage | When to Call a Roofer | Upgrade Roofing',
-  description: 'Learn the warning signs of roof damage. Missing tiles, leaks, sagging, moss growth. Know when to call a professional roofer. Expert advice from Upgrade Roofing Cheshire.',
+  title: 'Signs of Roof Damage | When to Call a Roofer | Upgrade Roofs',
+  description: 'Learn the warning signs of roof damage. Missing tiles, leaks, sagging, moss growth. Know when to call a professional roofer. Expert advice from Upgrade Roofs Cheshire.',
   keywords: 'roof damage signs, when to repair roof, roof leak signs, missing roof tiles, roof inspection needed, roof damage Cheshire',
   openGraph: {
     title: 'Signs of Roof Damage | When to Call a Roofer',
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Signs of Roof Damage | Upgrade Roofing',
+    title: 'Signs of Roof Damage | Upgrade Roofs',
     description: 'Learn the warning signs of roof damage.',
   },
   alternates: {

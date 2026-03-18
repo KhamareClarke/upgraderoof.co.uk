@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Flat vs Tile Roofs | Which is Best? | Upgrade Roofing Cheshire',
+  title: 'Flat vs Tile Roofs | Which is Best? | Upgrade Roofs Cheshire',
   description: 'Comparing flat roofs vs tile roofs. Pros, cons, costs, lifespan and maintenance. Expert guide to help you choose the right roofing for your property.',
   keywords: 'flat roof vs tile roof, roof comparison, best roof type, flat roof pros cons, tile roof benefits, roofing materials comparison',
   openGraph: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Flat vs Tile Roofs | Upgrade Roofing',
+    title: 'Flat vs Tile Roofs | Upgrade Roofs',
     description: 'Expert comparison of flat roofs vs tile roofs.',
   },
   alternates: {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Choosing a Roofing Contractor | Upgrade Roofing',
+    title: 'Choosing a Roofing Contractor | Upgrade Roofs',
     description: 'Expert guide to hiring reliable roofers.',
   },
   alternates: {

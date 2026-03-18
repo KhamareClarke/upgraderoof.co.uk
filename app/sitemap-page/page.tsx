@@ -41,7 +41,6 @@ const sitePages = [
     icon: Wrench,
     pages: [
       { title: 'All Services', url: '/services', description: 'Complete overview of roofing services' },
-      { title: 'Service Directory', url: '/all-services', description: 'Detailed service list with keywords' },
       { title: 'Tile & Slate Roofing', url: '/services/tile-slate-roofing', description: 'Traditional roofing solutions' },
       { title: 'Flat Roofing', url: '/services/flat-roofing', description: 'Modern flat roofing systems' },
       { title: 'Chimney Repairs', url: '/services/chimney-repairs', description: 'Professional chimney services' },
@@ -54,7 +53,7 @@ const sitePages = [
     category: 'Areas & Locations',
     icon: MapPin,
     pages: [
-      { title: 'Service Areas', url: '/service-areas', description: 'All areas we serve in Cheshire & Staffordshire' },
+      { title: 'Service Areas', url: '/service-areas', description: 'All areas we serve across Cheshire' },
     ]
   },
   {
@@ -97,7 +96,7 @@ const quickActions = [
   },
   {
     title: 'View Services',
-    url: '/all-services',
+    url: '/services',
     icon: Wrench,
     color: 'bg-blue-500',
     description: 'Complete list of roofing services'
@@ -107,7 +106,7 @@ const quickActions = [
     url: '/service-areas',
     icon: MapPin,
     color: 'bg-purple-500',
-    description: 'Areas we cover in Cheshire & Staffordshire'
+    description: 'Areas we cover across Cheshire'
   }
 ];
 
@@ -227,7 +226,7 @@ export default function SitemapPage() {
                     Browse our complete service directory with detailed information about each roofing service we offer.
                   </p>
                   <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white" asChild>
-                    <Link href="/all-services">
+                    <Link href="/services">
                       View All Services
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>

@@ -233,6 +233,18 @@ export default function ChoosingRoofingContractorPost() {
               </p>
             </div>
 
+            {/* Money Page Links */}
+            <div className="bg-brand-navy/5 border border-brand-navy/10 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-brand-navy mb-3">Ready to Get Quotes?</h3>
+              <p className="text-gray-600 text-sm mb-3">
+                Whether you need <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">roof repairs</Link>, a 
+                complete <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof</Link>, or 
+                <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium"> emergency roofing</Link>, we provide 
+                free written quotes with no obligation. See what Sandbach customers say on our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">local Sandbach page</Link>, 
+                or view our <Link href="/case-studies" className="text-brand-orange hover:underline font-medium">case studies</Link> with before/after photos.
+              </p>
+            </div>
+
             <div className="border-t pt-8 mt-8">
               <h3 className="text-xl font-bold text-brand-navy mb-6">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">

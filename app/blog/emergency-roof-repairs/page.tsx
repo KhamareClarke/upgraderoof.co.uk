@@ -193,6 +193,18 @@ export default function EmergencyRoofRepairsPost() {
               </p>
             </div>
 
+            {/* Money Page Links */}
+            <div className="bg-brand-navy/5 border border-brand-navy/10 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-brand-navy mb-3">Need Emergency Help Now?</h3>
+              <p className="text-gray-600 text-sm mb-3">
+                Visit our <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">24/7 emergency roofing page</Link> for 
+                immediate assistance. Based in Sandbach, we respond fast across all of Cheshire. For non-urgent issues, see our 
+                <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium"> roof repair service</Link> or 
+                browse <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">roofers in Sandbach</Link> for 
+                local case studies and reviews.
+              </p>
+            </div>
+
             <div className="border-t pt-8 mt-8">
               <h3 className="text-xl font-bold text-brand-navy mb-6">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">
@@ -206,13 +218,13 @@ export default function EmergencyRoofRepairsPost() {
                     </p>
                   </div>
                 </Link>
-                <Link href="/blog/storm-damage-insurance" className="group">
+                <Link href="/blog/roof-damage-signs" className="group">
                   <div className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors">
                     <h4 className="font-semibold text-brand-navy group-hover:text-brand-orange mb-2">
-                      Storm Damage Insurance Claims Guide
+                      How to Spot Roof Damage Early
                     </h4>
                     <p className="text-sm text-gray-600">
-                      How to successfully claim for roof storm damage.
+                      Identify problems before they become emergencies.
                     </p>
                   </div>
                 </Link>

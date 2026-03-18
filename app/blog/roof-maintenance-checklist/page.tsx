@@ -199,6 +199,16 @@ export default function RoofMaintenanceChecklistPost() {
               </p>
             </div>
 
+            {/* Money Page Links */}
+            <div className="bg-brand-navy/5 border border-brand-navy/10 rounded-xl p-6 mb-8">
+              <h3 className="font-bold text-brand-navy mb-3">Spotted Something During Your Inspection?</h3>
+              <p className="text-gray-600 text-sm mb-3">
+                If you've found damage during your maintenance check, our <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">roof repair team</Link> can 
+                fix it quickly. For urgent leaks or storm damage, use our <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">24/7 emergency service</Link>. 
+                Sandbach homeowners can see local examples on our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach roofers page</Link>.
+              </p>
+            </div>
+
             <div className="border-t pt-8 mt-8">
               <h3 className="text-xl font-bold text-brand-navy mb-6">Related Articles</h3>
               <div className="grid md:grid-cols-2 gap-6">

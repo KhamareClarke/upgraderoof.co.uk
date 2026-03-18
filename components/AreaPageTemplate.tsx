@@ -23,8 +23,8 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
     { icon: Layers, title: 'Flat Roofing', desc: `EPDM rubber and GRP fibreglass flat roofing for ${town} properties. Up to 20-year guarantee.`, href: '/services/flat-roofing' },
     { icon: Flame, title: 'Chimney Repairs', desc: `Chimney repointing, lead flashing, and stack repairs for ${town} homes.`, href: '/services/chimney-repairs' },
     { icon: Droplets, title: 'Guttering & Fascias', desc: `uPVC guttering, fascias, and soffits. Full replacements and repairs in ${town}.`, href: '/services/gutters-fascias' },
-    { icon: Wrench, title: 'Roof Repairs', desc: `Fast, reliable roof repairs for leaks, storm damage, and missing tiles in ${town}.`, href: '/contact' },
-    { icon: Zap, title: 'Emergency Roofing', desc: `24/7 emergency call-outs to ${town}. Storm damage, leaks, and urgent make-safe work.`, href: '/contact' },
+    { icon: Wrench, title: 'Roof Repairs', desc: `Fast, reliable roof repairs for leaks, storm damage, and missing tiles in ${town}.`, href: '/roof-repairs' },
+    { icon: Zap, title: 'Emergency Roofing', desc: `24/7 emergency call-outs to ${town}. Storm damage, leaks, and urgent make-safe work.`, href: '/emergency-roofing' },
   ];
 
   return (
@@ -81,6 +81,21 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
               <p>{localContext}</p>
               <p>{roofingChallenges}</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contextual Cross-Links */}
+      <section className="py-8 bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto text-gray-600 leading-relaxed text-lg">
+            <p>
+              We handle everything from <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">urgent roof repairs</Link> and 
+              <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium"> emergency roofing</Link> call-outs to 
+              complete <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof installations</Link> across {town}. 
+              Based in Sandbach, our team can usually reach {town} the same day. See our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach roofing page</Link> for 
+              local case studies, or browse our full <Link href="/services" className="text-brand-orange hover:underline font-medium">range of services</Link>.
+            </p>
           </div>
         </div>
       </section>

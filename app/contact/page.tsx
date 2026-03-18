@@ -188,7 +188,7 @@ export default function ContactPage() {
               <div className="bg-brand-grey p-6 rounded-xl">
                 <h3 className="text-lg font-semibold text-brand-navy mb-3">Local Cheshire Roofers</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Based in Sandbach, we serve homeowners and businesses throughout Cheshire and Staffordshire. Being local means faster response times, knowledge of local building regulations, and a reputation we're proud to maintain in our community.
+                  Based in Sandbach, we serve homeowners and businesses throughout Cheshire. Being local means faster response times, knowledge of local building regulations, and a reputation we're proud to maintain in our community.
                 </p>
               </div>
             </div>

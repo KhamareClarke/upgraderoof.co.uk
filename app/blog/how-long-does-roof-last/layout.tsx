@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'How Long Does a Roof Last? | UK Roof Lifespan Guide | Upgrade Roofing',
+  title: 'How Long Does a Roof Last? | UK Roof Lifespan Guide | Upgrade Roofs',
   description: 'How long do different roof types last in the UK? Slate, tile, flat roofing lifespans explained. Expert guide from Cheshire roofing contractors. Free assessments.',
   keywords: 'how long does roof last, roof lifespan UK, slate roof lifespan, tile roof lifespan, flat roof lifespan, when to replace roof',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How Long Does a Roof Last? | Upgrade Roofing',
+    title: 'How Long Does a Roof Last? | Upgrade Roofs',
     description: 'UK roof lifespan guide for homeowners.',
   },
   alternates: {

@@ -5,9 +5,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'How to Spot Roof Damage Before It Gets Expensive | Stoke-on-Trent',
-  description: 'Learn to identify early signs of roof damage in Staffordshire. Expert tips from professional roofers to save money on repairs. Free roof inspections available.',
-  keywords: 'roof damage signs, roof inspection Stoke-on-Trent, roof problems Staffordshire, roof maintenance, early roof damage',
+  title: 'How to Spot Roof Damage Before It Gets Expensive | Sandbach & Cheshire',
+  description: 'Learn to identify early signs of roof damage in Cheshire. Expert tips from Sandbach roofers to save money on repairs. Free roof inspections available.',
+  keywords: 'roof damage signs, roof inspection Sandbach, roof problems Cheshire, roof maintenance, early roof damage',
   openGraph: {
     title: 'How to Spot Roof Damage Before It Gets Expensive',
     description: 'Expert guide to identifying roof damage early and preventing costly repairs.',
@@ -36,7 +36,7 @@ export default function RoofDamageSignsPost() {
               How to Spot Roof Damage Before It Gets Expensive
             </h1>
             <p className="text-xl text-white/90 mb-8 max-w-3xl">
-              Early detection of roof problems can save Staffordshire homeowners thousands in repair costs. 
+              Early detection of roof problems can save Cheshire homeowners thousands in repair costs. 
               Learn the warning signs from our experienced roofing professionals.
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function RoofDamageSignsPost() {
               <div className="mb-8">
                 <Image
                   src="/images/6.jpeg"
-                  alt="Professional roof inspection in Stoke-on-Trent showing damaged tiles"
+                  alt="Professional roof inspection in Sandbach showing damaged tiles"
                   width={800}
                   height={400}
                   className="rounded-xl shadow-lg w-full object-cover"
@@ -59,7 +59,7 @@ export default function RoofDamageSignsPost() {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                As professional <strong>roofing contractors in Stoke-on-Trent</strong>, we've seen how small, unnoticed problems 
+                As professional <strong>roofing contractors in Sandbach</strong>, we've seen how small, unnoticed problems 
                 can quickly escalate into major structural issues. The key to avoiding expensive roof repairs is knowing what 
                 to look for and when to call in the experts.
               </p>
@@ -96,7 +96,7 @@ export default function RoofDamageSignsPost() {
               </p>
 
               <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Missing, cracked, or curling roof tiles</strong> - Common in Staffordshire's variable weather</li>
+                <li><strong>Missing, cracked, or curling roof tiles</strong> - Common in Cheshire's variable weather</li>
                 <li><strong>Damaged flashing</strong> - Check around chimneys, vents, and skylights</li>
                 <li><strong>Clogged or damaged gutters</strong> - Can cause water backup and roof damage</li>
                 <li><strong>Moss or algae growth</strong> - Indicates moisture retention and potential tile damage</li>
@@ -104,7 +104,7 @@ export default function RoofDamageSignsPost() {
               </ul>
 
               <h2 className="text-2xl font-bold text-brand-navy mb-4">
-                3. Seasonal Damage in Staffordshire
+                3. Seasonal Damage in Cheshire
               </h2>
 
               <p className="mb-4">
@@ -150,7 +150,7 @@ export default function RoofDamageSignsPost() {
               <div className="bg-brand-navy text-white p-8 rounded-xl mb-8">
                 <h3 className="text-xl font-bold mb-4">Free Professional Roof Inspection</h3>
                 <p className="mb-4">
-                  Our experienced team provides comprehensive roof inspections throughout Stoke-on-Trent and Staffordshire. 
+                  Our experienced team provides comprehensive roof inspections throughout Sandbach and Cheshire. 
                   We'll identify potential problems before they become expensive repairs.
                 </p>
                 <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold" asChild>
@@ -204,7 +204,7 @@ export default function RoofDamageSignsPost() {
 
               <p className="mb-6">
                 Regular roof inspections and early intervention are the keys to maintaining your property's value and avoiding 
-                costly emergency repairs. As experienced <strong>roofing contractors serving Stoke-on-Trent and Staffordshire</strong>, 
+                costly emergency repairs. As experienced <strong>roofing contractors serving Sandbach and Cheshire</strong>, 
                 we recommend annual professional inspections and immediate attention to any warning signs.
               </p>
 

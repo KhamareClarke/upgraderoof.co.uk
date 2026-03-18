@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
-import { Phone, CheckCircle, Clock, Shield, Wrench, MapPin, ArrowRight } from 'lucide-react';
+import { Phone, CheckCircle, Clock, Shield, Wrench, MapPin, ArrowRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
 
@@ -125,6 +125,40 @@ export default function RoofRepairsPage() {
               <h3 className="text-2xl font-bold text-brand-navy mb-6">Get a Free Repair Quote</h3>
               <QuoteForm />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Roof Repair Reviews */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <h2 className="text-2xl font-bold text-brand-navy mb-6 text-center">What Customers Say About Our Repairs</h2>
+          <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {[
+              { text: 'Had a leak above the bathroom that two other roofers couldn\'t fix. Upgrade Roofs found the problem in 20 minutes — a failed lead flashing behind the soil pipe. Fixed properly, no more damp.', name: 'Karen W.', location: 'Elworth, Sandbach' },
+              { text: 'Storm blew off 6 tiles on our semi. They came same day, replaced the tiles and checked the rest of the roof while they were up there. Fair price, no fuss.', name: 'Mike R.', location: 'Middlewich Road, Sandbach' },
+              { text: 'Our ridge tiles had been loose for months. Upgrade Roofs re-bedded them with a dry ridge system. Looks much better and should last decades now.', name: 'Janet & Alan D.', location: 'Crewe' },
+            ].map((r, i) => (
+              <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+                <div className="flex gap-1 mb-2">{[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 text-yellow-400 fill-current" />)}</div>
+                <p className="text-sm text-gray-700 italic mb-3">"{r.text}"</p>
+                <p className="text-sm font-semibold text-brand-navy">{r.name}</p>
+                <p className="text-xs text-gray-500">{r.location}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contextual Cross-Links */}
+      <section className="py-10 bg-white">
+        <div className="container-custom">
+          <div className="max-w-3xl mx-auto prose prose-lg text-gray-600 leading-relaxed">
+            <p>
+              For urgent roof repair work in Sandbach, see our dedicated <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach roofing page</Link> for 
+              local case studies and customer reviews. If your roof damage is beyond repair, we also offer complete <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof installations</Link> with 
+              10-year guarantees. For out-of-hours emergencies — storm damage, sudden leaks, or structural issues — call our <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">24/7 emergency roofing line</Link> on 07379 440583.
+            </p>
           </div>
         </div>
       </section>
