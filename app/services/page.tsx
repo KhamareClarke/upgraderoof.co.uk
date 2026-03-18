@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: 'Roofing Services Cheshire | All Services | 01270 897606',
   description: 'Complete roofing services in Cheshire. Tile & slate roofs, flat roofing, chimney repairs, gutters, fascias, skylights, cladding. 10-year guarantee, £10M insured. Free quotes. Call 01270 897606.',
