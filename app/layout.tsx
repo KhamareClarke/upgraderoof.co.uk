@@ -3,11 +3,8 @@ import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import { StructuredData } from './structured-data';
 import { ConditionalLayout } from '@/components/ConditionalLayout';
-import { WhatsAppButton } from '@/components/WhatsAppButton';
-import { ScrollToTop } from '@/components/ScrollToTop';
-import { MobileContactBar } from '@/components/MobileContactBar';
 import { Analytics } from '@/components/Analytics';
-import { CookieConsent } from '@/components/CookieConsent';
+import { ClientWidgets } from '@/components/ClientWidgets';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -124,10 +121,7 @@ export default function RootLayout({
         </noscript>
         <Analytics />
         <ConditionalLayout>{children}</ConditionalLayout>
-        <WhatsAppButton />
-        <MobileContactBar />
-        <ScrollToTop />
-        <CookieConsent />
+        <ClientWidgets />
       </body>
     </html>
   );

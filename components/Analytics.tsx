@@ -46,11 +46,7 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* GA4 + Google Ads via gtag.js — afterInteractive so consent signals are ready */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-7V452FMYFY"
-        strategy="afterInteractive"
-      />
+      {/* GA4 + Google Ads config — GTM already loads gtag.js, so only config calls needed */}
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];

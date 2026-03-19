@@ -72,17 +72,17 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[55vh] sm:min-h-[70vh] lg:min-h-[85vh] flex items-start sm:items-center justify-center overflow-hidden pt-12 sm:pt-0" style={{ contain: 'layout style paint' }}>
-      {/* Render current + adjacent slides for smooth transitions */}
+      {/* Render only current slide + next slide for transition */}
       {slides.map((slide, index) => {
         const isVisible = index === currentSlide;
-        const isAdjacent = index === (currentSlide + 1) % slides.length || index === (currentSlide - 1 + slides.length) % slides.length;
+        const isNext = index === (currentSlide + 1) % slides.length;
         
-        if (!isVisible && !isAdjacent) return null;
+        if (!isVisible && !isNext) return null;
         
         return (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 will-change-[opacity] ${
+            className={`absolute inset-0 transition-opacity duration-1000 ${
               isVisible ? 'opacity-100 z-[1]' : 'opacity-0 z-0'
             }`}
           >
@@ -93,7 +93,7 @@ export function Hero() {
                 fill
                 priority={index === 0}
                 loading={index === 0 ? 'eager' : 'lazy'}
-                quality={40}
+                quality={index === 0 ? 30 : 25}
                 sizes="100vw"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/ANF6d1qC+1O5tIbWRFhRCXZgd25mHAx8wKKUqxNxJYBuf//Z"
@@ -107,16 +107,15 @@ export function Hero() {
         );
       })}
 
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
 
       <div className="container-custom relative z-10 pt-2 pb-8 sm:pt-4 sm:pb-16 md:pt-6 md:pb-20 lg:pt-8 lg:pb-24">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 md:mb-8 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-medium tracking-wide fade-in-up">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 mb-4 sm:mb-6 md:mb-8 rounded-full bg-white/15 sm:backdrop-blur-sm border border-white/20 text-white text-xs sm:text-sm font-medium tracking-wide fade-in-up">
             <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-brand-orange" />
             <span className="whitespace-nowrap">Award-Winning Roofing Company 2024</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-5 sm:mb-6 md:mb-8 text-balance leading-[1.1] tracking-tight fade-in-up px-4 sm:px-0 drop-shadow-2xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-5 sm:mb-6 md:mb-8 text-balance leading-[1.1] tracking-tight px-4 sm:px-0 drop-shadow-2xl">
             {slides[currentSlide].title}{' '}
             <span className="relative inline-block">
               <span className="relative z-10 text-brand-orange">
@@ -127,11 +126,11 @@ export function Hero() {
             {slides[currentSlide].subtitle}
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide slide-in-right px-4 sm:px-0 drop-shadow-lg">
+          <p className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed tracking-wide px-4 sm:px-0 drop-shadow-lg">
             {slides[currentSlide].description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-8 sm:mb-10 md:mb-12 scale-in justify-center max-w-md sm:max-w-none mx-auto sm:mx-0">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mb-8 sm:mb-10 md:mb-12 justify-center max-w-md sm:max-w-none mx-auto sm:mx-0">
             <QuoteForm trigger={
               <Button
                 size="lg"
@@ -143,7 +142,7 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="group border border-white/20 text-white hover:bg-white/10 hover:border-white/30 font-semibold px-8 sm:px-10 md:px-12 text-sm sm:text-base tracking-wide h-12 sm:h-14 md:h-16 backdrop-blur-sm bg-white/5 transition-all duration-500 hover:scale-[1.02] w-full sm:w-auto rounded-lg active:scale-95"
+              className="group border border-white/20 text-white hover:bg-white/10 hover:border-white/30 font-semibold px-8 sm:px-10 md:px-12 text-sm sm:text-base tracking-wide h-12 sm:h-14 md:h-16 bg-white/10 transition-all duration-500 hover:scale-[1.02] w-full sm:w-auto rounded-lg active:scale-95"
               asChild
             >
               <Link href="/contact" className="flex items-center justify-center">
@@ -161,7 +160,7 @@ export function Hero() {
             ].map((stat, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center gap-3 p-4 sm:p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-500 group"
+                className="flex items-center justify-center gap-3 p-4 sm:p-5 rounded-xl bg-white/10 border border-white/10 hover:bg-white/15 transition-all duration-500 group"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-brand-orange/25 flex items-center justify-center group-hover:scale-105 transition-transform duration-500 flex-shrink-0">
                   <stat.icon className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
@@ -178,7 +177,7 @@ export function Hero() {
 
       <button
         onClick={prevSlide}
-        className="hidden md:flex absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
+        className="hidden md:flex absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 border border-white/20 items-center justify-center text-white hover:bg-white/25 transition-all duration-300 hover:scale-110 group"
         aria-label="Previous slide"
       >
         <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 group-hover:-translate-x-1 transition-transform" />
@@ -186,7 +185,7 @@ export function Hero() {
 
       <button
         onClick={nextSlide}
-        className="hidden md:flex absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 items-center justify-center text-white hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
+        className="hidden md:flex absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/15 border border-white/20 items-center justify-center text-white hover:bg-white/25 transition-all duration-300 hover:scale-110 group"
         aria-label="Next slide"
       >
         <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />

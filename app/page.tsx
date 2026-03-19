@@ -2,13 +2,9 @@ import type { Metadata } from 'next';
 import { Hero } from '@/components/Hero';
 import { Services } from '@/components/Services';
 import { WhyChooseUs } from '@/components/WhyChooseUs';
-import { GoogleReviewsCarousel } from '@/components/GoogleReviewsCarousel';
 import { VideoTestimonials } from '@/components/VideoTestimonials';
-import { GallerySlider } from '@/components/GallerySlider';
-import { FAQ } from '@/components/FAQ';
 import { CTABanner } from '@/components/CTABanner';
-import { EnhancedContactSection } from '@/components/EnhancedContactSection';
-import { SEOAccordion } from '@/components/SEOAccordion';
+import { ReviewsBlock, GalleryBlock, FAQBlock, ContactBlock, SEOBlock } from '@/components/HomepageSections';
 import { CheckCircle, Star, Award, Shield, Home as HomeIcon, Layers, MapPin, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
@@ -140,14 +136,14 @@ export default function Home() {
         <WhyChooseUs />
       </section>
       <div className="bg-gradient-to-b from-gray-100 via-gray-50 to-white">
-        <GoogleReviewsCarousel />
+        <ReviewsBlock />
         <VideoTestimonials />
       </div>
       <div className="bg-gradient-to-b from-white via-gray-50 to-gray-100">
         <section id="gallery">
-          <GallerySlider />
+          <GalleryBlock />
         </section>
-        <FAQ />
+        <FAQBlock />
       </div>
       <CTABanner />
 
@@ -197,9 +193,9 @@ export default function Home() {
         </div>
       </section>
 
-      <SEOAccordion />
+      <SEOBlock />
       <section id="contact">
-        <EnhancedContactSection />
+        <ContactBlock />
       </section>
     </>
   );

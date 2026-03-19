@@ -108,7 +108,7 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/98 backdrop-blur-xl border-b border-gray-200/40 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200/40 shadow-sm">
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20 lg:h-22">
           <Link href="/" className="flex items-center">
