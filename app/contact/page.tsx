@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Contact Upgrade Roofs for free quotes. Call 01270 897606 or WhatsApp 07379 440583. Serving Sandbach, Crewe, Middlewich, Congleton and all Cheshire. Fast response guaranteed.',
   keywords: 'contact roofer Cheshire, roofing quote Cheshire, roofing enquiry, free roof quote, Cheshire roofing contact, emergency roofer contact',
   openGraph: {
-    title: 'Contact Upgrade Roofing | Free Quote Cheshire',
+    title: 'Contact Upgrade Roofs | Free Quote Cheshire',
     description: 'Get a free roofing quote. Call 01270 897606. Fast response guaranteed.',
     url: 'https://www.upgraderoofs.co.uk/contact',
     siteName: 'Upgrade Roofs',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Upgrade Roofing | 01270 897606',
+    title: 'Contact Upgrade Roofs | 01270 897606',
     description: 'Free roofing quotes. Fast response guaranteed.',
     images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
   },

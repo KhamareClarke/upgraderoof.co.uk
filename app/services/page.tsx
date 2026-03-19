@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { Home, Layers, Flame, Droplets, Sun, Square, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -125,10 +126,14 @@ export default function ServicesPage() {
                   className="group bg-white rounded-2xl sm:rounded-3xl border border-gray-200 overflow-hidden hover:shadow-2xl hover:border-brand-orange/50 transition-all duration-300 hover:-translate-y-2"
                 >
                   <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      loading="lazy"
+                      quality={60}
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/50 to-transparent" />
 

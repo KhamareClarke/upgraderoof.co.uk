@@ -105,7 +105,7 @@ export default function SpecialOfferLayout({
               name: 'Upgrade Roofs',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '20 Crewe Road',
+                streetAddress: '20 Crewe Rd',
                 addressLocality: 'Sandbach',
                 addressRegion: 'Cheshire',
                 postalCode: 'CW11 4NE',
@@ -155,7 +155,7 @@ export default function SpecialOfferLayout({
             telephone: '01270897606',
             address: {
               '@type': 'PostalAddress',
-              streetAddress: '20 Crewe Road',
+              streetAddress: '20 Crewe Rd',
               addressLocality: 'Sandbach',
               addressRegion: 'Cheshire',
               postalCode: 'CW11 4NE',

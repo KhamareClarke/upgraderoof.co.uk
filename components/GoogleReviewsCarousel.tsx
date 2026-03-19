@@ -129,7 +129,7 @@ export function GoogleReviewsCarousel() {
                         {review.avatar}
                       </div>
                       <div>
-                        <h4 className="font-semibold text-brand-navy">{review.name}</h4>
+                        <p className="font-semibold text-brand-navy">{review.name}</p>
                         <p className="text-sm text-gray-500">{review.location} • {review.date}</p>
                       </div>
                     </div>

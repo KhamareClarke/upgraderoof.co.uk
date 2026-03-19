@@ -1,9 +1,9 @@
 export function StructuredData() {
   const organizationData = {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'RoofingContractor', 'HomeAndConstructionBusiness'],
+    '@type': ['LocalBusiness', 'RoofingContractor'],
     name: 'Upgrade Roofs',
-    alternateName: 'Upgrade Roofing',
+    alternateName: 'Upgrade Roofs Ltd',
     image: [
       'https://www.upgraderoofs.co.uk/images/6.jpeg',
       'https://www.upgraderoofs.co.uk/images/2.jpeg'

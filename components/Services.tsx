@@ -1,8 +1,7 @@
-'use client';
-
 import { Button } from '@/components/ui/button';
 import { Chrome as Home, Layers, Flame, Droplets, Sun, Square, ArrowRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Services() {
   const services = [
@@ -87,11 +86,14 @@ export function Services() {
                 className="group relative overflow-hidden rounded-2xl bg-white border border-gray-200 hover:border-brand-orange/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="relative h-48 overflow-hidden">
-                  <img
+                  <Image
                     src={service.image}
                     alt={service.alt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     loading="lazy"
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    quality={60}
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 via-brand-navy/50 to-transparent" />
 

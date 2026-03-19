@@ -325,12 +325,12 @@ export default function BlogPage() {
               { src: '/images/3.jpeg', alt: 'GRP fibreglass flat roof in Middlewich showing seamless waterproof finish', title: 'GRP Flat Roof - Middlewich, CW10', category: 'Flat Roofs' },
               { src: '/images/4.jpeg', alt: 'Chimney stack rebuild with lead flashing in Congleton heritage style finish', title: 'Chimney Rebuild - Congleton, CW12', category: 'Chimneys' },
               { src: '/images/5.jpeg', alt: 'New uPVC gutter and fascia replacement in Nantwich with leaf guard protection', title: 'Gutters - Nantwich, CW5', category: 'Gutters' },
-              { src: '/images/6.jpeg', alt: 'Professional tile roof installation by Upgrade Roofing in Sandbach Cheshire', title: 'Tile Roof - Sandbach, CW11', category: 'Tile Roofs' },
+              { src: '/images/6.jpeg', alt: 'Professional tile roof installation by Upgrade Roofs in Sandbach Cheshire', title: 'Tile Roof - Sandbach, CW11', category: 'Tile Roofs' },
               { src: '/images/7.jpeg', alt: 'Welsh slate roof repair in Alsager using reclaimed slates for authentic finish', title: 'Slate Roof - Alsager, ST7', category: 'Tile Roofs' },
               { src: '/images/8.jpeg', alt: 'Modern composite cladding installation on commercial property in Crewe', title: 'Cladding - Crewe, CW2', category: 'Cladding' },
               { src: '/images/9.jpeg', alt: 'Emergency storm damage roof repair in Cheshire completed within 24 hours', title: 'Emergency Repair - Cheshire', category: 'Emergency' },
               { src: '/images/10.jpeg', alt: 'Velux skylight installation in Holmes Chapel loft conversion with blackout blinds', title: 'Skylight - Holmes Chapel, CW4', category: 'Skylights' },
-              { src: '/images/IMG-20240916-WA0000.jpg', alt: 'Roofing project completed by Upgrade Roofing professional team in Cheshire', title: 'Roofing Project - Cheshire', category: 'Tile Roofs' },
+              { src: '/images/IMG-20240916-WA0000.jpg', alt: 'Roofing project completed by Upgrade Roofs professional team in Cheshire', title: 'Roofing Project - Cheshire', category: 'Tile Roofs' },
               { src: '/images/IMG-20241030-WA0000.jpg', alt: 'Professional roofing work in progress Sandbach quality materials', title: 'Roof Work - Sandbach', category: 'Tile Roofs' },
               { src: '/images/IMG-20241108-WA0004.jpg', alt: 'Completed roof installation Crewe area expert craftsmanship', title: 'Roof Installation - Crewe', category: 'Tile Roofs' },
               { src: '/images/IMG-20241115-WA0003.jpg', alt: 'Quality roofing craftsmanship Middlewich premium materials', title: 'Quality Roofing - Middlewich', category: 'Tile Roofs' },
@@ -414,6 +414,17 @@ export default function BlogPage() {
               Contact Us Today
             </Button>
           </Link>
+          <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+            <Link href="/roofers-sandbach" className="text-white/70 hover:text-white transition-colors">Roofers Sandbach</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/roof-repairs" className="text-white/70 hover:text-white transition-colors">Roof Repairs</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/new-roofs" className="text-white/70 hover:text-white transition-colors">New Roofs</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/emergency-roofing" className="text-white/70 hover:text-white transition-colors">Emergency Roofing</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/services" className="text-white/70 hover:text-white transition-colors">All Services</Link>
+          </div>
         </div>
       </section>
     </div>

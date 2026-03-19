@@ -13,12 +13,12 @@ import { CheckCircle, Star, Award, Shield, Home as HomeIcon, Layers, MapPin, Arr
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Upgrade Roofs | Expert Roofers Cheshire | 01270 897606',
-  description: 'Professional roofers in Cheshire. 25+ years experience, CORC certified, £10M insured. Tile & flat roofs, repairs, guttering. Free quotes. Call 01270 897606.',
-  keywords: 'roofers Cheshire, roofing company Cheshire, roof repairs Cheshire, flat roofing, tile roofing, emergency roofer, Sandbach roofer, Crewe roofer, Congleton roofer',
+  title: 'Upgrade Roofs | Roofers Sandbach & Cheshire | 01270 897606',
+  description: 'Trusted roofers in Sandbach & Cheshire. 25+ years experience, CORC certified, £10M insured. Roof repairs, new roofs, flat roofing, guttering. Free quotes. Call 01270 897606.',
+  keywords: 'roofers Sandbach, roofers Cheshire, roof repairs Sandbach, roofing company Cheshire, flat roofing Sandbach, emergency roofer Sandbach, tile roofing, Crewe roofer, Congleton roofer',
   openGraph: {
-    title: 'Upgrade Roofs | Expert Roofers Cheshire',
-    description: 'Professional roofers in Cheshire. 25+ years experience, CORC certified, £10M insured. Free quotes available.',
+    title: 'Upgrade Roofs | Roofers Sandbach & Cheshire',
+    description: 'Trusted roofers in Sandbach & Cheshire. 25+ years experience, CORC certified, £10M insured. Free quotes available.',
     url: 'https://www.upgraderoofs.co.uk',
     siteName: 'Upgrade Roofs',
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Upgrade Roofs - Professional Roofers Cheshire',
+        alt: 'Upgrade Roofs - Trusted Roofers in Sandbach & Cheshire',
       },
     ],
     locale: 'en_GB',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Upgrade Roofs | Expert Roofers Cheshire',
-    description: 'Professional roofers in Cheshire. 25+ years experience. Free quotes.',
+    title: 'Upgrade Roofs | Roofers Sandbach & Cheshire',
+    description: 'Trusted roofers in Sandbach & Cheshire. 25+ years experience. Free quotes.',
     images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
   },
   alternates: {

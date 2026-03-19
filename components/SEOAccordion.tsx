@@ -68,7 +68,7 @@ export function SEOAccordion() {
                   <div className="w-12 h-12 bg-brand-orange/20 rounded-xl flex items-center justify-center">
                     <CheckCircle className="w-6 h-6 text-brand-orange" />
                   </div>
-                  <h4 className="text-2xl font-bold">Why Choose Upgrade Roofing?</h4>
+                  <h4 className="text-2xl font-bold">Why Choose Upgrade Roofs?</h4>
                 </div>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">

@@ -27,7 +27,7 @@ export default function FlatVsTileRoofsPost() {
               <span className="text-sm">November 4, 2024</span>
               <span className="text-white/50">•</span>
               <User className="w-4 h-4" />
-              <span className="text-sm">Upgrade Roofing Team</span>
+              <span className="text-sm">Upgrade Roofs Team</span>
               <span className="text-white/50">•</span>
               <Clock className="w-4 h-4" />
               <span className="text-sm">7 min read</span>

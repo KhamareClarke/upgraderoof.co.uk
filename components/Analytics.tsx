@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Script from 'next/script';
 
 declare global {
@@ -11,40 +11,14 @@ declare global {
 }
 
 export function Analytics() {
-  useEffect(() => {
-    // Initialize dataLayer
-    window.dataLayer = window.dataLayer || [];
-    
-    // Track page views
-    const handleRouteChange = () => {
-      if (typeof window.gtag !== 'undefined') {
-        window.gtag('config', 'G-7V452FMYFY', {
-          page_location: window.location.href,
-          page_title: document.title,
-        });
-      }
-    };
-
-    // Track initial page load
-    handleRouteChange();
-
-    // Track route changes (for SPA navigation)
-    window.addEventListener('popstate', handleRouteChange);
-    
-    return () => {
-      window.removeEventListener('popstate', handleRouteChange);
-    };
-  }, []);
-
   return (
     <>
-      {/* Google Consent Mode v2 - Must load first */}
+      {/* Google Consent Mode V2 — MUST fire synchronously before any tags */}
       <Script id="google-consent-mode" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          
-          // Set default consent state to denied (GDPR compliant)
+
           gtag('consent', 'default', {
             'ad_storage': 'denied',
             'ad_user_data': 'denied',
@@ -55,17 +29,14 @@ export function Analytics() {
             'security_storage': 'granted',
             'wait_for_update': 500
           });
-          
-          // Enable URL passthrough for better measurement when cookies are denied
+
           gtag('set', 'url_passthrough', true);
-          
-          // Redact ads data when ad_storage is denied
           gtag('set', 'ads_data_redaction', true);
         `}
       </Script>
 
-      {/* Google Tag Manager */}
-      <Script id="google-tag-manager" strategy="lazyOnload">
+      {/* Google Tag Manager — loads after consent defaults are set */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -75,30 +46,22 @@ export function Analytics() {
         `}
       </Script>
 
-      {/* Google Analytics - Load after page is interactive */}
+      {/* GA4 + Google Ads via gtag.js — afterInteractive so consent signals are ready */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-7V452FMYFY"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          
-          // Google Analytics 4
-          gtag('config', 'G-7V452FMYFY', {
-            page_location: window.location.href,
-            page_title: document.title,
-            send_page_view: true
-          });
-          
-          // Google Ads
+          gtag('config', 'G-7V452FMYFY', { send_page_view: true });
           gtag('config', 'AW-17763560213');
         `}
       </Script>
 
-      {/* Facebook Pixel - Load lazily */}
+      {/* Facebook Pixel — lazy load, non-critical */}
       <Script id="facebook-pixel" strategy="lazyOnload">
         {`
           !function(f,b,e,v,n,t,s)

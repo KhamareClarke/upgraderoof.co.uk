@@ -25,7 +25,7 @@ const caseStudies = [
       '10-year workmanship guarantee provided',
     ],
     testimonial: {
-      text: "Upgrade Roofing transformed our leaky old roof into something we're proud of. Professional team, fair price, and the work was completed exactly when promised.",
+      text: "Upgrade Roofs transformed our leaky old roof into something we're proud of. Professional team, fair price, and the work was completed exactly when promised.",
       author: 'Mr & Mrs Thompson',
       location: 'Sandbach',
     },
@@ -73,7 +73,7 @@ const caseStudies = [
       'Ridge tiles re-bedded with modern dry ridge system',
     ],
     testimonial: {
-      text: "When the storm damaged our roof, Upgrade Roofing were absolute lifesavers. They had us weatherproof before the rain came and handled everything with our insurance.",
+      text: "When the storm damaged our roof, Upgrade Roofs were absolute lifesavers. They had us weatherproof before the rain came and handled everything with our insurance.",
       author: 'Sarah K.',
       location: 'Middlewich',
     },
@@ -97,7 +97,7 @@ const caseStudies = [
       'Property value protected with sympathetic restoration',
     ],
     testimonial: {
-      text: "Our Victorian chimney was in a terrible state. Upgrade Roofing sourced matching bricks and rebuilt it beautifully. You'd never know it was new work.",
+      text: "Our Victorian chimney was in a terrible state. Upgrade Roofs sourced matching bricks and rebuilt it beautifully. You'd never know it was new work.",
       author: 'The Williams Family',
       location: 'Congleton',
     },

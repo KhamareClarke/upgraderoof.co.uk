@@ -38,7 +38,7 @@ export default function ChoosingRoofingContractorPost() {
               <span className="text-sm">February 25, 2026</span>
               <span className="text-white/50">•</span>
               <User className="w-4 h-4" />
-              <span className="text-sm">Upgrade Roofing Team</span>
+              <span className="text-sm">Upgrade Roofs Team</span>
               <span className="text-white/50">•</span>
               <Clock className="w-4 h-4" />
               <span className="text-sm">8 min read</span>
@@ -215,7 +215,7 @@ export default function ChoosingRoofingContractorPost() {
               <div className="bg-brand-navy text-white p-8 rounded-xl mb-8">
                 <h3 className="text-xl font-bold mb-4">Get a Free, No-Obligation Quote</h3>
                 <p className="mb-4">
-                  See the Upgrade Roofing difference. We provide detailed written quotes, 
+                  See the Upgrade Roofs difference. We provide detailed written quotes, 
                   proof of all credentials, and references from satisfied customers across 
                   Sandbach, Crewe, Middlewich, Congleton, and all of Cheshire.
                 </p>

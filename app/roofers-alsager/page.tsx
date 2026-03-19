@@ -1,5 +1,8 @@
 import { AreaPageTemplate } from '@/components/AreaPageTemplate';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export default function RoofersAlsagerPage() {
   return (
     <AreaPageTemplate

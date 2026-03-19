@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roofing Case Studies | Upgrade Roofing',
+    title: 'Roofing Case Studies | Upgrade Roofs',
     description: 'Before and after roofing projects in Cheshire.',
   },
   alternates: {

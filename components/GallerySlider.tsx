@@ -15,7 +15,7 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     src: '/images/1.jpeg',
-    alt: 'Professional roof repair completed in Sandbach Cheshire by Upgrade Roofing',
+    alt: 'Professional roof repair completed in Sandbach Cheshire by Upgrade Roofs',
     title: 'Roof Repair - Sandbach',
     location: 'Sandbach, CW11',
     category: 'Tile Roofs',
@@ -50,7 +50,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: '/images/6.jpeg',
-    alt: 'Professional tile roof installation by Upgrade Roofing Sandbach',
+    alt: 'Professional tile roof installation by Upgrade Roofs Sandbach',
     title: 'Tile Roof Installation - Sandbach',
     location: 'Sandbach, CW11',
     category: 'Tile Roofs',
@@ -85,7 +85,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: '/images/IMG-20240916-WA0000.jpg',
-    alt: 'Roofing project completed by Upgrade Roofing in Cheshire',
+    alt: 'Roofing project completed by Upgrade Roofs in Cheshire',
     title: 'Roofing Project - Cheshire',
     location: 'Cheshire',
     category: 'Tile Roofs',

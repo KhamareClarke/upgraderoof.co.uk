@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'About Us | Upgrade Roofing Cheshire | 25+ Years Experience',
+  title: 'About Us | Upgrade Roofs Cheshire | 25+ Years Experience',
   description: 'Upgrade Roofs: Award-winning roofing company with 25+ years experience in Cheshire. CORC certified, £10M insured, 5 star rated. Meet our expert team. Call 01270 897606.',
-  keywords: 'about Upgrade Roofing, Cheshire roofing company, roofing contractors Cheshire, experienced roofers, accredited roofing, CORC certified roofers',
+  keywords: 'about Upgrade Roofs, Cheshire roofing company, roofing contractors Cheshire, experienced roofers, accredited roofing, CORC certified roofers',
   openGraph: {
-    title: 'About Upgrade Roofing Cheshire | 25+ Years Experience',
+    title: 'About Upgrade Roofs Cheshire | 25+ Years Experience',
     description: 'Award-winning roofing company. 25+ years experience, CORC certified, £10M insured.',
     url: 'https://www.upgraderoofs.co.uk/about',
     siteName: 'Upgrade Roofs',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Upgrade Roofing Cheshire',
+    title: 'About Upgrade Roofs Cheshire',
     description: '25+ years of roofing excellence. Meet our expert team.',
     images: ['https://www.upgraderoofs.co.uk/images/1.jpeg'],
   },

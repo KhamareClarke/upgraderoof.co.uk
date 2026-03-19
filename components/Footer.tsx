@@ -161,7 +161,7 @@ export function Footer() {
         <div className="container-custom py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex flex-col items-center md:items-start gap-4">
-              <p className="text-white/50 text-sm tracking-wide">
+              <p className="text-white/60 text-sm tracking-wide">
                 © {new Date().getFullYear()} Upgrade Roofs. All rights reserved.
               </p>
               <div className="flex items-center gap-5 text-sm">
@@ -169,7 +169,7 @@ export function Footer() {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="text-white/50 hover:text-brand-orange transition-colors duration-300 tracking-wide"
+                    className="text-white/60 hover:text-brand-orange transition-colors duration-300 tracking-wide"
                   >
                     {link.name}
                   </Link>
@@ -178,7 +178,7 @@ export function Footer() {
             </div>
 
             <div className="flex items-center gap-5 flex-wrap justify-center md:justify-start">
-              <span className="text-white/50 text-sm tracking-wide">We accept:</span>
+              <span className="text-white/60 text-sm tracking-wide">We accept:</span>
               <div className="flex items-center gap-4">
                 <img 
                   src="/images/visa.svg" 
@@ -199,7 +199,7 @@ export function Footer() {
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="text-white/50 text-sm tracking-wide">Follow us:</span>
+              <span className="text-white/60 text-sm tracking-wide">Follow us:</span>
               <div className="flex items-center gap-3">
                 <a 
                   href="https://www.facebook.com/people/Upgrade-Roofs/61564099403039/" 

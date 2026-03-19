@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Thank You | Free Roof Inspection Booked - Upgrade Roofing',
+  title: 'Thank You | Free Roof Inspection Booked - Upgrade Roofs',
   description: 'Thank you for booking your free roof inspection. Our expert team will contact you within 10 minutes to arrange your appointment.',
   robots: {
     index: false,

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Video, Shield, Award, Clock, ChevronLeft, ChevronRight } from 'lucide-react';
 import { QuoteForm } from '@/components/QuoteForm';
@@ -50,6 +50,16 @@ export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
+  const nextSlide = useCallback(() => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  }, []);
+
+  const prevSlide = useCallback(() => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  }, []);
+
   useEffect(() => {
     if (!isAutoPlaying) return;
 
@@ -60,36 +70,20 @@ export function Hero() {
     return () => clearInterval(interval);
   }, [isAutoPlaying]);
 
-
-  const nextSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setIsAutoPlaying(false);
-    setCurrentSlide(index);
-  };
-
   return (
-    <section className="relative min-h-[55vh] sm:min-h-[70vh] lg:min-h-[85vh] flex items-start sm:items-center justify-center overflow-hidden pt-12 sm:pt-0">
-      {/* Only render current slide initially for best LCP */}
+    <section className="relative min-h-[55vh] sm:min-h-[70vh] lg:min-h-[85vh] flex items-start sm:items-center justify-center overflow-hidden pt-12 sm:pt-0" style={{ contain: 'layout style paint' }}>
+      {/* Render current + adjacent slides for smooth transitions */}
       {slides.map((slide, index) => {
-        // Only render the current slide
         const isVisible = index === currentSlide;
+        const isAdjacent = index === (currentSlide + 1) % slides.length || index === (currentSlide - 1 + slides.length) % slides.length;
         
-        if (!isVisible) return null;
+        if (!isVisible && !isAdjacent) return null;
         
         return (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              isVisible ? 'opacity-100 z-0' : 'opacity-0 z-0'
+            className={`absolute inset-0 transition-opacity duration-1000 will-change-[opacity] ${
+              isVisible ? 'opacity-100 z-[1]' : 'opacity-0 z-0'
             }`}
           >
             <div className="absolute inset-0">
@@ -98,12 +92,12 @@ export function Hero() {
                 alt={slide.alt}
                 fill
                 priority={index === 0}
-                loading="eager"
-                quality={15}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                quality={40}
                 sizes="100vw"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIhAAAgEDAwUBAAAAAAAAAAAAAQIDAAQRBRIhBhMiMUFR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAZEQACAwEAAAAAAAAAAAAAAAABAgADESH/2gAMAwEAAhEDEQA/ANF6d1qC+1O5tIbWRFhRCXZgd25mHAx8wKKUqxNxJYBuf//Z"
-                fetchPriority="high"
+                fetchPriority={index === 0 ? 'high' : 'auto'}
                 className="object-cover"
               />
               <div className="absolute inset-0 bg-slate-900/75" />

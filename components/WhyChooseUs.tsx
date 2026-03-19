@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Check, Star } from 'lucide-react';
 import { QuoteForm } from '@/components/QuoteForm';
+import Image from 'next/image';
 
 export function WhyChooseUs() {
   const benefits = [
@@ -16,11 +17,14 @@ export function WhyChooseUs() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           <div className="relative h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg bg-gray-200">
-            <img
+            <Image
               src="/images/2.jpeg"
               alt="Upgrade Roofs professional roofers installing gutters and fascias in Cheshire"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               loading="lazy"
-              className="w-full h-full object-cover scale-125"
+              quality={60}
+              className="object-cover scale-125"
               style={{ objectPosition: 'center center' }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" />

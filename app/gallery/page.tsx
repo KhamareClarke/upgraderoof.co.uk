@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roofing Gallery | Upgrade Roofing Cheshire',
+    title: 'Roofing Gallery | Upgrade Roofs Cheshire',
     description: 'View our completed roofing projects across Cheshire.',
   },
   alternates: {

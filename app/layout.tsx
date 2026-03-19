@@ -70,7 +70,7 @@ export const metadata: Metadata = {
         url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Professional Roofing Services Cheshire - Upgrade Roofing',
+        alt: 'Professional Roofing Services Cheshire - Upgrade Roofs',
       },
     ],
     locale: 'en_GB',
@@ -108,18 +108,9 @@ export default function RootLayout({
   return (
     <html lang="en-GB" className={poppins.variable}>
       <head>
-        <meta name="google-site-verification" content="l8ZfvIY9wUeZiyzCRFhthl1KvzjwVCwP-tLXa4uQtZA" />
         <StructuredData />
-        <link rel="icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
-        <link rel="shortcut icon" href="/images/upgrade_logo.jpeg" type="image/jpeg" />
-        <link rel="apple-touch-icon" href="/images/upgrade_logo.jpeg" />
-        {/* Preconnect to external domains for faster loading */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
-        {/* Preload hero image for faster LCP */}
-        <link rel="preload" as="image" href="/images/6.jpeg" fetchPriority="high" />
       </head>
       <body className="font-sans antialiased">
         {/* Google Tag Manager (noscript) */}

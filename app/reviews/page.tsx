@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Star, Quote } from 'lucide-react';
+import Link from 'next/link';
 import { VideoTestimonials } from '@/components/VideoTestimonials';
 import { supabase, type Testimonial } from '@/lib/supabase';
 import { ReviewCardSkeleton } from '@/components/LoadingSkeletons';
@@ -117,6 +118,17 @@ export default function ReviewsPage() {
               Get Free Quote
             </button>
           </a>
+          <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+            <Link href="/roofers-sandbach" className="text-white/70 hover:text-white transition-colors">Roofers Sandbach</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/roof-repairs" className="text-white/70 hover:text-white transition-colors">Roof Repairs</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/new-roofs" className="text-white/70 hover:text-white transition-colors">New Roofs</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/emergency-roofing" className="text-white/70 hover:text-white transition-colors">Emergency Roofing</Link>
+            <span className="text-white/30">·</span>
+            <Link href="/services" className="text-white/70 hover:text-white transition-colors">All Services</Link>
+          </div>
         </div>
       </section>
     </div>

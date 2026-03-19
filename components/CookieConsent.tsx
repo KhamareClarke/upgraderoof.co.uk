@@ -77,7 +77,7 @@ export function CookieConsent() {
                 <Cookie className="w-5 h-5 text-brand-orange" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900 mb-1">We value your privacy</h3>
+                <p className="font-semibold text-gray-900 mb-1">We value your privacy</p>
                 <p className="text-sm text-gray-600">
                   We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. 
                   By clicking "Accept All", you consent to our use of cookies.{' '}
@@ -118,7 +118,7 @@ export function CookieConsent() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <Shield className="w-6 h-6 text-brand-orange" />
-                  <h2 className="text-xl font-bold text-gray-900">Cookie Preferences</h2>
+                  <p className="text-xl font-bold text-gray-900">Cookie Preferences</p>
                 </div>
                 <button
                   onClick={() => setShowPreferences(false)}
@@ -133,7 +133,7 @@ export function CookieConsent() {
               {/* Essential Cookies */}
               <div className="p-4 bg-gray-50 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">Essential Cookies</h3>
+                  <p className="font-semibold text-gray-900">Essential Cookies</p>
                   <span className="px-2 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
                     Always Active
                   </span>
@@ -147,7 +147,7 @@ export function CookieConsent() {
               {/* Analytics Cookies */}
               <div className="p-4 border border-gray-200 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">Analytics Cookies</h3>
+                  <p className="font-semibold text-gray-900">Analytics Cookies</p>
                   <label className="relative inline-flex items-center cursor-pointer">
                     <input
                       type="checkbox"
@@ -167,7 +167,7 @@ export function CookieConsent() {
               {/* Advertising Cookies */}
               <div className="p-4 border border-gray-200 rounded-xl">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">Advertising Cookies</h3>
+                  <p className="font-semibold text-gray-900">Advertising Cookies</p>
                   <label className="relative inline-flex items-center cursor-pointer">
                     <input
                       type="checkbox"
