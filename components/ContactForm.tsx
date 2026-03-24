@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { supabase, type ContactMessage } from '@/lib/supabase';
+import { trackContactForm } from '@/lib/tracking';
 import { Loader as Loader2, CircleCheck as CheckCircle2, CircleAlert as AlertCircle } from 'lucide-react';
 
 export function ContactForm() {
@@ -50,6 +51,9 @@ export function ContactForm() {
       } catch (supabaseError) {
         console.warn('Failed to save to Supabase, but email was sent:', supabaseError);
       }
+
+      // Track only after confirmed success — capture subject before reset
+      trackContactForm({ subject: formData.subject });
 
       setSuccess(true);
       setFormData({
