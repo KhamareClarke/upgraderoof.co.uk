@@ -3,6 +3,7 @@ import { MapPin, Phone, Clock, CheckCircle, ArrowRight, Shield, Award } from 'lu
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 
 export const dynamic = 'force-static';
 export const revalidate = false;
@@ -99,10 +100,10 @@ export default function ServiceAreasPage() {
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
-                <a href="tel:01270897606">
+                <TrackedPhoneLink href="tel:01270897606" placement="service_areas_hero">
                   <Phone className="w-5 h-5 mr-2" />
                   01270 897 606
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>
@@ -208,7 +209,7 @@ export default function ServiceAreasPage() {
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
-                <a href="tel:01270897606"><Phone className="w-5 h-5 mr-2" />01270 897 606</a>
+                <TrackedPhoneLink href="tel:01270897606" placement="service_areas_bottom_cta"><Phone className="w-5 h-5 mr-2" />01270 897 606</TrackedPhoneLink>
               </Button>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Calendar, User, Clock, ArrowRight, Phone, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -42,10 +43,10 @@ export default function EmergencyRoofRepairsPost() {
               Storm damage, sudden leaks, or fallen debris? Learn how to handle roofing emergencies 
               and when to call professional help. Available 24/7 across Cheshire.
             </p>
-            <a href="tel:01270897606" className="inline-flex items-center gap-2 bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-orange/90 transition-colors">
+            <TrackedPhoneLink href="tel:01270897606" placement="blog_emergency_hero" className="inline-flex items-center gap-2 bg-brand-orange text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-orange/90 transition-colors">
               <Phone className="w-5 h-5" />
               Call Now: 01270 897606
-            </a>
+            </TrackedPhoneLink>
           </div>
         </div>
       </section>
@@ -159,10 +160,10 @@ export default function EmergencyRoofRepairsPost() {
                   to respond to roofing emergencies across Cheshire, day or night.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <a href="tel:01270897606" className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  <TrackedPhoneLink href="tel:01270897606" placement="blog_emergency_cta" className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                     <Phone className="w-5 h-5" />
                     01270 897606
-                  </a>
+                  </TrackedPhoneLink>
                   <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-semibold transition-colors border border-white/20">
                     Request Callback
                     <ArrowRight className="w-4 h-4" />

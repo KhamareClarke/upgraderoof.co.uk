@@ -2,6 +2,7 @@
 
 import { Phone, Mail } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import { trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
 
 export function MobileContactBar() {
   const pathname = usePathname();
@@ -18,6 +19,7 @@ export function MobileContactBar() {
           href="tel:07379440583"
           className="flex flex-col items-center gap-1 text-brand-navy hover:text-brand-orange transition-colors group"
           aria-label="Call us"
+          onClick={() => trackPhoneClick('mobile_contact_bar')}
         >
           <div className="w-10 h-10 bg-brand-orange/10 rounded-full flex items-center justify-center group-hover:bg-brand-orange/20 transition-colors">
             <Phone className="w-5 h-5 text-brand-orange" />
@@ -31,6 +33,7 @@ export function MobileContactBar() {
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-1 text-brand-navy hover:text-green-500 transition-colors group"
           aria-label="Contact us on WhatsApp"
+          onClick={() => trackWhatsAppClick('mobile_contact_bar')}
         >
           <div className="w-10 h-10 bg-green-500/10 rounded-full flex items-center justify-center group-hover:bg-green-500/20 transition-colors">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

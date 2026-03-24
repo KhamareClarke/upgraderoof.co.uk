@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { CheckCircle, Phone, MapPin, Shield, Award, Clock, Star, ArrowRight, Home, Layers, Flame, Droplets, Zap, Wrench } from 'lucide-react';
 
 export const dynamic = 'force-static';
@@ -37,10 +38,10 @@ export default function RoofersSandbachPage() {
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14 text-base" asChild>
-                <a href="tel:01270897606">
+                <TrackedPhoneLink href="tel:01270897606" placement="roofers_sandbach_hero">
                   <Phone className="w-5 h-5 mr-2" />
                   01270 897 606
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>
@@ -470,10 +471,10 @@ export default function RoofersSandbachPage() {
               </Button>
             } />
             <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-10 h-14 text-base" asChild>
-              <a href="tel:01270897606">
+              <TrackedPhoneLink href="tel:01270897606" placement="roofers_sandbach_bottom_cta">
                 <Phone className="w-5 h-5 mr-2" />
                 Call 01270 897 606
-              </a>
+              </TrackedPhoneLink>
             </Button>
           </div>
           <p className="text-white/60 text-sm mt-6">

@@ -19,6 +19,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import { LocalAreaContent } from '@/components/LocalAreaContent';
+import { trackQuoteRequest, trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
 
 export default function OfferSandbachPage() {
   const [mounted, setMounted] = useState(false);
@@ -97,6 +98,12 @@ export default function OfferSandbachPage() {
         throw new Error(result.error || 'Failed to submit form');
       }
 
+      // Track only after confirmed success
+      trackQuoteRequest({
+        service_type: formData.serviceNeeded || formData.roofType,
+        postcode: formData.postcode,
+      });
+
       window.location.href = '/thank-you';
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -162,6 +169,7 @@ export default function OfferSandbachPage() {
               <div className="space-y-3 pt-2">
                 <a
                   href="tel:01270897606"
+                  onClick={() => trackPhoneClick('offer_sandbach_hero')}
                   className="w-full bg-brand-orange hover:bg-brand-orange/90 !text-white font-bold px-8 py-6 text-2xl rounded-xl shadow-2xl flex items-center justify-center gap-3 transition-colors"
                 >
                   <Phone className="w-8 h-8" />
@@ -173,6 +181,7 @@ export default function OfferSandbachPage() {
                     href="https://wa.me/447379440583"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackWhatsAppClick('offer_sandbach_hero')}
                     className="border-2 border-white !text-white hover:bg-white/10 hover:border-brand-orange font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
                   >
                     <MessageCircle className="w-5 h-5" />
@@ -452,6 +461,7 @@ export default function OfferSandbachPage() {
             </Button>
             <a
               href="tel:01270897606"
+              onClick={() => trackPhoneClick('offer_sandbach_bottom_cta')}
               className="border-2 border-white !text-white hover:bg-white/10 hover:border-brand-orange font-bold px-8 py-4 text-lg rounded-md flex items-center justify-center gap-2 transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -530,6 +540,7 @@ export default function OfferSandbachPage() {
         <div className="flex gap-2">
           <a
             href="tel:01270897606"
+            onClick={() => trackPhoneClick('offer_sandbach_mobile_sticky')}
             className="flex-1 bg-brand-orange hover:bg-brand-orange/90 !text-white font-bold text-sm py-4 px-3 rounded-md text-center animate-pulse flex items-center justify-center"
           >
             📞 CALL NOW
@@ -538,6 +549,7 @@ export default function OfferSandbachPage() {
             href="https://wa.me/447379440583"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackWhatsAppClick('offer_sandbach_mobile_sticky')}
             className="bg-green-500 hover:bg-green-600 !text-white font-bold px-3 py-4 text-xs whitespace-nowrap rounded-md flex items-center justify-center gap-1"
           >
             <span>💬</span>
@@ -567,7 +579,7 @@ export default function OfferSandbachPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Upgrade Roofs - Sandbach",
+        "name": "Upgrade Roofs",
         "address": { "@type": "PostalAddress", "streetAddress": "20 Crewe Rd", "addressLocality": "Sandbach", "postalCode": "CW11 4NE", "addressCountry": "GB" },
         "telephone": "01270897606",
         "url": "https://www.upgraderoofs.co.uk/offer-sandbach",

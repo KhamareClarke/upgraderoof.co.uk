@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { Home, CheckCircle, Clock, Shield, Award, MapPin, ArrowRight, Phone, Star } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
@@ -9,12 +10,12 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: 'New Roofs & Re-Roofing Sandbach | Complete Replacements | 01270 897606',
-  description: 'Complete new roof installations in Sandbach. Tile, slate, flat roofing. 10-year guarantee, £10M insured. Expert re-roofing across CW11. Free quotes. Call 01270 897606.',
-  keywords: 'new roof Sandbach, re-roofing Sandbach, roof replacement Sandbach, new tile roof, new slate roof CW11, complete re-roof Cheshire',
+  title: 'New Roofs & Re-Roofing Cheshire | 10-Year Guarantee | Upgrade Roofs',
+  description: 'Complete new roof installations across Cheshire. Tile, slate, flat roofing. 10-year guarantee, £10M insured. Expert re-roofing. Free quotes. Call 01270 897606.',
+  keywords: 'new roof installation Cheshire, re-roofing Cheshire, roof replacement, new tile roof, new slate roof, complete re-roof',
   openGraph: {
-    title: 'New Roofs & Re-Roofing Sandbach | Complete Replacements',
-    description: 'Complete new roof installations. Tile, slate, flat roofing. 10-year guarantee.',
+    title: 'New Roofs & Re-Roofing Cheshire | 10-Year Guarantee',
+    description: 'Complete new roof installations across Cheshire. Tile, slate, flat roofing. 10-year guarantee.',
     url: 'https://www.upgraderoofs.co.uk/new-roofs',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
@@ -49,10 +50,10 @@ export default function NewRoofsPage() {
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
-                <a href="tel:01270897606">
+                <TrackedPhoneLink href="tel:01270897606" placement="new_roofs_hero">
                   <Phone className="w-5 h-5 mr-2" />
                   01270 897 606
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>
@@ -221,10 +222,10 @@ export default function NewRoofsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14" asChild>
-              <a href="tel:01270897606">
+              <TrackedPhoneLink href="tel:01270897606" placement="new_roofs_bottom_cta">
                 <Phone className="w-5 h-5 mr-2" />
                 Call 01270 897 606
-              </a>
+              </TrackedPhoneLink>
             </Button>
             <QuoteForm trigger={
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-10 h-14">

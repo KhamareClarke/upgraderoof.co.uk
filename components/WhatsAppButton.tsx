@@ -1,12 +1,14 @@
 'use client';
 
 import { MessageCircle } from 'lucide-react';
+import { trackWhatsAppClick } from '@/lib/tracking';
 
 export function WhatsAppButton() {
   const phoneNumber = '447379440583';
   const message = 'Hi, I would like to enquire about your roofing services.';
 
   const handleClick = () => {
+    trackWhatsAppClick('floating_button');
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };

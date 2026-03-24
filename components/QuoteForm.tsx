@@ -8,6 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { supabase, type QuoteRequest } from '@/lib/supabase';
+import { trackQuoteRequest } from '@/lib/tracking';
 import { Loader as Loader2, CircleCheck as CheckCircle2, CircleAlert as AlertCircle } from 'lucide-react';
 
 export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
@@ -71,6 +72,12 @@ export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
       } catch (supabaseError) {
         console.warn('Failed to save to Supabase, but email was sent:', supabaseError);
       }
+
+      // Track successful submission
+      trackQuoteRequest({
+        service_type: formData.service_type,
+        postcode: formData.postcode,
+      });
 
       setSuccess(true);
       setFormData({

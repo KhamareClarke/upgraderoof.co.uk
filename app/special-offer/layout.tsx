@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Free Roof Inspection Offer - Upgrade Roofs Sandbach',
+        alt: 'Free Roof Inspection Offer — Upgrade Roofs',
       },
     ],
     locale: 'en_GB',
@@ -53,10 +53,7 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  other: {
-    'google-ads-conversion': 'AW-XXXXXXXXX/XXXXXXXXX', // Replace with actual conversion ID
-    'facebook-domain-verification': 'XXXXXXXXXXXXXXXXXXXXXXX', // Replace with actual verification code
-  },
+  other: {},
 };
 
 import Script from 'next/script';
@@ -68,24 +65,6 @@ export default function SpecialOfferLayout({
 }) {
   return (
     <>
-      {/* Google tag (gtag.js) */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-17763560213"
-        strategy="afterInteractive"
-      />
-      <Script
-        id="google-ads-gtag"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-17763560213');
-          `
-        }}
-      />
-      
       {/* Structured Data for Special Offer */}
       <Script
         id="special-offer-schema"

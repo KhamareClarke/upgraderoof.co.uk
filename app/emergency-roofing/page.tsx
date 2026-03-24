@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { Zap, Phone, CheckCircle, Clock, Shield, AlertTriangle, MapPin, ArrowRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
@@ -9,12 +10,12 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roofing Sandbach | Storm Damage | 07379 440583',
-  description: 'Emergency roof repairs in Sandbach. 24/7 call-out service. Storm damage, leaks, fallen tiles. Based on Crewe Road - fast response across CW11. Call 07379 440583 now.',
-  keywords: 'emergency roofer Sandbach, 24/7 roof repairs, storm damage roof Sandbach, urgent roof repair, emergency leak repair CW11',
+  title: '24/7 Emergency Roofing Cheshire | Storm Damage | 07379 440583',
+  description: 'Emergency roof repairs across Cheshire. 24/7 call-out service. Storm damage, leaks, fallen tiles. Fast response from Sandbach base. Call 07379 440583 now.',
+  keywords: 'emergency roofer Cheshire, 24/7 roof repairs, storm damage roofing, urgent roof repair, emergency roof leak',
   openGraph: {
-    title: '24/7 Emergency Roofing Sandbach | Storm Damage',
-    description: 'Emergency roof repairs. 24/7 call-out service. Fast response across Sandbach.',
+    title: '24/7 Emergency Roofing Cheshire | Storm Damage',
+    description: 'Emergency roof repairs across Cheshire. 24/7 call-out service. Fast response.',
     url: 'https://www.upgraderoofs.co.uk/emergency-roofing',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
@@ -44,16 +45,16 @@ export default function EmergencyRoofingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-8 h-14 animate-pulse" asChild>
-                <a href="tel:07379440583">
+                <TrackedPhoneLink href="tel:07379440583" placement="emergency_hero_mobile">
                   <Phone className="w-5 h-5 mr-2" />
                   Emergency: 07379 440583
-                </a>
+                </TrackedPhoneLink>
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
-                <a href="tel:01270897606">
+                <TrackedPhoneLink href="tel:01270897606" placement="emergency_hero_office">
                   <Phone className="w-5 h-5 mr-2" />
                   Office: 01270 897 606
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>
@@ -132,16 +133,16 @@ export default function EmergencyRoofingPage() {
               </p>
               <div className="space-y-4">
                 <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold h-14 animate-pulse" asChild>
-                  <a href="tel:07379440583">
+                  <TrackedPhoneLink href="tel:07379440583" placement="emergency_callout_mobile">
                     <Phone className="w-5 h-5 mr-2" />
                     Emergency: 07379 440583
-                  </a>
+                  </TrackedPhoneLink>
                 </Button>
                 <Button size="lg" variant="outline" className="w-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-semibold h-14" asChild>
-                  <a href="tel:01270897606">
+                  <TrackedPhoneLink href="tel:01270897606" placement="emergency_callout_office">
                     <Phone className="w-5 h-5 mr-2" />
                     Office: 01270 897 606
-                  </a>
+                  </TrackedPhoneLink>
                 </Button>
               </div>
               <div className="mt-6">
@@ -201,10 +202,10 @@ export default function EmergencyRoofingPage() {
             Don't wait - call us now for immediate assistance across CW11 and Cheshire
           </p>
           <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14 text-lg animate-pulse" asChild>
-            <a href="tel:07379440583">
+            <TrackedPhoneLink href="tel:07379440583" placement="emergency_bottom_cta">
               <Phone className="w-5 h-5 mr-2" />
               Call Emergency Line: 07379 440583
-            </a>
+            </TrackedPhoneLink>
           </Button>
         </div>
       </section>

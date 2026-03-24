@@ -15,6 +15,7 @@ type ContactMessage = {
   subject: string;
   message: string;
 };
+import { trackContactForm, trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
 import { 
   Loader2, 
   CheckCircle2, 
@@ -106,6 +107,9 @@ export function EnhancedContactSection() {
         console.warn('Failed to save to Supabase, but email was sent:', supabaseError);
       }
 
+      // Track successful submission
+      trackContactForm({ subject: formData.subject });
+
       setSuccess(true);
       setFormData({
         name: '',
@@ -178,7 +182,7 @@ export function EnhancedContactSection() {
                       Send Another Message
                     </Button>
                     <Button asChild className="bg-brand-orange hover:bg-brand-orange/90">
-                      <a href="tel:07379440583">
+                      <a href="tel:07379440583" onClick={() => trackPhoneClick('contact_form_success')}>
                         <Phone className="w-4 h-4 mr-2" />
                         Call Now
                       </a>
@@ -326,6 +330,7 @@ export function EnhancedContactSection() {
                       <a 
                         href="tel:07379440583" 
                         className="text-brand-orange font-semibold hover:underline"
+                        onClick={() => trackPhoneClick('contact_sidebar')}
                       >
                         07379 440583
                       </a>
@@ -348,6 +353,7 @@ export function EnhancedContactSection() {
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-green-500 font-semibold hover:underline"
+                        onClick={() => trackWhatsAppClick('contact_sidebar')}
                       >
                         Message Us
                       </a>

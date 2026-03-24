@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { CheckCircle, Phone, MessageCircle, Clock, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
+import { TrackedWhatsAppLink } from '@/components/TrackedWhatsAppLink';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -70,16 +72,16 @@ export default function ThankYouPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold" asChild>
-                  <a href="tel:01782123456">
+                  <TrackedPhoneLink href="tel:07379440583" placement="thank_you_page">
                     <Phone className="w-4 h-4 mr-2" />
-                    Call 01782 123456
-                  </a>
+                    Call 07379 440583
+                  </TrackedPhoneLink>
                 </Button>
                 <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white" asChild>
-                  <a href="https://wa.me/447379440583" target="_blank" rel="noopener noreferrer">
+                  <TrackedWhatsAppLink href="https://wa.me/447379440583" placement="thank_you_page" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     WhatsApp Us
-                  </a>
+                  </TrackedWhatsAppLink>
                 </Button>
               </div>
             </div>
@@ -146,34 +148,6 @@ export default function ThankYouPage() {
         </div>
       </div>
 
-      {/* Conversion Tracking Script */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            // Google Ads Conversion
-            gtag('event', 'conversion', {
-              'send_to': 'AW-XXXXXXXXX/XXXXXXXXX', // Replace with actual conversion ID
-              'value': 150.0,
-              'currency': 'GBP'
-            });
-            
-            // Facebook Pixel Conversion
-            fbq('track', 'Lead', {
-              value: 150,
-              currency: 'GBP',
-              content_name: 'Free Roof Inspection',
-              content_category: 'Roofing Services'
-            });
-            
-            // Google Analytics Event
-            gtag('event', 'generate_lead', {
-              event_category: 'conversion',
-              event_label: 'special_offer_form',
-              value: 150
-            });
-          `
-        }}
-      />
     </div>
   );
 }

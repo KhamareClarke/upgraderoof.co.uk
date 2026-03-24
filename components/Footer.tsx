@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Mail, Phone, Clock, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 
 export function Footer() {
   const quickLinks = [
@@ -97,18 +98,20 @@ export function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brand-orange flex-shrink-0" />
                 <div className="space-y-1.5">
-                  <a
+                  <TrackedPhoneLink
                     href="tel:01270897606"
+                    placement="footer_landline"
                     className="block text-white/70 hover:text-brand-orange transition-colors duration-300 text-sm tracking-wide"
                   >
                     01270 897 606
-                  </a>
-                  <a
+                  </TrackedPhoneLink>
+                  <TrackedPhoneLink
                     href="tel:07379440583"
+                    placement="footer_mobile"
                     className="block text-white/70 hover:text-brand-orange transition-colors duration-300 text-sm tracking-wide"
                   >
                     07379 440 583
-                  </a>
+                  </TrackedPhoneLink>
                 </div>
               </div>
 
@@ -163,6 +166,9 @@ export function Footer() {
             <div className="flex flex-col items-center md:items-start gap-4">
               <p className="text-white/60 text-sm tracking-wide">
                 © {new Date().getFullYear()} Upgrade Roofs. All rights reserved.
+              </p>
+              <p className="text-white/50 text-xs tracking-wide">
+                Upgrade Roofs is operated by UPGRADE ROOFS LTD
               </p>
               <div className="flex items-center gap-5 text-sm">
                 {legalLinks.map((link) => (

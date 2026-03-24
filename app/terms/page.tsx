@@ -39,7 +39,7 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold text-brand-navy">1. Introduction</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                These Terms and Conditions ("Terms") govern your use of Upgrade Roofs' services and website. By engaging our services or using our website, you agree to be bound by these Terms. Please read them carefully before proceeding.
+                These Terms and Conditions ("Terms") govern your use of the services and website of Upgrade Roofs, operated by UPGRADE ROOFS LTD. By engaging our services or using our website, you agree to be bound by these Terms. Please read them carefully before proceeding.
               </p>
             </section>
 

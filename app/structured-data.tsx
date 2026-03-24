@@ -3,7 +3,7 @@ export function StructuredData() {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'RoofingContractor'],
     name: 'Upgrade Roofs',
-    alternateName: 'Upgrade Roofs Ltd',
+    alternateName: 'UPGRADE ROOFS LTD',
     image: [
       'https://www.upgraderoofs.co.uk/images/6.jpeg',
       'https://www.upgraderoofs.co.uk/images/2.jpeg'
@@ -198,11 +198,6 @@ export function StructuredData() {
     name: 'Upgrade Roofs',
     publisher: {
       '@id': 'https://www.upgraderoofs.co.uk/#organization'
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: 'https://www.upgraderoofs.co.uk/search?q={search_term_string}',
-      'query-input': 'required name=search_term_string'
     }
   };
 
@@ -215,36 +210,6 @@ export function StructuredData() {
         position: 1,
         name: 'Home',
         item: 'https://www.upgraderoofs.co.uk'
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'About',
-        item: 'https://www.upgraderoofs.co.uk/about'
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: 'Services',
-        item: 'https://www.upgraderoofs.co.uk/services'
-      },
-      {
-        '@type': 'ListItem',
-        position: 4,
-        name: 'Gallery',
-        item: 'https://www.upgraderoofs.co.uk/gallery'
-      },
-      {
-        '@type': 'ListItem',
-        position: 5,
-        name: 'Blog',
-        item: 'https://www.upgraderoofs.co.uk/blog'
-      },
-      {
-        '@type': 'ListItem',
-        position: 6,
-        name: 'Contact',
-        item: 'https://www.upgraderoofs.co.uk/contact'
       }
     ]
   };

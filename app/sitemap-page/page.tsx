@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { 
   Home, 
   Info, 
@@ -244,7 +245,7 @@ export default function SitemapPage() {
                   </p>
                   <div className="flex gap-2">
                     <Button className="bg-green-500 hover:bg-green-600 text-white" asChild>
-                      <a href="tel:01270897606">Call Now</a>
+                      <TrackedPhoneLink href="tel:01270897606" placement="sitemap_page">Call Now</TrackedPhoneLink>
                     </Button>
                     <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white" asChild>
                       <Link href="/contact">Contact Form</Link>

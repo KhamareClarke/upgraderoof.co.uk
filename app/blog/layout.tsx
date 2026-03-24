@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roofing Blog | Tips & Advice | Upgrade Roofs Cheshire',
+  title: 'Roofing Blog | Tips & Advice | Upgrade Roofs',
   description: 'Expert roofing tips, advice and guides from Upgrade Roofs. Learn about roof maintenance, repairs, materials and more. Serving Cheshire homeowners.',
   keywords: 'roofing blog, roofing tips, roof maintenance advice, roofing guides Cheshire, roof repair tips, roofing materials guide',
   openGraph: {
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: 'https://www.upgraderoofs.co.uk/images/7.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Roofing Blog - Expert Tips and Advice from Upgrade Roofs Cheshire',
+        alt: 'Roofing Blog — Expert Tips and Advice from Upgrade Roofs',
       },
     ],
     locale: 'en_GB',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roofing Blog | Upgrade Roofs Cheshire',
+    title: 'Roofing Blog | Upgrade Roofs',
     description: 'Expert roofing tips and advice.',
     images: ['https://www.upgraderoofs.co.uk/images/7.jpeg'],
   },

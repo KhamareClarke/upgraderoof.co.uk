@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
+import { trackPhoneClick } from '@/lib/tracking';
 
 const faqs = [
   {
@@ -92,6 +93,7 @@ export function FAQ() {
             <a
               href="tel:07379440583"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold rounded-lg transition-colors text-sm sm:text-base"
+              onClick={() => trackPhoneClick('faq_section')}
             >
               Call Us: 07379 440583
             </a>

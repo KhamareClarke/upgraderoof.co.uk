@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { QuoteForm } from '@/components/QuoteForm';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { Phone, CheckCircle, Clock, Shield, Wrench, MapPin, ArrowRight, Star } from 'lucide-react';
 import Link from 'next/link';
 import { ServiceAreaLinks } from '@/components/ServiceAreaLinks';
@@ -9,12 +10,12 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: 'Roof Repairs Sandbach & Cheshire | Fast Response | 01270 897606',
-  description: 'Expert roof repairs in Sandbach and Cheshire. Leaks, storm damage, missing tiles, ridge repairs. Same-day service available. 25+ years experience. Call 01270 897606.',
-  keywords: 'roof repairs Sandbach, roof leak repair, storm damage roof, emergency roof repair Sandbach, tile replacement, ridge repairs Cheshire',
+  title: 'Roof Repairs Cheshire | Same-Day Service | Upgrade Roofs',
+  description: 'Professional roof repairs across Cheshire. Leaks, storm damage, missing tiles, ridge repairs. Same-day response. 25+ years experience. CORC certified. Call 01270 897606.',
+  keywords: 'roof repairs Cheshire, roof leak repair, storm damage roof repair, tile replacement Cheshire, ridge repairs, missing tiles',
   openGraph: {
-    title: 'Roof Repairs Sandbach & Cheshire | Fast Response',
-    description: 'Expert roof repairs. Leaks, storm damage, missing tiles. Same-day service available.',
+    title: 'Roof Repairs Cheshire | Same-Day Service',
+    description: 'Professional roof repairs across Cheshire. Leaks, storm damage, missing tiles. Same-day response.',
     url: 'https://www.upgraderoofs.co.uk/roof-repairs',
     siteName: 'Upgrade Roofs',
     locale: 'en_GB',
@@ -49,10 +50,10 @@ export default function RoofRepairsPage() {
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
-                <a href="tel:01270897606">
+                <TrackedPhoneLink href="tel:01270897606" placement="roof_repairs_hero">
                   <Phone className="w-5 h-5 mr-2" />
                   01270 897 606
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>
@@ -174,10 +175,10 @@ export default function RoofRepairsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14" asChild>
-              <a href="tel:01270897606">
+              <TrackedPhoneLink href="tel:01270897606" placement="roof_repairs_bottom_cta">
                 <Phone className="w-5 h-5 mr-2" />
                 Call 01270 897 606
-              </a>
+              </TrackedPhoneLink>
             </Button>
             <QuoteForm trigger={
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-10 h-14">

@@ -39,7 +39,7 @@ export default function PrivacyPage() {
                 <h2 className="text-2xl font-bold text-brand-navy">1. Introduction</h2>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Upgrade Roofs ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We are based in Sandbach, Cheshire, UK, and comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
+                Upgrade Roofs, operated by UPGRADE ROOFS LTD ("we", "our", or "us"), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services. We are based in Sandbach, Cheshire, UK, and comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.
               </p>
             </section>
 

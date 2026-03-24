@@ -16,7 +16,7 @@ import {
   Clock,
   ArrowUp
 } from 'lucide-react';
-import { trackConversion, trackEvent } from '@/components/Analytics';
+import { trackQuoteRequest, trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
 import Image from 'next/image';
 
 export default function SpecialOfferPage() {
@@ -84,9 +84,6 @@ export default function SpecialOfferPage() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    trackConversion('quote_request', 150);
-    trackEvent('special_offer_form_submitted');
-    
     try {
       // Call the API route to send email
       const response = await fetch('/api/send-special-offer', {
@@ -103,6 +100,12 @@ export default function SpecialOfferPage() {
         throw new Error(result.error || 'Failed to submit form');
       }
 
+      // Track only after confirmed success
+      trackQuoteRequest({
+        service_type: formData.serviceNeeded || formData.roofType,
+        postcode: formData.postcode,
+      });
+
       // Redirect to thank you page on success
       window.location.href = '/thank-you';
     } catch (error) {
@@ -113,11 +116,11 @@ export default function SpecialOfferPage() {
   };
 
   const handlePhoneClick = () => {
-    trackEvent('phone_call_clicked', { source: 'special_offer' });
+    trackPhoneClick('special_offer');
   };
 
   const handleWhatsAppClick = () => {
-    trackEvent('whatsapp_clicked', { source: 'special_offer' });
+    trackWhatsAppClick('special_offer');
   };
 
   return (

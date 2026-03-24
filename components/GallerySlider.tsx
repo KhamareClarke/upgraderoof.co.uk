@@ -50,7 +50,7 @@ const galleryImages: GalleryImage[] = [
   },
   {
     src: '/images/6.jpeg',
-    alt: 'Professional tile roof installation by Upgrade Roofs Sandbach',
+    alt: 'Professional tile roof installation by Upgrade Roofs in Sandbach',
     title: 'Tile Roof Installation - Sandbach',
     location: 'Sandbach, CW11',
     category: 'Tile Roofs',

@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Phone, Clock } from 'lucide-react';
+import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 
 export function CTABanner() {
   return (
@@ -19,10 +20,10 @@ export function CTABanner() {
               className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-6 sm:px-7 md:px-8 text-base sm:text-lg h-12 sm:h-14 md:h-14 w-full sm:w-auto"
               asChild
             >
-              <a href="tel:07379440583" className="text-white flex items-center justify-center">
+              <TrackedPhoneLink href="tel:07379440583" placement="cta_banner_book" className="text-white flex items-center justify-center">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Book Now
-              </a>
+              </TrackedPhoneLink>
             </Button>
             <Button
               size="lg"
@@ -30,21 +31,21 @@ export function CTABanner() {
               className="border-2 border-white !text-white bg-transparent hover:bg-white hover:!text-brand-navy font-semibold px-6 sm:px-7 md:px-8 text-base sm:text-lg h-12 sm:h-14 md:h-14 w-full sm:w-auto"
               asChild
             >
-              <a href="tel:07379440583" className="!text-white hover:!text-brand-navy flex items-center justify-center">
+              <TrackedPhoneLink href="tel:07379440583" placement="cta_banner_emergency" className="!text-white hover:!text-brand-navy flex items-center justify-center">
                 <Clock className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Emergency Call 24/7
-              </a>
+              </TrackedPhoneLink>
             </Button>
           </div>
 
           <div className="mt-6 sm:mt-7 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center text-white">
-            <a href="tel:01270897606" className="text-lg sm:text-xl md:text-2xl font-bold hover:text-brand-orange transition-colors break-all sm:break-normal">
+            <TrackedPhoneLink href="tel:01270897606" placement="cta_banner_landline" className="text-lg sm:text-xl md:text-2xl font-bold hover:text-brand-orange transition-colors break-all sm:break-normal">
               01270 897 606
-            </a>
+            </TrackedPhoneLink>
             <span className="hidden sm:inline text-white/50">|</span>
-            <a href="tel:07379440583" className="text-lg sm:text-xl md:text-2xl font-bold hover:text-brand-orange transition-colors break-all sm:break-normal">
+            <TrackedPhoneLink href="tel:07379440583" placement="cta_banner_mobile" className="text-lg sm:text-xl md:text-2xl font-bold hover:text-brand-orange transition-colors break-all sm:break-normal">
               07379 440 583
-            </a>
+            </TrackedPhoneLink>
           </div>
         </div>
       </div>

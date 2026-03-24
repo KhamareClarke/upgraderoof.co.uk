@@ -5,11 +5,11 @@ import Link from 'next/link';
 import { QuoteForm } from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'About Us | Upgrade Roofs Cheshire | 25+ Years Experience',
+  title: 'About Us | Upgrade Roofs | 25+ Years Experience',
   description: 'Upgrade Roofs: Award-winning roofing company with 25+ years experience in Cheshire. CORC certified, £10M insured, 5 star rated. Meet our expert team. Call 01270 897606.',
   keywords: 'about Upgrade Roofs, Cheshire roofing company, roofing contractors Cheshire, experienced roofers, accredited roofing, CORC certified roofers',
   openGraph: {
-    title: 'About Upgrade Roofs Cheshire | 25+ Years Experience',
+    title: 'About Upgrade Roofs | 25+ Years Experience',
     description: 'Award-winning roofing company. 25+ years experience, CORC certified, £10M insured.',
     url: 'https://www.upgraderoofs.co.uk/about',
     siteName: 'Upgrade Roofs',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://www.upgraderoofs.co.uk/images/1.jpeg',
         width: 1200,
         height: 630,
-        alt: 'About Upgrade Roofs - Professional Roofers Cheshire',
+        alt: 'About Upgrade Roofs — Professional Roofers in Cheshire',
       },
     ],
     locale: 'en_GB',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Upgrade Roofs Cheshire',
+    title: 'About Upgrade Roofs',
     description: '25+ years of roofing excellence. Meet our expert team.',
     images: ['https://www.upgraderoofs.co.uk/images/1.jpeg'],
   },
@@ -111,7 +111,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-gray-700 leading-relaxed">
                 <p>
-                  Founded in 1999, Upgrade Roofs Cheshire has grown from a small family business to become one of the most trusted roofing companies in the region. Our journey has been built on a simple principle: deliver exceptional quality and service on every single project.
+                  Founded in 1999, Upgrade Roofs has grown from a small family business to become one of the most trusted roofing companies in the region. Our journey has been built on a simple principle: deliver exceptional quality and service on every single project.
                 </p>
                 <p>
                   With over 25 years of experience, we've seen the roofing industry evolve, and we've evolved with it. From traditional tile and slate work to modern flat roofing systems, we combine time-honored craftsmanship with cutting-edge techniques and materials.
