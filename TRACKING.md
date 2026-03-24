@@ -30,7 +30,7 @@
 | `CTABanner`                     | `cta_banner_book`, `cta_banner_call`, `cta_banner_mobile`, `cta_banner_landline` |
 | `Footer`                        | `footer_mobile`, `footer_landline`                     |
 | `FAQ`                           | `faq_cta`                                              |
-| `AreaPageTemplate`              | `area_page_cta`                                        |
+| `AreaPageTemplate`              | `area_page_hero`, `area_page_cta`                      |
 | `emergency-roofing/page`        | `emergency_hero_mobile`, `emergency_hero_office`, `emergency_callout_mobile`, `emergency_callout_office`, `emergency_bottom_cta` |
 | `contact/page`                  | `contact_info_landline`, `contact_info_mobile`, `contact_emergency_cta` |
 | `new-roofs/page`                | `new_roofs_hero`, `new_roofs_bottom_cta`               |
@@ -66,6 +66,30 @@ NEXT_PUBLIC_FB_PIXEL_ID=XXXXXXXXXXXXXXX   # Meta Pixel ID
 All are optional — tracking degrades gracefully if any are missing.
 In development, missing vars produce a single console warning on page load.
 
+**Note:** `components/Analytics.tsx` has hardcoded production ID fallbacks for GTM, GA4, and Google Ads. These ensure tags load even if env vars are not yet configured. Once env vars are set in Vercel, the fallbacks are ignored.
+
+## Architecture
+
+```
+components/Analytics.tsx    → Tag initialization ONLY (GTM, GA4, Google Ads, Meta Pixel, Consent Mode)
+lib/tracking.ts             → ALL event helper functions (single source of truth)
+components/TrackedPhoneLink → Reusable wrapper for tel: links in server components
+components/TrackedWhatsAppLink → Reusable wrapper for wa.me links in server components
+```
+
+**Rules:**
+- Never add event helpers to `Analytics.tsx` — use `lib/tracking.ts`
+- Never call `gtag()` or `fbq()` directly in components — use the centralized helpers
+- Exception: `special-offer/layout.tsx` has an inline `fbq('track', 'ViewContent')` for page-load tracking (not a user action)
+
+## Detecting Duplicate Firing
+
+1. Open browser DevTools → Network tab → filter by `collect` or `google-analytics`
+2. Perform an action (e.g. submit a form)
+3. You should see exactly **one** GA4 event request per action
+4. If you see two identical events, check for duplicate `onClick` handlers or double-mounted components
+5. In dev mode, check the console — each `[tracking]` log should appear once per action
+
 ## Testing Instructions
 
 ### 1. Local Dev-Mode Debug Logging
@@ -96,3 +120,11 @@ Run `npm run dev`. Every tracking call logs to the browser console with an orang
 2. Browse the site and perform actions
 3. Verify `Lead` events fire on form submissions
 4. Verify `PhoneClick` and `WhatsAppClick` custom events fire on clicks
+
+### 6. Quick Smoke Test Checklist
+- [ ] Submit quote form → `quote_request` fires once
+- [ ] Submit contact form → `contact_form_submit` fires once
+- [ ] Click any phone number → `phone_click` fires with correct `placement`
+- [ ] Click any WhatsApp link → `whatsapp_click` fires with correct `placement`
+- [ ] Check Network tab — no duplicate event requests
+- [ ] Check console in dev mode — `[tracking]` logs appear with orange prefix

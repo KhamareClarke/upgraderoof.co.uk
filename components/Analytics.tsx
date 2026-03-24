@@ -1,5 +1,17 @@
 'use client';
 
+/**
+ * Analytics — TAG INITIALIZATION ONLY
+ *
+ * This component loads third-party tracking scripts (GTM, GA4, Google Ads,
+ * Meta Pixel) and sets up Google Consent Mode V2. It does NOT contain any
+ * event helper functions — all event tracking lives in `lib/tracking.ts`.
+ *
+ * Env vars with hardcoded fallbacks below are the real production IDs.
+ * They ensure tracking works even if Vercel env vars are not yet configured.
+ * Once env vars are set in the hosting platform, these fallbacks are ignored.
+ */
+
 import React from 'react';
 import Script from 'next/script';
 

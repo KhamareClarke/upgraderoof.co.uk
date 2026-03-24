@@ -52,7 +52,7 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
                 </Button>
               } />
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14 text-base" asChild>
-                <a href="tel:01270897606"><Phone className="w-5 h-5 mr-2" />01270 897 606</a>
+                <TrackedPhoneLink href="tel:01270897606" placement="area_page_hero"><Phone className="w-5 h-5 mr-2" />01270 897 606</TrackedPhoneLink>
               </Button>
             </div>
           </div>

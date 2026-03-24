@@ -496,6 +496,7 @@ export default function SpecialOfferPage() {
             href="https://wa.me/447379440583"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleWhatsAppClick}
             className="bg-green-500 hover:bg-green-600 !text-white font-bold px-3 py-4 text-xs whitespace-nowrap rounded-md flex items-center justify-center gap-1"
           >
             <span>💬</span>
