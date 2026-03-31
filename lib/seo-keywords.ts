@@ -128,7 +128,7 @@ export const pageKeywords = {
     primary: 'roofing contractors Cheshire',
     secondary: ['get roofing quote', 'roofing company contact'],
     title: 'Contact Upgrade Roofs | Free Quotes Cheshire | 01270 897606',
-    description: 'Contact Upgrade Roofs for free roofing quotes in Sandbach & Cheshire. Call 01270 897606 or WhatsApp 07379 440583. Fast response guaranteed.'
+    description: 'Contact Upgrade Roofs for free roofing quotes in Sandbach & Cheshire. Call 01270 897606. Fast response guaranteed.'
   },
   about: {
     primary: 'roofing company Cheshire',

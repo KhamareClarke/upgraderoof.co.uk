@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Signs of Roof Damage | When to Call a Roofer | Upgrade Roofs',
@@ -31,5 +32,15 @@ export default function RoofDamageSignsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Signs of Roof Damage: When to Call a Roofer"
+        description="Learn the warning signs of roof damage. Missing tiles, leaks, sagging, moss growth."
+        url="https://www.upgraderoofs.co.uk/blog/roof-damage-signs"
+        datePublished="2024-11-04"
+      />
+      {children}
+    </>
+  );
 }

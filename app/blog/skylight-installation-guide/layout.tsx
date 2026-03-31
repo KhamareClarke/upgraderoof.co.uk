@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Skylight Installation Guide Cheshire | Velux & Sun Tunnels | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function SkylightInstallationGuideLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Skylight Installation Guide: Transform Your Cheshire Home"
+        description="Complete guide to skylight installation. Velux, sun tunnels, flat roof skylights. Types, costs, benefits."
+        url="https://www.upgraderoofs.co.uk/blog/skylight-installation-guide"
+        datePublished="2026-02-20"
+        image="/images/10.jpeg"
+      />
+      {children}
+    </>
+  );
 }

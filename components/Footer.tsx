@@ -105,13 +105,6 @@ export function Footer() {
                   >
                     01270 897 606
                   </TrackedPhoneLink>
-                  <TrackedPhoneLink
-                    href="tel:07379440583"
-                    placement="footer_mobile"
-                    className="block text-white/70 hover:text-brand-orange transition-colors duration-300 text-sm tracking-wide"
-                  >
-                    07379 440 583
-                  </TrackedPhoneLink>
                 </div>
               </div>
 

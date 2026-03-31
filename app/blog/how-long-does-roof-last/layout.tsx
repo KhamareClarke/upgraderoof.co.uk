@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'How Long Does a Roof Last? | UK Roof Lifespan Guide | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function HowLongDoesRoofLastLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="How Long Does a Roof Last? Complete UK Guide"
+        description="How long do different roof types last in the UK? Slate, tile, flat roofing lifespans explained."
+        url="https://www.upgraderoofs.co.uk/blog/how-long-does-roof-last"
+        datePublished="2026-03-08"
+        image="/images/7.jpeg"
+      />
+      {children}
+    </>
+  );
 }

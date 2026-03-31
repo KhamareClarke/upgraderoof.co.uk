@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roofers Nantwich | Local Roofing Company | Upgrade Roofs',
-  description: 'Trusted roofers in Nantwich, Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. CORC certified, £10M insured, 25+ years experience. Free quotes.',
+  title: 'Roofers Nantwich | Heritage & Listed Buildings | 01270 897606 | Upgrade Roofs',
+  description: 'Heritage roofing specialists serving Nantwich CW5. Listed building experience, natural slate and clay tile experts. Roof repairs, new roofs, 24/7 emergency call-outs. CORC certified, £10M insured. Free quotes.',
   openGraph: {
     title: 'Roofers Nantwich | Upgrade Roofs | 01270 897606',
     description: 'Nantwich\'s trusted local roofers. 25+ years experience, CORC certified. Free quotes.',

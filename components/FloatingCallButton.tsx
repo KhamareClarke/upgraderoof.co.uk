@@ -12,7 +12,7 @@ export function FloatingCallButton() {
         className="group relative bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-4 py-4 rounded-full shadow-2xl hover:shadow-brand-orange/50 transition-all duration-300 hover:scale-110 active:scale-95"
         asChild
       >
-        <a href="tel:07379440583" className="flex items-center justify-center" onClick={() => trackPhoneClick('floating_call_button')}>
+        <a href="tel:01270897606" className="flex items-center justify-center" onClick={() => trackPhoneClick('floating_call_button')}>
           <Phone className="w-6 h-6 group-hover:animate-bounce" />
           <span className="ml-2 font-bold">Call Now</span>
         </a>

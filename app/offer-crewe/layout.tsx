@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.upgraderoofs.co.uk/offer-crewe',
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 };

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Emergency Roof Repairs Cheshire | 24/7 Storm Damage | 01270 897606',
@@ -29,5 +30,16 @@ export default function EmergencyRoofRepairsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Emergency Roof Repairs in Cheshire: What to Do When Disaster Strikes"
+        description="Need emergency roof repairs in Cheshire? 24/7 storm damage response. Leaks, missing tiles, wind damage."
+        url="https://www.upgraderoofs.co.uk/blog/emergency-roof-repairs"
+        datePublished="2026-03-15"
+        image="/images/1.jpeg"
+      />
+      {children}
+    </>
+  );
 }

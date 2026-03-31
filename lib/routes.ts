@@ -22,6 +22,8 @@
  *     /offer-middlewich    — same
  *     /offer-nantwich     — same
  *     /offer-alsager       — same
+ *     /special-offer      — ads conversion page (noindex)
+ *     /offer-sandbach     — ads conversion page (noindex)
  *     /sitemap-page       — HTML sitemap for humans, not for crawlers
  * ---------------------------------------------------------------
  */
@@ -64,7 +66,7 @@ const coreCommercial: RouteEntry[] = [
   {
     path: '/roof-repairs',
     pageType: 'core-commercial',
-    lastModified: '2025-03-01',
+    lastModified: '2025-03-31',
     changeFreq: 'monthly',
     priority: 0.9,
     label: 'Roof Repairs',
@@ -72,7 +74,7 @@ const coreCommercial: RouteEntry[] = [
   {
     path: '/new-roofs',
     pageType: 'core-commercial',
-    lastModified: '2025-03-01',
+    lastModified: '2025-03-31',
     changeFreq: 'monthly',
     priority: 0.9,
     label: 'New Roofs',
@@ -80,7 +82,7 @@ const coreCommercial: RouteEntry[] = [
   {
     path: '/emergency-roofing',
     pageType: 'core-commercial',
-    lastModified: '2025-03-01',
+    lastModified: '2025-03-31',
     changeFreq: 'monthly',
     priority: 0.9,
     label: 'Emergency Roofing',
@@ -260,25 +262,9 @@ const trustPages: RouteEntry[] = [
   },
 ];
 
-// ---------- CONVERSION PAGES (indexable offers) ----------
-const conversionPages: RouteEntry[] = [
-  {
-    path: '/special-offer',
-    pageType: 'conversion',
-    lastModified: '2025-03-19',
-    changeFreq: 'weekly',
-    priority: 0.6,
-    label: 'Free Roof Inspection',
-  },
-  {
-    path: '/offer-sandbach',
-    pageType: 'conversion',
-    lastModified: '2025-03-01',
-    changeFreq: 'monthly',
-    priority: 0.5,
-    label: 'Sandbach Offer',
-  },
-];
+// ---------- CONVERSION PAGES (noindex, ads-only — NOT in sitemap) ----------
+// /special-offer, /offer-sandbach, /offer-cheshire, /offer-crewe, etc.
+// These are kept as functional pages but excluded from the indexable route list.
 
 // ---------- BLOG ----------
 export interface BlogRouteEntry extends RouteEntry {
@@ -451,7 +437,6 @@ export const allIndexableRoutes: RouteEntry[] = [
   ...serviceSubpages,
   ...localCommercial,
   ...trustPages,
-  ...conversionPages,
   ...blogIndex,
   ...blogPosts,
   ...utilityPages,

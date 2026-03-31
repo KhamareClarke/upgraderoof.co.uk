@@ -229,7 +229,9 @@ export default function FlatRoofProblemsPost() {
 
               <p className="mb-8">
                 Got a flat roof problem? <Link href="/contact" className="text-brand-orange hover:underline">Contact us</Link> for 
-                a free inspection and honest advice on repair vs replacement.
+                a free inspection and honest advice on repair vs replacement. For urgent leaks, our <Link href="/emergency-roofing" className="text-brand-orange hover:underline">24/7 emergency roofing</Link> team 
+                responds fast. If your flat roof is part of a wider issue, explore our <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repair services</Link> or 
+                <Link href="/new-roofs" className="text-brand-orange hover:underline"> complete re-roofing options</Link>.
               </p>
             </div>
 

@@ -16,7 +16,7 @@ export function MobileContactBar() {
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg md:hidden">
       <div className="flex items-center justify-around py-3 px-4">
         <a
-          href="tel:07379440583"
+          href="tel:01270897606"
           className="flex flex-col items-center gap-1 text-brand-navy hover:text-brand-orange transition-colors group"
           aria-label="Call us"
           onClick={() => trackPhoneClick('mobile_contact_bar')}

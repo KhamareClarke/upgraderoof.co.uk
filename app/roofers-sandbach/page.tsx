@@ -393,7 +393,7 @@ export default function RoofersSandbachPage() {
                 },
                 {
                   q: 'Do you offer emergency roof repairs in Sandbach?',
-                  a: 'Yes. We provide 24/7 emergency roofing across Sandbach and surrounding areas. As we\'re based on Crewe Road, we can usually reach any Sandbach address within 30 minutes for urgent leaks, storm damage, or make-safe work. Call 07379 440583 for emergencies.'
+                  a: 'Yes. We provide 24/7 emergency roofing across Sandbach and surrounding areas. As we\'re based on Crewe Road, we can usually reach any Sandbach address within 30 minutes for urgent leaks, storm damage, or make-safe work. Call 01270 897606 for emergencies.'
                 },
                 {
                   q: 'What areas of Sandbach do you cover?',
@@ -478,7 +478,7 @@ export default function RoofersSandbachPage() {
             </Button>
           </div>
           <p className="text-white/60 text-sm mt-6">
-            20 Crewe Rd, Sandbach, CW11 4NE · Mon–Fri 8am–6pm, Sat 9am–4pm · 24/7 Emergency Line: 07379 440 583
+            20 Crewe Rd, Sandbach, CW11 4NE · Mon–Fri 8am–6pm, Sat 9am–4pm · Call: 01270 897 606
           </p>
         </div>
       </section>
@@ -499,7 +499,7 @@ export default function RoofersSandbachPage() {
               {
                 '@type': 'Question',
                 name: 'Do you offer emergency roof repairs in Sandbach?',
-                acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide 24/7 emergency roofing across Sandbach and surrounding areas. As we are based on Crewe Road, we can usually reach any Sandbach address within 30 minutes for urgent leaks, storm damage, or make-safe work. Call 07379 440583 for emergencies.' }
+                acceptedAnswer: { '@type': 'Answer', text: 'Yes. We provide 24/7 emergency roofing across Sandbach and surrounding areas. As we are based on Crewe Road, we can usually reach any Sandbach address within 30 minutes for urgent leaks, storm damage, or make-safe work. Call 01270 897606 for emergencies.' }
               },
               {
                 '@type': 'Question',

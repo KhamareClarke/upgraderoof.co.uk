@@ -72,9 +72,9 @@ export default function ThankYouPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold" asChild>
-                  <TrackedPhoneLink href="tel:07379440583" placement="thank_you_page">
+                  <TrackedPhoneLink href="tel:01270897606" placement="thank_you_page">
                     <Phone className="w-4 h-4 mr-2" />
-                    Call 07379 440583
+                    Call 01270 897 606
                   </TrackedPhoneLink>
                 </Button>
                 <Button variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white" asChild>

@@ -11,7 +11,6 @@ export function StructuredData() {
     '@id': 'https://www.upgraderoofs.co.uk/#organization',
     url: 'https://www.upgraderoofs.co.uk',
     telephone: '01270 897606',
-    alternativeTelephone: '07379 440583',
     email: 'upgraderoofs@yahoo.com',
     priceRange: '££-£££',
     description: 'Professional roofing company based in Sandbach, serving Cheshire with 25+ years experience. Specializing in roof repairs, installations, flat roofing, tile roofs, guttering, and emergency roofing services.',
@@ -201,65 +200,9 @@ export function StructuredData() {
     }
   };
 
-  const breadcrumbData = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://www.upgraderoofs.co.uk'
-      }
-    ]
-  };
-
-  const faqData = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How much does a new roof cost in Cheshire?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Roof costs vary depending on size, materials, and complexity. A typical terraced house roof replacement ranges from £5,000-£8,000, while larger detached properties can cost £8,000-£15,000+. We provide free, detailed quotes with no hidden costs.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'How long does a roof replacement take?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Most residential roof replacements take 3-7 days depending on size and weather. Smaller repairs can often be completed in 1-2 days. We provide a detailed timeline during your free consultation.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do you offer emergency roofing services?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, we provide 24/7 emergency roofing services throughout Cheshire. Call 07379 440583 for immediate assistance with leaks, storm damage, or urgent repairs.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What areas of Cheshire do you cover?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'We cover all of Cheshire including Sandbach, Crewe, Congleton, Nantwich, Middlewich, Alsager, Holmes Chapel, and surrounding areas throughout the North West.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'What warranty do you offer on roofing work?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'We provide a comprehensive 10-year guarantee on all workmanship, backed by manufacturer warranties on materials. All work is fully insured with £10M public liability coverage.'
-        }
-      }
-    ]
-  };
+  // NOTE: BreadcrumbList and FAQPage schema removed from global layout.
+  // These should be injected page-specifically where the content actually exists.
+  // See: /roofers-sandbach, /roof-repairs, etc. for page-level FAQ schema.
 
   return (
     <>
@@ -270,14 +213,6 @@ export function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
       />
     </>
   );

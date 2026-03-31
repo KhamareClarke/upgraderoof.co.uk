@@ -263,7 +263,9 @@ export default function SkylightInstallationGuidePost() {
 
               <p className="mb-8">
                 Ready to brighten your home? <Link href="/contact" className="text-brand-orange hover:underline">Contact us</Link> for 
-                a free skylight consultation and quote.
+                a free skylight consultation and quote. Skylights are often installed as part of a <Link href="/new-roofs" className="text-brand-orange hover:underline">new roof</Link> or 
+                re-roofing project — the ideal time to add natural light. We also handle all related <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repairs</Link> if 
+                your existing roof needs attention first.
               </p>
             </div>
 

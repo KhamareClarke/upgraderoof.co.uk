@@ -9,16 +9,29 @@ interface AreaFAQ {
   a: string;
 }
 
+interface CommonProblem {
+  problem: string;
+  solution: string;
+}
+
 interface AreaPageProps {
   town: string;
+  postcode?: string;
+  distanceFromBase?: string;
+  emergencyResponseTime?: string;
   intro: string;
   localContext: string;
   roofingChallenges: string;
+  landmarks?: string[];
+  propertyTypes?: string[];
+  commonProblems?: CommonProblem[];
+  proofPoint?: string;
+  ctaLine?: string;
   faqs: AreaFAQ[];
   nearbyAreas: { name: string; href: string }[];
 }
 
-export function AreaPageTemplate({ town, intro, localContext, roofingChallenges, faqs, nearbyAreas }: AreaPageProps) {
+export function AreaPageTemplate({ town, postcode, distanceFromBase, emergencyResponseTime, intro, localContext, roofingChallenges, landmarks, propertyTypes, commonProblems, proofPoint, ctaLine, faqs, nearbyAreas }: AreaPageProps) {
   const services = [
     { icon: Home, title: 'Tile & Slate Roofing', desc: `Expert tile and slate roof installation and repair across ${town}. Traditional and modern options.`, href: '/services/tile-slate-roofing' },
     { icon: Layers, title: 'Flat Roofing', desc: `EPDM rubber and GRP fibreglass flat roofing for ${town} properties. Up to 20-year guarantee.`, href: '/services/flat-roofing' },
@@ -71,6 +84,37 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
         </div>
       </section>
 
+      {/* Local Proof Bar */}
+      {(postcode || distanceFromBase || proofPoint) && (
+        <section className="py-6 bg-brand-orange/5 border-b border-brand-orange/10">
+          <div className="container-custom">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-10 text-sm text-gray-700">
+              {postcode && (
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-brand-orange" />
+                  <span className="font-semibold">Covering {postcode}</span>
+                </div>
+              )}
+              {distanceFromBase && (
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-brand-orange" />
+                  <span className="font-semibold">{distanceFromBase}</span>
+                </div>
+              )}
+              {emergencyResponseTime && (
+                <div className="flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-brand-orange" />
+                  <span className="font-semibold">Emergency: {emergencyResponseTime}</span>
+                </div>
+              )}
+            </div>
+            {proofPoint && (
+              <p className="text-center text-sm font-medium text-brand-navy mt-3">{proofPoint}</p>
+            )}
+          </div>
+        </section>
+      )}
+
       {/* Local Context */}
       <section className="section-padding">
         <div className="container-custom">
@@ -82,9 +126,59 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
               <p>{localContext}</p>
               <p>{roofingChallenges}</p>
             </div>
+            {/* Landmarks & Property Types */}
+            {(landmarks?.length || propertyTypes?.length) && (
+              <div className="grid sm:grid-cols-2 gap-6 mt-8">
+                {landmarks && landmarks.length > 0 && (
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-lg font-bold text-brand-navy mb-3">Areas We Cover in {town}</h3>
+                    <ul className="space-y-2">
+                      {landmarks.map((l, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                          <MapPin className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />{l}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {propertyTypes && propertyTypes.length > 0 && (
+                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-lg font-bold text-brand-navy mb-3">Property Types in {town}</h3>
+                    <ul className="space-y-2">
+                      {propertyTypes.map((p, i) => (
+                        <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                          <CheckCircle className="w-4 h-4 text-brand-orange flex-shrink-0 mt-0.5" />{p}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </div>
       </section>
+
+      {/* Common Local Roofing Problems */}
+      {commonProblems && commonProblems.length > 0 && (
+        <section className="section-padding bg-white">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-brand-navy mb-8 text-center">
+                Common Roofing Problems in {town}
+              </h2>
+              <div className="space-y-6">
+                {commonProblems.map((cp, i) => (
+                  <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                    <h3 className="text-lg font-bold text-brand-navy mb-2">{cp.problem}</h3>
+                    <p className="text-gray-600 text-sm">{cp.solution}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Contextual Cross-Links */}
       <section className="py-8 bg-white">
@@ -168,7 +262,7 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
         <div className="container-custom text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Need a Roofer in {town}?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Get a free, no-obligation quote. We'll inspect your roof and provide a clear, written price.
+            {ctaLine || 'Get a free, no-obligation quote. We\'ll inspect your roof and provide a clear, written price.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <QuoteForm trigger={
@@ -181,7 +275,7 @@ export function AreaPageTemplate({ town, intro, localContext, roofingChallenges,
             </Button>
           </div>
           <p className="text-white/60 text-sm mt-6">
-            Based in Sandbach · Serving {town} & all of Cheshire · 24/7 Emergency: 07379 440 583
+            Based in Sandbach · Serving {town} & all of Cheshire · Call: 01270 897 606
           </p>
         </div>
       </section>

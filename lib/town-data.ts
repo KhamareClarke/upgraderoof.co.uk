@@ -134,7 +134,7 @@ export const townData: Record<string, TownData> = {
     proofPoint: 'Regularly working on properties across the CW12 postcode from town centre to Astbury.',
     ctaLine: 'Based in Sandbach \u2014 6 miles from Congleton. Emergency response within 30\u201345 minutes.',
     faqs: [
-      { q: 'How quickly can you reach Congleton for an emergency?', a: 'We are based in Sandbach, approximately 6 miles from Congleton. For emergencies we can typically arrive within 30-45 minutes. Call 07379 440583 for our 24/7 emergency line.' },
+      { q: 'How quickly can you reach Congleton for an emergency?', a: 'We are based in Sandbach, approximately 6 miles from Congleton. For emergencies we can typically arrive within 30-45 minutes. Call 01270 897606 for emergencies.' },
       { q: 'Do you work on older properties in Congleton town centre?', a: 'Yes. We have extensive experience with period properties in Congleton, including natural slate re-roofing, lime mortar ridge work, and lead flashing repairs. We can match existing materials sympathetically.' },
       { q: 'How much does a roof replacement cost in Congleton?', a: 'Typical costs in Congleton range from \u00a35,000-\u00a38,000 for terraced houses, \u00a37,000-\u00a311,000 for semi-detached, and \u00a39,000-\u00a316,000+ for larger detached properties. We always provide a free inspection and written quote first.' },
       { q: 'Can you fix storm damage to roofs in Congleton?', a: "Yes. Congleton properties can be more exposed to storm damage due to the town's position. We provide 24/7 emergency response for storm damage, including make-safe work, tarpaulin cover, and permanent repairs. We also handle insurance claims paperwork." },
@@ -171,7 +171,7 @@ export const townData: Record<string, TownData> = {
     ctaLine: 'Heritage roofing specialists serving Nantwich and the CW5 postcode area.',
     faqs: [
       { q: 'Can you work on listed buildings in Nantwich?', a: 'Yes. We have experience working on period and listed properties in Nantwich using traditional materials including natural Welsh slate, handmade clay tiles, and lime mortar. We understand conservation area requirements and can advise on material choices that meet planning conditions.' },
-      { q: 'How quickly can you reach Nantwich?', a: 'We are based in Sandbach, approximately 8 miles from Nantwich. Standard inspections can usually be arranged for the same or next day. Emergency callouts reach Nantwich within 30-45 minutes. Call 07379 440583 for emergencies.' },
+      { q: 'How quickly can you reach Nantwich?', a: 'We are based in Sandbach, approximately 8 miles from Nantwich. Standard inspections can usually be arranged for the same or next day. Emergency callouts reach Nantwich within 30-45 minutes. Call 01270 897606 for emergencies.' },
       { q: 'Do you offer roof maintenance contracts in Nantwich?', a: 'Yes. We provide annual roof inspection and maintenance packages for Nantwich homeowners. Regular maintenance catches small issues before they become expensive problems \u2014 particularly important for the older properties Nantwich is known for.' },
       { q: 'How much does re-roofing cost in Nantwich?', a: 'Costs depend on property size and materials. A typical terraced house re-roof starts from \u00a35,000, semi-detached from \u00a36,500, and detached from \u00a39,000. Listed properties requiring specialist materials may cost more. We always provide a detailed free quote.' },
     ],

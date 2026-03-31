@@ -266,7 +266,7 @@ export default function SpecialOfferPage() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      placeholder="07379 440583"
+                      placeholder="Your phone number"
                       required
                       className="mt-2 h-12 text-base border-2 focus:border-brand-orange rounded-xl"
                     />

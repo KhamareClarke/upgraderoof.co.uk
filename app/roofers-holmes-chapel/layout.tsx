@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roofers Holmes Chapel | Local Roofing Company | Upgrade Roofs',
-  description: 'Trusted roofers in Holmes Chapel, Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. CORC certified, £10M insured, 25+ years experience. Free quotes.',
+  title: 'Roofers Holmes Chapel | Village Roofing Experts | 01270 897606 | Upgrade Roofs',
+  description: 'Quality roofers serving Holmes Chapel CW4, just 4 miles from our Sandbach base. Cottage and period property specialists. Roof repairs, new roofs, flat roofing, 24/7 emergency. CORC certified, £10M insured.',
   openGraph: {
     title: 'Roofers Holmes Chapel | Upgrade Roofs | 01270 897606',
     description: 'Holmes Chapel\'s trusted local roofers. 25+ years experience, CORC certified. Free quotes.',

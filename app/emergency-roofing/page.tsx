@@ -10,19 +10,37 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Roofing Cheshire | Storm Damage | 07379 440583',
-  description: 'Emergency roof repairs across Cheshire. 24/7 call-out service. Storm damage, leaks, fallen tiles. Fast response from Sandbach base. Call 07379 440583 now.',
-  keywords: 'emergency roofer Cheshire, 24/7 roof repairs, storm damage roofing, urgent roof repair, emergency roof leak',
+  title: 'Emergency Roofer Sandbach | 24/7 Storm Damage | 01270 897606',
+  description: 'Emergency roof repairs in Sandbach & Cheshire. 24/7 call-out. Storm damage, leaks, fallen tiles. Usually on-site within 30 minutes from our Sandbach base. Call 01270 897606 now.',
+  keywords: 'emergency roofer Sandbach, emergency roof repairs Sandbach, 24/7 roofer Cheshire, storm damage Sandbach, urgent roof repair',
   openGraph: {
-    title: '24/7 Emergency Roofing Cheshire | Storm Damage',
-    description: 'Emergency roof repairs across Cheshire. 24/7 call-out service. Fast response.',
+    title: 'Emergency Roofer Sandbach | 24/7 | 01270 897606',
+    description: 'Emergency roof repairs in Sandbach & Cheshire. 24/7 call-out. Fast response from our Sandbach base.',
     url: 'https://www.upgraderoofs.co.uk/emergency-roofing',
     siteName: 'Upgrade Roofs',
+    images: [
+      {
+        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Emergency Roofer Sandbach - Upgrade Roofs',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Emergency Roofer Sandbach | 24/7 | Upgrade Roofs',
+    description: '24/7 emergency roof repairs from our Sandbach base. Storm damage, leaks, fallen tiles. Call 01270 897606.',
+    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
+  },
   alternates: {
     canonical: 'https://www.upgraderoofs.co.uk/emergency-roofing',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -38,16 +56,16 @@ export default function EmergencyRoofingPage() {
               <span>24/7 Emergency Service</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              Emergency Roofing <span className="text-brand-orange">Sandbach</span>
+              Emergency Roofer in <span className="text-brand-orange">Sandbach</span> — 24/7
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-              Storm damage? Sudden leak? We respond fast. Based on Crewe Road, Sandbach - usually with you within 30 minutes.
+              Storm damage? Sudden leak? Based in Sandbach, we respond fast — usually on-site within 30 minutes. 24/7 emergency cover across Sandbach and all of Cheshire.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-8 h-14 animate-pulse" asChild>
-                <TrackedPhoneLink href="tel:07379440583" placement="emergency_hero_mobile">
+                <TrackedPhoneLink href="tel:01270897606" placement="emergency_hero_mobile">
                   <Phone className="w-5 h-5 mr-2" />
-                  Emergency: 07379 440583
+                  Call: 01270 897 606
                 </TrackedPhoneLink>
               </Button>
               <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 font-semibold px-8 h-14" asChild>
@@ -69,7 +87,7 @@ export default function EmergencyRoofingPage() {
               24/7 Emergency Roofing Services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              When disaster strikes, we're ready. Serving Sandbach, CW11, and all surrounding Cheshire areas.
+              When disaster strikes, we're ready. Based in Sandbach, we cover Crewe, Congleton, Middlewich, Nantwich, and all of Cheshire.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -101,9 +119,9 @@ export default function EmergencyRoofingPage() {
               </h2>
               <div className="space-y-4">
                 {[
-                  { icon: Clock, title: 'Fast Response', desc: 'Based on Crewe Road, Sandbach. We can reach most CW11 addresses within 30 minutes.' },
+                  { icon: Clock, title: 'Fast Response', desc: 'Based in Sandbach, we cover all of south and mid-Cheshire — typically on-site within 30 minutes of your call.' },
                   { icon: Shield, title: 'Make-Safe Guarantee', desc: 'We secure your property immediately to prevent further damage.' },
-                  { icon: MapPin, title: 'Local Knowledge', desc: '25+ years serving Sandbach. We know the area and common property issues.' },
+                  { icon: MapPin, title: 'Local Knowledge', desc: '25+ years serving Sandbach and Cheshire. We know local property types and common roofing issues.' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
@@ -129,13 +147,13 @@ export default function EmergencyRoofingPage() {
             <div className="bg-white rounded-2xl p-8 shadow-lg border-2 border-red-200">
               <h3 className="text-2xl font-bold text-brand-navy mb-4">Emergency Call-Out</h3>
               <p className="text-gray-600 mb-6">
-                For immediate emergency assistance in Sandbach and surrounding areas, call our emergency line now.
+                For immediate emergency assistance in Sandbach or anywhere in Cheshire, call our emergency line now.
               </p>
               <div className="space-y-4">
                 <Button size="lg" className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold h-14 animate-pulse" asChild>
-                  <TrackedPhoneLink href="tel:07379440583" placement="emergency_callout_mobile">
+                  <TrackedPhoneLink href="tel:01270897606" placement="emergency_callout_mobile">
                     <Phone className="w-5 h-5 mr-2" />
-                    Emergency: 07379 440583
+                    Call: 01270 897 606
                   </TrackedPhoneLink>
                 </Button>
                 <Button size="lg" variant="outline" className="w-full border-2 border-brand-navy text-brand-navy hover:bg-brand-navy hover:text-white font-semibold h-14" asChild>
@@ -146,9 +164,9 @@ export default function EmergencyRoofingPage() {
                 </Button>
               </div>
               <div className="mt-6">
-                <Link href="/roofers-sandbach" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline text-sm">
+                <Link href="/service-areas" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline text-sm">
                   <MapPin className="w-4 h-4" />
-                  View all Sandbach roofing services <ArrowRight className="w-4 h-4" />
+                  View all Cheshire service areas <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -184,8 +202,8 @@ export default function EmergencyRoofingPage() {
             <p>
               Once the emergency is resolved, we can carry out permanent <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">roof repairs</Link> or 
               advise on whether a full <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof</Link> is the better long-term investment. 
-              For Sandbach residents, our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">local Sandbach roofing page</Link> has 
-              case studies of emergency jobs we've completed in the CW11 area. We also provide insurance claim documentation and can liaise directly with your insurer.
+              Find your local page: <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach</Link>, <Link href="/roofers-crewe" className="text-brand-orange hover:underline font-medium">Crewe</Link>, <Link href="/roofers-congleton" className="text-brand-orange hover:underline font-medium">Congleton</Link>, <Link href="/roofers-nantwich" className="text-brand-orange hover:underline font-medium">Nantwich</Link>, or <Link href="/roofers-middlewich" className="text-brand-orange hover:underline font-medium">Middlewich</Link>. We also provide insurance claim documentation and can liaise directly with your insurer. 
+              For prevention advice, read our <Link href="/blog/emergency-roof-repairs" className="text-brand-orange hover:underline font-medium">emergency roof repairs guide</Link> and <Link href="/blog/roof-damage-signs" className="text-brand-orange hover:underline font-medium">how to spot roof damage early</Link>.
             </p>
           </div>
         </div>
@@ -199,12 +217,12 @@ export default function EmergencyRoofingPage() {
           <AlertTriangle className="w-16 h-16 text-brand-orange mx-auto mb-6 animate-pulse" />
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Roofing Emergency in Sandbach?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Don't wait - call us now for immediate assistance across CW11 and Cheshire
+            Don't wait — call us now for immediate assistance in Sandbach and across Cheshire
           </p>
           <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14 text-lg animate-pulse" asChild>
-            <TrackedPhoneLink href="tel:07379440583" placement="emergency_bottom_cta">
+            <TrackedPhoneLink href="tel:01270897606" placement="emergency_bottom_cta">
               <Phone className="w-5 h-5 mr-2" />
-              Call Emergency Line: 07379 440583
+              Call Now: 01270 897 606
             </TrackedPhoneLink>
           </Button>
         </div>

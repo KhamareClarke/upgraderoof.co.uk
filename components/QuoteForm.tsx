@@ -96,7 +96,7 @@ export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
     } catch (err: any) {
       // Catch any unexpected errors
       console.error('Error submitting quote request:', err);
-      setError(err.message || 'An unexpected error occurred. Please try again or call us directly at 07379 440583.');
+      setError(err.message || 'An unexpected error occurred. Please try again or call us directly at 01270 897606.');
       setLoading(false);
     }
   };

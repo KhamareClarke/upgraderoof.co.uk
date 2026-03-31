@@ -10,19 +10,37 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: 'New Roofs & Re-Roofing Cheshire | 10-Year Guarantee | Upgrade Roofs',
-  description: 'Complete new roof installations across Cheshire. Tile, slate, flat roofing. 10-year guarantee, £10M insured. Expert re-roofing. Free quotes. Call 01270 897606.',
-  keywords: 'new roof installation Cheshire, re-roofing Cheshire, roof replacement, new tile roof, new slate roof, complete re-roof',
+  title: 'New Roofs Sandbach & Cheshire | 10-Year Guarantee | Upgrade Roofs',
+  description: 'New roof installations in Sandbach & across Cheshire. Tile, slate, flat roofing. 10-year guarantee, £10M insured. Expert re-roofing from our Sandbach base. Free quotes. Call 01270 897606.',
+  keywords: 'new roofs Sandbach, re-roofing Sandbach, new roof Cheshire, roof replacement Sandbach, new tile roof, new slate roof',
   openGraph: {
-    title: 'New Roofs & Re-Roofing Cheshire | 10-Year Guarantee',
-    description: 'Complete new roof installations across Cheshire. Tile, slate, flat roofing. 10-year guarantee.',
+    title: 'New Roofs Sandbach & Cheshire | 10-Year Guarantee',
+    description: 'New roof installations in Sandbach & across Cheshire. 10-year guarantee. Free quotes.',
     url: 'https://www.upgraderoofs.co.uk/new-roofs',
     siteName: 'Upgrade Roofs',
+    images: [
+      {
+        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'New Roofs Sandbach - Upgrade Roofs',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'New Roofs Sandbach & Cheshire | Upgrade Roofs',
+    description: 'Complete roof replacements from our Sandbach base. Tile, slate, flat roofing. 10-year guarantee.',
+    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
+  },
   alternates: {
     canonical: 'https://www.upgraderoofs.co.uk/new-roofs',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -38,10 +56,10 @@ export default function NewRoofsPage() {
               <span>Complete Installations</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              New Roofs & Re-Roofing <span className="text-brand-orange">Sandbach</span>
+              New Roofs &amp; Re-Roofing in <span className="text-brand-orange">Sandbach</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-              Complete roof replacements for Sandbach properties. Premium materials, expert craftsmanship, 10-year guarantee.
+              Complete roof replacements from our Sandbach base. Premium materials, expert craftsmanship, and a 10-year guarantee on every installation. Serving Sandbach and all of Cheshire.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <QuoteForm trigger={
@@ -65,17 +83,17 @@ export default function NewRoofsPage() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
-              New Roof Options for Sandbach Properties
+              New Roof Options for Sandbach &amp; Cheshire Homes
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Based on Crewe Road, we've installed hundreds of new roofs across CW11 and surrounding areas.
+              We've installed hundreds of new roofs in Sandbach and across Cheshire. Tile, slate, and modern flat roofing systems for every property type.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { 
                 title: 'Tile Roofing', 
-                desc: 'Concrete and clay tiles. Traditional look, excellent durability. Popular choice for Sandbach properties.',
+                desc: 'Concrete and clay tiles. Traditional look, excellent durability. Popular choice across Cheshire.',
                 features: ['50+ year lifespan', 'Wide colour range', 'Weather resistant']
               },
               { 
@@ -119,7 +137,7 @@ export default function NewRoofsPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { step: '1', title: 'Free Survey', desc: 'We visit your Sandbach property, assess the roof, and provide a detailed written quote.' },
+              { step: '1', title: 'Free Survey', desc: 'We visit your property in Sandbach or anywhere in Cheshire, assess the roof, and provide a detailed written quote.' },
               { step: '2', title: 'Strip & Prepare', desc: 'Old roof removed, timbers inspected and repaired, new felt and battens installed.' },
               { step: '3', title: 'Install New Roof', desc: 'Premium materials installed by experienced roofers. All work to building regulations.' },
               { step: '4', title: 'Clean & Inspect', desc: 'Site cleaned, final inspection, 10-year guarantee certificate issued.' },
@@ -162,9 +180,9 @@ export default function NewRoofsPage() {
                 ))}
               </div>
               <div className="mt-8">
-                <Link href="/roofers-sandbach" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline">
+                <Link href="/service-areas" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline">
                   <MapPin className="w-4 h-4" />
-                  More about our Sandbach roofing services <ArrowRight className="w-4 h-4" />
+                  See all Cheshire areas we cover <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -203,9 +221,9 @@ export default function NewRoofsPage() {
           <div className="max-w-3xl mx-auto prose prose-lg text-gray-600 leading-relaxed">
             <p>
               Not sure if you need a full replacement? Our team can assess whether <Link href="/roof-repairs" className="text-brand-orange hover:underline font-medium">targeted roof repairs</Link> could 
-              extend your existing roof's life. For Sandbach homeowners, visit our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">dedicated Sandbach roofing page</Link> to 
-              see recent re-roofing projects in your area. We also specialise in <Link href="/services/flat-roofing" className="text-brand-orange hover:underline font-medium">flat roofing systems</Link> for 
-              extensions and garages, and <Link href="/services/chimney-repairs" className="text-brand-orange hover:underline font-medium">chimney repairs</Link> that are often needed alongside a new roof.
+              extend your existing roof's life. Find your local page for recent projects: <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach</Link>, <Link href="/roofers-crewe" className="text-brand-orange hover:underline font-medium">Crewe</Link>, <Link href="/roofers-congleton" className="text-brand-orange hover:underline font-medium">Congleton</Link>, <Link href="/roofers-nantwich" className="text-brand-orange hover:underline font-medium">Nantwich</Link>, or <Link href="/roofers-middlewich" className="text-brand-orange hover:underline font-medium">Middlewich</Link>. We also specialise in <Link href="/services/flat-roofing" className="text-brand-orange hover:underline font-medium">flat roofing systems</Link> for 
+              extensions and garages, and <Link href="/services/chimney-repairs" className="text-brand-orange hover:underline font-medium">chimney repairs</Link> that are often needed alongside a new roof. 
+              Read our guides on <Link href="/blog/how-long-does-roof-last" className="text-brand-orange hover:underline font-medium">how long different roofs last</Link> and <Link href="/blog/flat-vs-tile-roofs" className="text-brand-orange hover:underline font-medium">flat vs tile roofs compared</Link> to help you choose.
             </p>
           </div>
         </div>
@@ -218,7 +236,7 @@ export default function NewRoofsPage() {
         <div className="container-custom text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Ready for a New Roof in Sandbach?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Get a free, no-obligation quote for your complete roof replacement across CW11
+            Get a free, no-obligation quote for your complete roof replacement in Sandbach or across Cheshire
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14" asChild>

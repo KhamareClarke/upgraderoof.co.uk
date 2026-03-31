@@ -182,7 +182,7 @@ export function EnhancedContactSection() {
                       Send Another Message
                     </Button>
                     <Button asChild className="bg-brand-orange hover:bg-brand-orange/90">
-                      <a href="tel:07379440583" onClick={() => trackPhoneClick('contact_form_success')}>
+                      <a href="tel:01270897606" onClick={() => trackPhoneClick('contact_form_success')}>
                         <Phone className="w-4 h-4 mr-2" />
                         Call Now
                       </a>
@@ -328,11 +328,11 @@ export function EnhancedContactSection() {
                       <h3 className="font-semibold text-brand-navy mb-2">Call Us</h3>
                       <p className="text-gray-600 mb-2">Get immediate assistance</p>
                       <a 
-                        href="tel:07379440583" 
+                        href="tel:01270897606" 
                         className="text-brand-orange font-semibold hover:underline"
                         onClick={() => trackPhoneClick('contact_sidebar')}
                       >
-                        07379 440583
+                        01270 897 606
                       </a>
                     </div>
                   </div>

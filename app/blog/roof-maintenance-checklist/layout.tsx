@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Roof Maintenance Checklist Cheshire | Seasonal Guide | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function RoofMaintenanceChecklistLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Roof Maintenance Checklist for Cheshire Homeowners"
+        description="Complete roof maintenance checklist for Cheshire homeowners. Seasonal tasks and when to call professionals."
+        url="https://www.upgraderoofs.co.uk/blog/roof-maintenance-checklist"
+        datePublished="2026-03-10"
+        image="/images/6.jpeg"
+      />
+      {children}
+    </>
+  );
 }

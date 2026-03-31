@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'How to Choose a Roofing Contractor Cheshire | Avoid Cowboy Builders',
@@ -29,5 +30,16 @@ export default function ChoosingRoofingContractorLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="How to Choose a Reliable Roofing Contractor in Cheshire"
+        description="Expert guide to choosing a reliable roofing contractor. Red flags, green flags, questions to ask."
+        url="https://www.upgraderoofs.co.uk/blog/choosing-roofing-contractor"
+        datePublished="2026-02-25"
+        image="/images/6.jpeg"
+      />
+      {children}
+    </>
+  );
 }

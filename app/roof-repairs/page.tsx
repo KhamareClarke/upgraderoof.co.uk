@@ -10,19 +10,37 @@ export const dynamic = 'force-static';
 export const revalidate = false;
 
 export const metadata: Metadata = {
-  title: 'Roof Repairs Cheshire | Same-Day Service | Upgrade Roofs',
-  description: 'Professional roof repairs across Cheshire. Leaks, storm damage, missing tiles, ridge repairs. Same-day response. 25+ years experience. CORC certified. Call 01270 897606.',
-  keywords: 'roof repairs Cheshire, roof leak repair, storm damage roof repair, tile replacement Cheshire, ridge repairs, missing tiles',
+  title: 'Roof Repairs Sandbach & Cheshire | Same-Day Service | Upgrade Roofs',
+  description: 'Expert roof repairs in Sandbach & across Cheshire. Leaks, storm damage, missing tiles, ridge repairs. Same-day response from our Sandbach base. 25+ years experience. Call 01270 897606.',
+  keywords: 'roof repairs Sandbach, roof repairs Cheshire, roof leak repair Sandbach, storm damage roof repair, tile replacement, ridge repairs',
   openGraph: {
-    title: 'Roof Repairs Cheshire | Same-Day Service',
-    description: 'Professional roof repairs across Cheshire. Leaks, storm damage, missing tiles. Same-day response.',
+    title: 'Roof Repairs Sandbach & Cheshire | Same-Day Service',
+    description: 'Expert roof repairs in Sandbach & across Cheshire. Same-day response. 25+ years experience.',
     url: 'https://www.upgraderoofs.co.uk/roof-repairs',
     siteName: 'Upgrade Roofs',
+    images: [
+      {
+        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Roof Repairs Sandbach - Upgrade Roofs',
+      },
+    ],
     locale: 'en_GB',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Roof Repairs Sandbach & Cheshire | Upgrade Roofs',
+    description: 'Same-day roof repairs from our Sandbach base. Leaks, storm damage, missing tiles. Call 01270 897606.',
+    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
+  },
   alternates: {
     canonical: 'https://www.upgraderoofs.co.uk/roof-repairs',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -38,10 +56,10 @@ export default function RoofRepairsPage() {
               <span>Fast Response Service</span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              Roof Repairs <span className="text-brand-orange">Sandbach</span>
+              Roof Repairs in <span className="text-brand-orange">Sandbach</span> &amp; Cheshire
             </h1>
             <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl">
-              Fast, reliable roof repairs across Sandbach and Cheshire. From minor leaks to storm damage, we fix it right the first time.
+              Fast, reliable roof repairs from our Sandbach base. Leaks, storm damage, missing tiles, ridge work — we fix it right the first time. Serving Sandbach and all of Cheshire.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <QuoteForm trigger={
@@ -68,7 +86,7 @@ export default function RoofRepairsPage() {
               Common Roof Repairs We Handle
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Based in Sandbach, we handle all types of roof repairs across CW11 and surrounding Cheshire areas.
+              Based in Sandbach, we handle all types of roof repairs — from homes in CW11 to properties across Crewe, Congleton, Nantwich, and the wider Cheshire area.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -76,7 +94,7 @@ export default function RoofRepairsPage() {
               { title: 'Leak Repairs', desc: 'Fast leak detection and repair. We find the source and fix it permanently.' },
               { title: 'Missing Tiles', desc: 'Replace missing, cracked, or slipped tiles. Exact colour matching available.' },
               { title: 'Storm Damage', desc: 'Emergency repairs after high winds, fallen trees, or severe weather.' },
-              { title: 'Ridge Repairs', desc: 'Repointing and rebuilding ridge tiles. Common issue on older Sandbach properties.' },
+              { title: 'Ridge Repairs', desc: 'Repointing and rebuilding ridge tiles. Common issue on older Cheshire properties.' },
               { title: 'Valley Repairs', desc: 'Lead valley repairs and replacements. Critical for preventing leaks.' },
               { title: 'Flashing Repairs', desc: 'Chimney, wall, and dormer flashing repairs using lead or GRP.' },
             ].map((repair, i) => (
@@ -100,7 +118,7 @@ export default function RoofRepairsPage() {
               </h2>
               <div className="space-y-4">
                 {[
-                  { icon: Clock, title: 'Same-Day Service', desc: 'Based on Crewe Road, Sandbach - we can usually reach you within 30 minutes for urgent repairs.' },
+                  { icon: Clock, title: 'Same-Day Service', desc: 'Based in Sandbach, we cover all of south and mid-Cheshire — usually on-site within 30–45 minutes for urgent repairs.' },
                   { icon: Shield, title: '10-Year Guarantee', desc: 'All repairs backed by our comprehensive workmanship guarantee.' },
                   { icon: CheckCircle, title: 'No Hidden Costs', desc: 'Fixed-price quotes. No surprises, no call-out fees.' },
                 ].map((item, i) => (
@@ -116,9 +134,9 @@ export default function RoofRepairsPage() {
                 ))}
               </div>
               <div className="mt-8">
-                <Link href="/roofers-sandbach" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline">
+                <Link href="/service-areas" className="inline-flex items-center gap-2 text-brand-orange font-semibold hover:underline">
                   <MapPin className="w-4 h-4" />
-                  More about our Sandbach roofing services <ArrowRight className="w-4 h-4" />
+                  See all Cheshire areas we cover <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -156,9 +174,10 @@ export default function RoofRepairsPage() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto prose prose-lg text-gray-600 leading-relaxed">
             <p>
-              For urgent roof repair work in Sandbach, see our dedicated <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach roofing page</Link> for 
-              local case studies and customer reviews. If your roof damage is beyond repair, we also offer complete <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof installations</Link> with 
-              10-year guarantees. For out-of-hours emergencies — storm damage, sudden leaks, or structural issues — call our <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">24/7 emergency roofing line</Link> on 07379 440583.
+              Looking for a roofer in a specific area? See our <Link href="/roofers-sandbach" className="text-brand-orange hover:underline font-medium">Sandbach</Link>, <Link href="/roofers-crewe" className="text-brand-orange hover:underline font-medium">Crewe</Link>, <Link href="/roofers-congleton" className="text-brand-orange hover:underline font-medium">Congleton</Link>, or <Link href="/roofers-middlewich" className="text-brand-orange hover:underline font-medium">Middlewich</Link> roofing pages for 
+              local details and reviews. If your roof is beyond repair, we also offer complete <Link href="/new-roofs" className="text-brand-orange hover:underline font-medium">new roof installations</Link> with 
+              10-year guarantees. For out-of-hours emergencies — storm damage, sudden leaks, or structural issues — call our <Link href="/emergency-roofing" className="text-brand-orange hover:underline font-medium">24/7 emergency roofing line</Link> on 01270 897 606. 
+              Not sure if you need repairs? Read our guides on <Link href="/blog/roof-damage-signs" className="text-brand-orange hover:underline font-medium">spotting roof damage early</Link> and <Link href="/blog/roof-maintenance-checklist" className="text-brand-orange hover:underline font-medium">seasonal roof maintenance</Link>.
             </p>
           </div>
         </div>
@@ -171,7 +190,7 @@ export default function RoofRepairsPage() {
         <div className="container-custom text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Need a Roof Repair in Sandbach?</h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Call us now for same-day service across CW11 and surrounding areas
+            Call us now for same-day roof repairs in Sandbach and across Cheshire
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-10 h-14" asChild>

@@ -207,7 +207,9 @@ export default function GutterMaintenanceGuidePost() {
               </ul>
 
               <p className="mb-8">
-                For a free quote on gutter services, <Link href="/contact" className="text-brand-orange hover:underline">contact our team</Link> today.
+                For a free quote on gutter services, <Link href="/contact" className="text-brand-orange hover:underline">contact our team</Link> today. 
+                Gutter problems often signal wider roof issues — our <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repair team</Link> can 
+                carry out a full assessment. If water is actively entering your home, call our <Link href="/emergency-roofing" className="text-brand-orange hover:underline">24/7 emergency line</Link> on 01270 897 606.
               </p>
             </div>
 

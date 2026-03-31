@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'Do you offer emergency roofing services?',
-    answer: 'Yes. We offer a 24/7 emergency call-out service across Cheshire and the North West. If you have an urgent leak or storm damage, call us now on 01270 897 606 or 07379 440 583.'
+    answer: 'Yes. We offer a 24/7 emergency call-out service across Cheshire and the North West. If you have an urgent leak or storm damage, call us now on 01270 897 606.'
   },
   {
     question: 'What areas of Cheshire do you cover?',
@@ -91,11 +91,11 @@ export function FAQ() {
           <div className="mt-8 sm:mt-10 md:mt-12 text-center">
             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Still have questions?</p>
             <a
-              href="tel:07379440583"
+              href="tel:01270897606"
               className="inline-flex items-center justify-center px-6 sm:px-8 py-2.5 sm:py-3 bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold rounded-lg transition-colors text-sm sm:text-base"
               onClick={() => trackPhoneClick('faq_section')}
             >
-              Call Us: 07379 440583
+              Call Us: 01270 897 606
             </a>
           </div>
         </div>

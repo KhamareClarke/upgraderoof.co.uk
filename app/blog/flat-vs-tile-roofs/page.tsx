@@ -331,7 +331,10 @@ export default function FlatVsTileRoofsPost() {
 
               <p className="mb-8">
                 For expert advice on the best roofing solution for your Cheshire property, contact our experienced team. 
-                We provide honest assessments and quality installations backed by comprehensive warranties.
+                We provide honest assessments and quality installations backed by comprehensive warranties. 
+                Explore our <Link href="/new-roofs" className="text-brand-orange hover:underline">new roof installations</Link> for 
+                complete re-roofing, or our <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repair services</Link> if 
+                your current roof just needs attention.
               </p>
             </div>
 

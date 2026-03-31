@@ -219,7 +219,9 @@ export default function ChimneyRepairGuidePost() {
 
               <p className="mb-8">
                 For a free chimney inspection and quote, <Link href="/contact" className="text-brand-orange hover:underline">contact our team</Link> today. 
-                We serve all of Cheshire including Sandbach, Crewe, Middlewich, Congleton, and surrounding areas.
+                Chimney issues often coincide with other roofing problems — see our <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repair services</Link> for 
+                a full assessment. If your chimney has suffered storm damage, our <Link href="/emergency-roofing" className="text-brand-orange hover:underline">24/7 emergency roofing</Link> team 
+                can make it safe immediately. We serve all of Cheshire including Sandbach, Crewe, Middlewich, Congleton, and surrounding areas.
               </p>
             </div>
 

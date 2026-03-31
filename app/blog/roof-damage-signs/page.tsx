@@ -209,8 +209,10 @@ export default function RoofDamageSignsPost() {
               </p>
 
               <p className="mb-8">
-                For expert <Link href="/services/roof-repairs" className="text-brand-orange hover:underline">roof repair services</Link> or 
-                to schedule your free inspection, contact our team today.
+                For expert <Link href="/roof-repairs" className="text-brand-orange hover:underline">roof repair services</Link> or 
+                to schedule your free inspection, contact our team today. If damage is severe or you're dealing with an active leak, 
+                call our <Link href="/emergency-roofing" className="text-brand-orange hover:underline">24/7 emergency roofing line</Link> on 01270 897 606. 
+                When repairs aren't enough, we also offer <Link href="/new-roofs" className="text-brand-orange hover:underline">complete new roof installations</Link> with 10-year guarantees.
               </p>
             </div>
 

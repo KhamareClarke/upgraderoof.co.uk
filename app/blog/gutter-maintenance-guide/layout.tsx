@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Gutter Maintenance Guide Cheshire | Cleaning & Repairs | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function GutterMaintenanceGuideLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Complete Guide to Gutter Maintenance in Cheshire"
+        description="Complete guide to gutter maintenance. When to clean, signs of problems, DIY vs professional."
+        url="https://www.upgraderoofs.co.uk/blog/gutter-maintenance-guide"
+        datePublished="2026-03-05"
+        image="/images/2.jpeg"
+      />
+      {children}
+    </>
+  );
 }

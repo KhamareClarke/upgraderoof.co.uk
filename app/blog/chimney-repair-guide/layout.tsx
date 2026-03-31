@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Chimney Repairs Cheshire | Repointing & Rebuilds Guide | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function ChimneyRepairGuideLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Chimney Repairs in Cheshire: Complete Guide"
+        description="Complete guide to chimney repairs. Repointing, flashing, rebuilds explained."
+        url="https://www.upgraderoofs.co.uk/blog/chimney-repair-guide"
+        datePublished="2026-03-01"
+        image="/images/1.jpeg"
+      />
+      {children}
+    </>
+  );
 }

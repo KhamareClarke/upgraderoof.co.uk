@@ -5,7 +5,7 @@ import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Free Roofing Quote Cheshire | 01270 897606',
-  description: 'Contact Upgrade Roofs for free quotes. Call 01270 897606 or WhatsApp 07379 440583. Serving Sandbach, Crewe, Middlewich, Congleton and all Cheshire. Fast response guaranteed.',
+  description: 'Contact Upgrade Roofs for free quotes. Call 01270 897606. Serving Sandbach, Crewe, Middlewich, Congleton and all Cheshire. Fast response guaranteed.',
   keywords: 'contact roofer Cheshire, roofing quote Cheshire, roofing enquiry, free roof quote, Cheshire roofing contact, emergency roofer contact',
   openGraph: {
     title: 'Contact Upgrade Roofs | Free Quote Cheshire',
@@ -88,10 +88,7 @@ export default function ContactPage() {
                       <TrackedPhoneLink href="tel:01270897606" placement="contact_info_landline" className="text-sm sm:text-base text-gray-600 hover:text-brand-orange block break-all sm:break-normal">
                         01270 897 606
                       </TrackedPhoneLink>
-                      <TrackedPhoneLink href="tel:07379440583" placement="contact_info_mobile" className="text-sm sm:text-base text-gray-600 hover:text-brand-orange block break-all sm:break-normal mt-1">
-                        07379 440 583
-                      </TrackedPhoneLink>
-                    </div>
+                                          </div>
                   </div>
 
                   <div className="flex items-start gap-3 sm:gap-4">
@@ -242,9 +239,9 @@ export default function ContactPage() {
             <p className="text-sm sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 max-w-2xl mx-auto px-2">
               Storm damage? Leak? We offer 24/7 emergency roofing services across Cheshire. Our emergency team can be with you within hours to secure your property and prevent further damage. Don't wait - water damage can quickly escalate and cause structural issues.
             </p>
-            <TrackedPhoneLink href="tel:07379440583" placement="contact_emergency_cta" className="inline-block w-full sm:w-auto">
+            <TrackedPhoneLink href="tel:01270897606" placement="contact_emergency_cta" className="inline-block w-full sm:w-auto">
               <button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold px-6 sm:px-8 md:px-10 h-12 sm:h-14 text-base sm:text-lg rounded-md transition-colors w-full sm:w-auto">
-                <span className="hidden sm:inline">Call Now: </span>07379 440 583
+                <span className="hidden sm:inline">Call Now: </span>01270 897 606
               </button>
             </TrackedPhoneLink>
           </div>

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Roofers Sandbach | Trusted Roofing Company | Upgrade Roofs',
-  description: 'Local roofers in Sandbach, Cheshire. 25+ years experience. Roof repairs, new roofs, flat roofing, emergency call-outs. CORC certified, £10M insured. Free quotes.',
+  title: 'Roofers Sandbach | Based in CW11 | 01270 897606 | Upgrade Roofs',
+  description: 'Your local roofers based on Crewe Road, Sandbach. 25+ years experience. Roof repairs, new roofs, flat roofing, 24/7 emergency call-outs. CORC certified, £10M insured. Free quotes.',
   keywords: 'roofers sandbach, roofing company sandbach, roof repair sandbach, roofer near me sandbach, new roofs sandbach, emergency roofer sandbach, flat roofing sandbach, tile roofing sandbach',
   openGraph: {
     title: 'Roofers Sandbach | Local Roofing Experts | Upgrade Roofs',

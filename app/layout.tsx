@@ -15,8 +15,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Roofers Sandbach & Cheshire | Upgrade Roofs | 01270 897606',
-  description: 'Sandbach-based roofers serving Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. 25+ years experience, CORC certified, £10M insured. Free quotes. Call 01270 897606.',
+  title: {
+    default: 'Upgrade Roofs | Roofers Sandbach | 01270 897606',
+    template: '%s | Upgrade Roofs',
+  },
+  description: 'Upgrade Roofs — trusted roofers based in Sandbach, serving Cheshire. 25+ years experience, CORC certified, £10M insured. Call 01270 897606.',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -27,24 +30,6 @@ export const metadata: Metadata = {
     shortcut: '/images/upgrade_logo.jpeg',
     apple: '/images/upgrade_logo.jpeg',
   },
-  keywords: [
-    'roofing company Cheshire',
-    'roof repairs Cheshire',
-    'roofers Sandbach',
-    'flat roofing Cheshire',
-    'tile roofs Cheshire',
-    'guttering Cheshire',
-    'roofing Sandbach',
-    'roofing Crewe',
-    'roofing Congleton',
-    'roofing Middlewich',
-    'emergency roof repairs Cheshire',
-    'roofing contractors Cheshire',
-    'skylight installation Cheshire',
-    'cladding Cheshire',
-    'roof replacement Cheshire',
-    'commercial roofing Cheshire'
-  ],
   authors: [{ name: 'Upgrade Roofs' }],
   creator: 'Upgrade Roofs',
   publisher: 'Upgrade Roofs',
@@ -54,30 +39,13 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://www.upgraderoofs.co.uk'),
-  alternates: {
-    canonical: 'https://www.upgraderoofs.co.uk',
-  },
   openGraph: {
-    title: 'Roofers Sandbach & Cheshire | Upgrade Roofs',
-    description: 'Sandbach-based roofers serving Cheshire. Roof repairs, new roofs, flat roofing, emergency call-outs. 25+ years experience. Free quotes.',
-    url: 'https://www.upgraderoofs.co.uk',
     siteName: 'Upgrade Roofs',
-    images: [
-      {
-        url: 'https://www.upgraderoofs.co.uk/images/6.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Professional Roofing Services Cheshire - Upgrade Roofs',
-      },
-    ],
     locale: 'en_GB',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Roofers Sandbach & Cheshire | Upgrade Roofs',
-    description: 'Sandbach-based roofers serving Cheshire. 25+ years experience. Free quotes.',
-    images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
     site: '@upgraderoofing',
     creator: '@upgraderoofing',
   },

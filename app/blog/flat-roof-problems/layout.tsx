@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Common Flat Roof Problems & Solutions | Cheshire | Upgrade Roofs',
@@ -29,5 +30,16 @@ export default function FlatRoofProblemsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Common Flat Roof Problems and How to Fix Them"
+        description="Guide to common flat roof problems: ponding, blistering, cracking, leaks. When to repair vs replace."
+        url="https://www.upgraderoofs.co.uk/blog/flat-roof-problems"
+        datePublished="2026-02-15"
+        image="/images/3.jpeg"
+      />
+      {children}
+    </>
+  );
 }

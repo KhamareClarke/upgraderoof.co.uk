@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BlogArticleSchema } from '@/components/BlogArticleSchema';
 
 export const metadata: Metadata = {
   title: 'Flat vs Tile Roofs | Which is Best? | Upgrade Roofs',
@@ -31,5 +32,15 @@ export default function FlatVsTileRoofsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <BlogArticleSchema
+        title="Flat vs Tile Roofs: Which is Best for Your Home?"
+        description="Comparing flat roofs vs tile roofs. Pros, cons, costs, lifespan and maintenance."
+        url="https://www.upgraderoofs.co.uk/blog/flat-vs-tile-roofs"
+        datePublished="2024-11-04"
+      />
+      {children}
+    </>
+  );
 }

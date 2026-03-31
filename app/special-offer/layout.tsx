@@ -43,15 +43,8 @@ export const metadata: Metadata = {
     images: ['https://www.upgraderoofs.co.uk/images/6.jpeg'],
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   other: {},
 };
