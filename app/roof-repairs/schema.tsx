@@ -1,10 +1,5 @@
-'use client';
-
-import { FAQPage, Service, Review } from 'schema-dts';
-import { JsonLd } from 'react-schemaorg';
-
-// This is a simplified version for one service. In a real app, this might be more dynamic.
-const serviceData: Service = {
+const serviceData = {
+  '@context': 'https://schema.org',
   '@type': 'Service',
   serviceType: 'Roof Repair',
   provider: {
@@ -19,7 +14,7 @@ const serviceData: Service = {
       latitude: 53.1461,
       longitude: -2.3679,
     },
-    geoRadius: '30000', // 30km radius around Sandbach
+    geoRadius: '30000',
   },
   name: 'Roof Repair Services',
   description: 'Fast, reliable roof repairs for leaks, storm damage, missing tiles, and more. Serving Sandbach and the wider Cheshire area.',
@@ -36,7 +31,8 @@ const serviceData: Service = {
   },
 };
 
-const faqData: FAQPage = {
+const faqData = {
+  '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
     {
@@ -66,38 +62,50 @@ const faqData: FAQPage = {
   ],
 };
 
-const reviewData: Review[] = [
-    {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Karen W.' },
-        reviewBody: "Had a leak above the bathroom that two other roofers couldn't fix. Upgrade Roofs found the problem in 20 minutes — a failed lead flashing behind the soil pipe. Fixed properly, no more damp.",
-        reviewRating: { '@type': 'Rating', ratingValue: 5 },
-        publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' }
-    },
-    {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Mike R.' },
-        reviewBody: "Storm blew off 6 tiles on our semi. They came same day, replaced the tiles and checked the rest of the roof while they were up there. Fair price, no fuss.",
-        reviewRating: { '@type': 'Rating', ratingValue: 5 },
-        publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' }
-    },
-    {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: 'Janet & Alan D.' },
-        reviewBody: "Our ridge tiles had been loose for months. Upgrade Roofs re-bedded them with a dry ridge system. Looks much better and should last decades now.",
-        reviewRating: { '@type': 'Rating', ratingValue: 5 },
-        publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' }
-    }
+const reviewData = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Karen W.' },
+    reviewBody: "Had a leak above the bathroom that two other roofers couldn't fix. Upgrade Roofs found the problem in 20 minutes — a failed lead flashing behind the soil pipe. Fixed properly, no more damp.",
+    reviewRating: { '@type': 'Rating', ratingValue: 5 },
+    publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Mike R.' },
+    reviewBody: 'Storm blew off 6 tiles on our semi. They came same day, replaced the tiles and checked the rest of the roof while they were up there. Fair price, no fuss.',
+    reviewRating: { '@type': 'Rating', ratingValue: 5 },
+    publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    author: { '@type': 'Person', name: 'Janet & Alan D.' },
+    reviewBody: 'Our ridge tiles had been loose for months. Upgrade Roofs re-bedded them with a dry ridge system. Looks much better and should last decades now.',
+    reviewRating: { '@type': 'Rating', ratingValue: 5 },
+    publisher: { '@id': 'https://www.upgraderoofs.co.uk/#organization' },
+  },
 ];
-
 
 export function RoofRepairsSchema() {
   return (
     <>
-      <JsonLd item={serviceData} />
-      <JsonLd item={faqData} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
       {reviewData.map((review, index) => (
-        <JsonLd key={index} item={review} />
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(review) }}
+        />
       ))}
     </>
   );

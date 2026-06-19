@@ -519,4 +519,41 @@ export const townData: Record<string, TownData> = {
       { name: 'Alsager', href: '/roofers-alsager' },
     ],
   },
+
+  sandbach: {
+    slug: 'roofers-sandbach',
+    town: 'Sandbach',
+    postcode: 'CW11',
+    distanceFromBase: 'our home town — based in Sandbach',
+    emergencyResponseTime: '15–20 minutes',
+    intro:
+      'Upgrade Roofs is based right here in Sandbach. As your local roofer we know the area, the properties, and the conditions that affect roofs in CW11 better than anyone. From the historic cobbles of the town centre to the newer estates at Sandbach Heath, we look after roofs across the whole town.',
+    localContext:
+      'Sandbach is a market town with a proud heritage, and its housing stock reflects that — from Georgian and Victorian properties in the town centre to 1960s–80s estates and modern new-builds on the edges of town. The market square, Saxon Crosses, and surrounding farmland are all landmarks we pass on the way to jobs every day. Our team has completed hundreds of roofing projects across CW11, giving us unmatched knowledge of the local stock.',
+    roofingChallenges:
+      'Being on the Cheshire Plain, Sandbach properties are exposed to prevailing south-westerly winds that can lift ridge tiles and loosen flashing. Many older town-centre properties have original Welsh slate roofs that need sympathetic repair. We specify materials to match and specify dry-fix systems where mortar bedding is at risk from frost and wind.',
+    landmarks: ['Sandbach town centre', 'Saxon Crosses', 'Sandbach Heath', 'Wheelock', 'Elworth', 'Ettiley Heath'],
+    propertyTypes: ['Victorian terraces', 'Georgian townhouses', 'Post-war semis', 'Modern new-builds', 'Farmhouses'],
+    commonProblems: [
+      { problem: 'Ridge tile lifting on exposed properties', solution: 'Dry ridge systems rated for Cheshire Plain wind exposure — no mortar to crack.' },
+      { problem: 'Slate deterioration on period town-centre properties', solution: 'Natural Welsh slate sourced to match original roofs for authentic repairs.' },
+      { problem: 'Flat roof failures on garage and extension roofs', solution: 'EPDM or GRP replacement with 20-year guarantee, typically completed in 1–2 days.' },
+    ],
+    proofPoint: 'Our home town — hundreds of roofing projects completed across CW11 over 25+ years.',
+    ctaLine: "Your local Sandbach roofer — we're minutes away and know these streets well.",
+    faqs: [
+      { q: 'Are you actually based in Sandbach?', a: 'Yes. Upgrade Roofs is based at 20 Crewe Road, Sandbach, CW11 4NE. We are genuinely your local roofer — not a call centre that passes your job to a contractor from elsewhere.' },
+      { q: 'How quickly can you respond to a roofing emergency in Sandbach?', a: 'Being based in Sandbach means we can reach most addresses in the town within 15–20 minutes for urgent callouts. We aim to attend the same day for emergency roof repairs.' },
+      { q: 'How much does a roof repair cost in Sandbach?', a: 'Minor repairs such as replacing a few slipped tiles or repointing ridge mortar typically cost £150–£400 in Sandbach. More involved work involving leadwork or valley repairs ranges from £400–£1,500. We provide a free written quote before any work starts.' },
+      { q: 'Do you work on Victorian and period properties in Sandbach town centre?', a: 'Yes. Many of the properties in and around Sandbach town centre are Victorian or Georgian, often with original Welsh slate roofs. We have extensive experience working sympathetically on period properties, sourcing matching slate and using traditional techniques where required.' },
+    ],
+    nearbyAreas: [
+      { name: 'Crewe', href: '/roofers-crewe' },
+      { name: 'Middlewich', href: '/roofers-middlewich' },
+      { name: 'Congleton', href: '/roofers-congleton' },
+      { name: 'Nantwich', href: '/roofers-nantwich' },
+      { name: 'Alsager', href: '/roofers-alsager' },
+      { name: 'Holmes Chapel', href: '/roofers-holmes-chapel' },
+    ],
+  },
 };
