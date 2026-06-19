@@ -16,9 +16,10 @@
 import React from 'react';
 import Script from 'next/script';
 
-const GTM_ID  = process.env.NEXT_PUBLIC_GTM_ID  || 'GTM-5LMDG3F7';
-const GA4_ID  = process.env.NEXT_PUBLIC_GA4_ID  || 'G-8RLZRSYD5G';
-const GADS_ID = process.env.NEXT_PUBLIC_GADS_ID || 'AW-8479028400';
+const GTM_ID         = process.env.NEXT_PUBLIC_GTM_ID         || 'GTM-5LMDG3F7';
+const GA4_ID         = process.env.NEXT_PUBLIC_GA4_ID         || 'G-8RLZRSYD5G';
+const GADS_ID        = process.env.NEXT_PUBLIC_GADS_ID        || 'AW-8479028400';
+const GADS_CONV_ID   = process.env.NEXT_PUBLIC_GADS_CONV_ID   || 'AW-17763560213';
 
 export function Analytics() {
   return (
@@ -83,12 +84,15 @@ export function Analytics() {
       </Script>
 
       {/* ── 4. Google Ads global site tag ────────────────────────────────
-          Initialises remarketing audiences and the conversion linker.
-          Individual conversion events are fired from GTM using the
-          AW-8479028400/LABEL format — configure those inside GTM. */}
+          Two configs:
+          - AW-8479028400 : account-level (remarketing, call extensions)
+          - AW-17763560213: conversion tag for "Submit lead forms" — Google
+            matches this against the /special-offer URL pattern automatically,
+            no event snippet or conversion label required. */}
       <Script id="google-ads-config" strategy="afterInteractive">
         {`
           gtag('config', '${GADS_ID}');
+          gtag('config', '${GADS_CONV_ID}');
         `}
       </Script>
     </>
