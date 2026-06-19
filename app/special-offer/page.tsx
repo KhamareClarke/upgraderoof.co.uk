@@ -47,8 +47,7 @@ export default function SpecialOfferPage() {
   useEffect(() => {
     if (!mounted) return;
     
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7);
+    const targetDate = new Date('2026-07-31T23:59:59');
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -145,13 +144,14 @@ export default function SpecialOfferPage() {
             <div className="text-white space-y-4">
               <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand-orange text-white font-bold animate-pulse">
                 <Award className="w-5 h-5" />
-                <span className="text-lg">LIMITED TIME OFFER</span>
+                <span className="text-lg">FREE ROOF INSPECTION — SANDBACH & CHESHIRE</span>
               </div>
-              
+
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  <span className="text-brand-orange">CALL NOW</span><br />
-                  for Your FREE Roof Inspection!
+                  Roof Leak or Damage<br />
+                  in <span className="text-brand-orange">Cheshire?</span><br />
+                  We'll Inspect It Free.
                 </h1>
                 
                 <div className="bg-white/10 backdrop-blur-sm border-2 border-brand-orange rounded-2xl p-8 text-center">
@@ -166,14 +166,15 @@ export default function SpecialOfferPage() {
               
               <div className="space-y-3">
                 <p className="text-xl font-semibold text-brand-orange">
-                  Emergency Roof Repairs • Leak Fixes • New Roofs
+                  Emergency Repairs • Leaks • New Roofs • Flat Roofs
                 </p>
-                <p className="text-lg text-white/90">
-                  25+ Years Experience • FREE Same-Day Quotes
-                </p>
-                <p className="text-lg text-white/80">
-                  Based in Sandbach, Serving Cheshire
-                </p>
+                <ul className="text-base text-white/90 space-y-1">
+                  <li>✓ CORC certified — properly qualified roofers</li>
+                  <li>✓ £10M public liability insurance</li>
+                  <li>✓ 10-year workmanship guarantee on all work</li>
+                  <li>✓ Free written quote — no obligation, no pressure</li>
+                  <li>✓ Based in Sandbach — fast across all of Cheshire</li>
+                </ul>
               </div>
 
               {/* Call-First CTAs */}
@@ -229,19 +230,19 @@ export default function SpecialOfferPage() {
               <div className="text-center mb-8">
                 <div className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-2xl p-6 mb-6">
                   <div className="text-2xl font-bold mb-2">
-                    📞 FASTEST: Call 01270 897606
+                    📞 Call Now: 01270 897606
                   </div>
                   <div className="text-lg opacity-90">
-                    Instant quote in 2 minutes!
+                    We answer in 30 seconds — instant quote
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-brand-navy">
-                    Or Request a Callback
+                    Book Your Free Roof Inspection
                   </h3>
                   <p className="text-gray-600">
-                    We'll call you within 10 minutes
+                    We'll call you back within 10 minutes to confirm
                   </p>
                 </div>
               </div>
@@ -402,12 +403,23 @@ export default function SpecialOfferPage() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-6">
-              Got a Leak or Need a New Roof? We Identify the Problem Fast.
+              What Your Free Inspection Covers
             </h2>
-            <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-              Whether it's a small leak or a full roof replacement, our inspection includes a detailed condition report 
-              and a no-obligation repair plan tailored for your home.
-            </p>
+            <div className="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto mb-8">
+              {[
+                'Full roof structure check — tiles, slates, ridges',
+                'Lead flashing & valley condition',
+                'Gutters, fascias & soffits',
+                'Chimney pointing & flashings',
+                'Flat roof membranes (if applicable)',
+                'Written condition report with photos',
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">{item}</span>
+                </div>
+              ))}
+            </div>
             <Button 
               size="lg" 
               className="bg-brand-orange hover:bg-brand-orange/90 !text-white font-bold px-8 py-4"
@@ -423,10 +435,10 @@ export default function SpecialOfferPage() {
       <section className="py-12 bg-gradient-to-r from-red-600 to-brand-orange text-white">
         <div className="container-custom text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            ⏰ Limited Time Offer Act Fast!
+            Free Roof Inspection — Offer Ends 31st July 2026
           </h2>
           <p className="text-lg mb-6">
-            Only 5 free inspections left this week. Offer ends Sunday
+            Book before the deadline. No cost, no obligation — just an expert roof check and honest advice.
           </p>
           
           {/* Countdown Timer */}
@@ -439,12 +451,12 @@ export default function SpecialOfferPage() {
             ))}
           </div>
 
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white !text-brand-orange hover:bg-gray-100 font-bold px-8 py-4 text-lg"
             onClick={() => document.querySelector('form')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            <span className="!text-brand-orange">Claim Your Spot Now</span>
+            <span className="!text-brand-orange">Book My Free Inspection</span>
           </Button>
         </div>
       </section>
