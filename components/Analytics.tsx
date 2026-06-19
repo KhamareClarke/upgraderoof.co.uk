@@ -3,60 +3,94 @@
 /**
  * Analytics — TAG INITIALIZATION ONLY
  *
- * This component loads third-party tracking scripts (GTM) and sets up
- * Google Consent Mode V2. It does NOT contain any event helper functions —
- * all event tracking lives in `lib/tracking.ts`.
+ * Loads: Google Consent Mode V2 → GTM → GA4 (direct) → Google Ads global site tag
  *
- * It is assumed that all other marketing tags (GA4, Google Ads, Meta Pixel)
- * are configured and loaded via the Google Tag Manager container.
+ * GTM  : GTM-5LMDG3F7
+ * GA4  : G-8RLZRSYD5G
+ * Ads  : AW-8479028400
  *
- * Env vars with hardcoded fallbacks below are the real production IDs.
- * They ensure tracking works even if Vercel env vars are not yet configured.
- * Once env vars are set in the hosting platform, these fallbacks are ignored.
+ * Conversion events are pushed to window.dataLayer from lib/tracking.ts.
+ * GTM listens for those events and fires GA4 event tags + Ads conversion tags.
  */
 
 import React from 'react';
 import Script from 'next/script';
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-MKPC2G22';
+const GTM_ID  = process.env.NEXT_PUBLIC_GTM_ID  || 'GTM-5LMDG3F7';
+const GA4_ID  = process.env.NEXT_PUBLIC_GA4_ID  || 'G-8RLZRSYD5G';
+const GADS_ID = process.env.NEXT_PUBLIC_GADS_ID || 'AW-8479028400';
 
 export function Analytics() {
   return (
     <>
-      {/* Google Consent Mode V2 — MUST fire synchronously before any tags */}
+      {/* ── 1. Google Consent Mode V2 ─────────────────────────────────────
+          Must fire synchronously BEFORE any tags to comply with EU/UK consent
+          requirements. All ad/analytics storage defaults to denied until a
+          consent signal is received (e.g. via a cookie banner updating consent). */}
       <Script id="google-consent-mode" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
 
           gtag('consent', 'default', {
-            'ad_storage': 'denied',
-            'ad_user_data': 'denied',
-            'ad_personalization': 'denied',
-            'analytics_storage': 'denied',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'denied',
-            'security_storage': 'granted',
-            'wait_for_update': 500
+            'ad_storage':             'denied',
+            'ad_user_data':           'denied',
+            'ad_personalization':     'denied',
+            'analytics_storage':      'denied',
+            'functionality_storage':  'granted',
+            'personalization_storage':'denied',
+            'security_storage':       'granted',
+            'wait_for_update':        500
           });
 
-          gtag('set', 'url_passthrough', true);
+          gtag('set', 'url_passthrough',   true);
           gtag('set', 'ads_data_redaction', true);
         `}
       </Script>
 
-      {/* Google Tag Manager — loads after consent defaults are set */}
-      {GTM_ID && (
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','${GTM_ID}');
-          `}
-        </Script>
-      )}
+      {/* ── 2. Google Tag Manager ─────────────────────────────────────────
+          Primary container. All GA4 event tags and Ads conversion tags should
+          be configured inside GTM and fired from dataLayer events. */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','${GTM_ID}');
+        `}
+      </Script>
+
+      {/* ── 3. GA4 direct config tag ─────────────────────────────────────
+          Belt-and-braces: fires GA4 page_view even if GTM is blocked or
+          misconfigured. GTM's GA4 tags will deduplicate automatically. */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="ga4-config" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA4_ID}', {
+            page_path: window.location.pathname,
+            send_page_view: true,
+            transport_url: 'https://www.google-analytics.com',
+            first_party_collection: true
+          });
+        `}
+      </Script>
+
+      {/* ── 4. Google Ads global site tag ────────────────────────────────
+          Initialises remarketing audiences and the conversion linker.
+          Individual conversion events are fired from GTM using the
+          AW-8479028400/LABEL format — configure those inside GTM. */}
+      <Script id="google-ads-config" strategy="afterInteractive">
+        {`
+          gtag('config', '${GADS_ID}');
+        `}
+      </Script>
     </>
   );
 }
