@@ -3,6 +3,7 @@ import { CheckCircle, Phone, MessageCircle, Clock, ArrowRight } from 'lucide-rea
 import { Button } from '@/components/ui/button';
 import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
 import { TrackedWhatsAppLink } from '@/components/TrackedWhatsAppLink';
+import { ThankYouConversion } from '@/components/ThankYouConversion';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 export default function ThankYouPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-grey to-white flex items-center justify-center">
+      <ThankYouConversion />
       <div className="container-custom py-12">
         <div className="max-w-2xl mx-auto text-center">
           {/* Success Icon */}
