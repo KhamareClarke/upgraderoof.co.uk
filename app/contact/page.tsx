@@ -3,6 +3,7 @@ import { BreadcrumbSchema } from '@/components/BreadcrumbSchema';
 import { Mail, Phone, MapPin, Clock, MessageSquare } from 'lucide-react';
 import { ContactForm } from '@/components/ContactForm';
 import { TrackedPhoneLink } from '@/components/TrackedPhoneLink';
+import { TrackedEmailLink } from '@/components/TrackedEmailLink';
 
 export const metadata: Metadata = {
   title: 'Contact Us | Free Roofing Quote Cheshire | 01270 897606',
@@ -103,9 +104,9 @@ export default function ContactPage() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-semibold text-sm sm:text-base text-brand-navy mb-1 sm:mb-2">Email</h4>
-                      <a href="mailto:upgraderoofs@yahoo.com" className="text-sm sm:text-base text-gray-600 hover:text-brand-orange break-all sm:break-normal">
+                      <TrackedEmailLink href="mailto:upgraderoofs@yahoo.com" placement="contact_page" className="text-sm sm:text-base text-gray-600 hover:text-brand-orange break-all sm:break-normal">
                         upgraderoofs@yahoo.com
-                      </a>
+                      </TrackedEmailLink>
                     </div>
                   </div>
 

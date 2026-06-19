@@ -15,7 +15,7 @@ type ContactMessage = {
   subject: string;
   message: string;
 };
-import { trackContactForm, trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
+import { trackContactForm, trackPhoneClick, trackWhatsAppClick, trackEmailClick } from '@/lib/tracking';
 import { 
   Loader2, 
   CheckCircle2, 
@@ -371,9 +371,10 @@ export function EnhancedContactSection() {
                     <div>
                       <h3 className="font-semibold text-brand-navy mb-2">Email</h3>
                       <p className="text-gray-600 mb-2">Send us an email</p>
-                      <a 
-                        href="mailto:upgraderoofs@yahoo.com" 
+                      <a
+                        href="mailto:upgraderoofs@yahoo.com"
                         className="text-blue-500 font-semibold hover:underline"
+                        onClick={() => trackEmailClick('contact_section_sidebar')}
                       >
                         upgraderoofs@yahoo.com
                       </a>

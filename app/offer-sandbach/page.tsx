@@ -47,8 +47,7 @@ export default function OfferSandbachPage() {
   useEffect(() => {
     if (!mounted) return;
     
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 7);
+    const targetDate = new Date('2026-07-31T23:59:59');
     
     const timer = setInterval(() => {
       const now = new Date().getTime();

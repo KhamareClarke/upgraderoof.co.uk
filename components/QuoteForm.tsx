@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { supabase, type QuoteRequest } from '@/lib/supabase';
-import { trackQuoteRequest } from '@/lib/tracking';
+import { trackQuoteRequest, trackQuoteFormOpen } from '@/lib/tracking';
 import { Loader as Loader2, CircleCheck as CheckCircle2, CircleAlert as AlertCircle, ArrowRight, ArrowLeft } from 'lucide-react';
 
 export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
@@ -115,7 +115,7 @@ export function QuoteForm({ trigger }: { trigger?: React.ReactNode }) {
   };
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={(newOpen) => { if (newOpen) trackQuoteFormOpen(); setOpen(newOpen); }}>
       <DialogTrigger asChild>
         {trigger || (
           <Button className="bg-brand-orange hover:bg-brand-orange/90 text-white font-semibold">

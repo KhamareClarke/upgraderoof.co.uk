@@ -149,9 +149,10 @@ export default function SpecialOfferPage() {
 
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  Roof Leak or Damage<br />
-                  in <span className="text-brand-orange">Cheshire?</span><br />
-                  We'll Inspect It Free.
+                  Roof Leak or Damage in<br />
+                  <span className="text-brand-orange">Sandbach, Crewe,</span><br />
+                  <span className="text-brand-orange">Congleton or Cheshire?</span><br />
+                  <span className="text-3xl md:text-4xl">We'll Inspect It Free.</span>
                 </h1>
                 
                 <div className="bg-white/10 backdrop-blur-sm border-2 border-brand-orange rounded-2xl p-8 text-center">
@@ -398,7 +399,50 @@ export default function SpecialOfferPage() {
         </div>
       </section>
 
-      {/* New Mid-Page Section */}
+      {/* Areas We Cover — matches every local keyword in the ad campaign */}
+      <section className="py-10 bg-white border-b">
+        <div className="container-custom">
+          <div className="text-center mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-navy">
+              Serving Sandbach & All Surrounding Areas
+            </h2>
+            <p className="text-gray-600 mt-2">
+              Based in Sandbach CW11 — covering every corner of Cheshire within 30 minutes
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 max-w-4xl mx-auto">
+            {[
+              { town: 'Sandbach', postcode: 'CW11', highlight: true },
+              { town: 'Crewe', postcode: 'CW1–CW2' },
+              { town: 'Congleton', postcode: 'CW12' },
+              { town: 'Nantwich', postcode: 'CW5' },
+              { town: 'Alsager', postcode: 'ST7' },
+              { town: 'Middlewich', postcode: 'CW10' },
+              { town: 'Northwich', postcode: 'CW8–CW9' },
+              { town: 'Holmes Chapel', postcode: 'CW4' },
+              { town: 'Macclesfield', postcode: 'SK10–SK11' },
+              { town: 'Knutsford', postcode: 'WA16' },
+            ].map(({ town, postcode, highlight }) => (
+              <div
+                key={town}
+                className={`text-center py-3 px-2 rounded-xl border-2 ${
+                  highlight
+                    ? 'border-brand-orange bg-orange-50 font-bold text-brand-orange'
+                    : 'border-gray-200 bg-gray-50 text-gray-700'
+                }`}
+              >
+                <div className={`font-semibold text-sm ${highlight ? 'text-brand-orange' : 'text-brand-navy'}`}>{town}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{postcode}</div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-5">
+            Don't see your area? <a href="tel:01270897606" onClick={handlePhoneClick} className="text-brand-orange font-semibold hover:underline">Call 01270 897606</a> — we likely cover you.
+          </p>
+        </div>
+      </section>
+
+      {/* What Inspection Covers */}
       <section className="section-padding bg-brand-grey">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">

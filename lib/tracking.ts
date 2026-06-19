@@ -23,8 +23,11 @@
 declare global {
   interface Window {
     dataLayer: any[];
+    gtag: (...args: any[]) => void;
   }
 }
+
+const GADS_CONV_ID = process.env.NEXT_PUBLIC_GADS_CONV_ID || 'AW-17763560213';
 
 // --------------- low-level dispatcher ---------------
 
@@ -57,6 +60,21 @@ function sendDataLayerEvent(eventName: string, params: Record<string, any>) {
   });
 }
 
+/**
+ * Fires a Google Ads conversion event directly via gtag.
+ * Called after every confirmed form submission so Google Ads
+ * registers the lead regardless of GTM tag firing order or
+ * consent-mode delays.
+ */
+function fireGadsConversion(value: number) {
+  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  window.gtag('event', 'conversion', {
+    send_to: GADS_CONV_ID,
+    value,
+    currency: 'GBP',
+  });
+}
+
 // --------------- public tracking API ---------------
 
 /**
@@ -71,10 +89,10 @@ export function trackQuoteRequest(extra: {
     form_name: 'quote_request',
     service_type: extra.service_type,
     postcode: extra.postcode,
-    // A default value for the conversion. Can be overridden in GTM.
     value: 50.0,
     currency: 'GBP',
   });
+  fireGadsConversion(50.0);
 }
 
 /**
@@ -90,6 +108,7 @@ export function trackContactForm(extra?: {
     value: 25.0,
     currency: 'GBP',
   });
+  fireGadsConversion(25.0);
 }
 
 /**
@@ -115,5 +134,28 @@ export function trackWhatsAppClick(placement: string) {
     placement,
     value: 5.0,
     currency: 'GBP',
+  });
+}
+
+/**
+ * Track an email link click.
+ * Safe to call from onClick — does NOT prevent navigation.
+ */
+export function trackEmailClick(placement: string) {
+  sendDataLayerEvent('email_click', {
+    contact_method: 'email',
+    placement,
+    value: 3.0,
+    currency: 'GBP',
+  });
+}
+
+/**
+ * Track when the quote request modal is opened.
+ * Fires on dialog open — useful as a funnel entry signal in GTM.
+ */
+export function trackQuoteFormOpen() {
+  sendDataLayerEvent('quote_form_open', {
+    form_name: 'quote_request',
   });
 }

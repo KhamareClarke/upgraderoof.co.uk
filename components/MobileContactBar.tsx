@@ -2,7 +2,7 @@
 
 import { Phone, Mail } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking';
+import { trackPhoneClick, trackWhatsAppClick, trackEmailClick } from '@/lib/tracking';
 
 export function MobileContactBar() {
   const pathname = usePathname();
@@ -47,6 +47,7 @@ export function MobileContactBar() {
           href="mailto:upgraderoofs@yahoo.com"
           className="flex flex-col items-center gap-1 text-brand-navy hover:text-blue-500 transition-colors group"
           aria-label="Email us"
+          onClick={() => trackEmailClick('mobile_contact_bar')}
         >
           <div className="w-10 h-10 bg-blue-500/10 rounded-full flex items-center justify-center group-hover:bg-blue-500/20 transition-colors">
             <Mail className="w-5 h-5 text-blue-500" />
