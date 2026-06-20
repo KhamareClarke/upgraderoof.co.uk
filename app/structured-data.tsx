@@ -32,7 +32,7 @@ export function StructuredData() {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '20 Crewe Rd',
+      streetAddress: '20 Crewe Road',
       addressLocality: 'Sandbach',
       addressRegion: 'Cheshire',
       postalCode: 'CW11 4NE',
@@ -63,7 +63,8 @@ export function StructuredData() {
       'https://www.x.com/upgraderoofs',
       'https://www.youtube.com/@upgraderoofs',
       'https://www.pinterest.com/upgraderoofs',
-      'https://share.google/EkNuUQIZgxYuyzVpu'
+      'https://share.google/EkNuUQIZgxYuyzVpu',
+      'https://find-and-update.company-information.service.gov.uk/search?q=upgrade+roofs+ltd'
     ],
     identifier: {
       '@type': 'PropertyValue',
@@ -99,6 +100,38 @@ export function StructuredData() {
       {
         '@type': 'City',
         name: 'Holmes Chapel'
+      },
+      {
+        '@type': 'City',
+        name: 'Winsford'
+      },
+      {
+        '@type': 'City',
+        name: 'Northwich'
+      },
+      {
+        '@type': 'City',
+        name: 'Macclesfield'
+      },
+      {
+        '@type': 'City',
+        name: 'Knutsford'
+      },
+      {
+        '@type': 'City',
+        name: 'Tarporley'
+      },
+      {
+        '@type': 'City',
+        name: 'Biddulph'
+      },
+      {
+        '@type': 'City',
+        name: 'Newcastle-under-Lyme'
+      },
+      {
+        '@type': 'City',
+        name: 'Wilmslow'
       },
       {
         '@type': 'State',

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <TownLocalBusinessSchema town="Biddulph" postcode="ST8" slug="roofers-biddulph" lat={53.1148} lng={-2.1696} />
+      <TownLocalBusinessSchema town="Biddulph" postcode="ST8" slug="roofers-biddulph" lat={53.1148} lng={-2.1696} addressRegion="Staffordshire" />
       <BreadcrumbSchema items={[
         { name: 'Home', url: 'https://www.upgraderoofs.co.uk' },
         { name: 'Service Areas', url: 'https://www.upgraderoofs.co.uk/service-areas' },

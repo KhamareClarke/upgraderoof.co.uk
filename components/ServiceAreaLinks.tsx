@@ -14,6 +14,14 @@ export function ServiceAreaLinks({ serviceName }: ServiceAreaLinksProps) {
     { name: 'Nantwich', href: '/roofers-nantwich' },
     { name: 'Alsager', href: '/roofers-alsager' },
     { name: 'Holmes Chapel', href: '/roofers-holmes-chapel' },
+    { name: 'Winsford', href: '/roofers-winsford' },
+    { name: 'Northwich', href: '/roofers-northwich' },
+    { name: 'Macclesfield', href: '/roofers-macclesfield' },
+    { name: 'Knutsford', href: '/roofers-knutsford' },
+    { name: 'Tarporley', href: '/roofers-tarporley' },
+    { name: 'Biddulph', href: '/roofers-biddulph' },
+    { name: 'Newcastle-under-Lyme', href: '/roofers-newcastle-under-lyme' },
+    { name: 'Wilmslow', href: '/roofers-wilmslow' },
   ];
 
   return (

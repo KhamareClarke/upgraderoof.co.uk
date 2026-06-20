@@ -19,7 +19,7 @@ export function BlogArticleSchema({ title, description, url, datePublished, date
     inLanguage: 'en-GB',
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', '.article-intro', 'h2'],
+      cssSelector: ['h1', 'h2'],
     },
     author: {
       '@type': 'Organization',
@@ -34,7 +34,9 @@ export function BlogArticleSchema({ title, description, url, datePublished, date
       '@id': 'https://www.upgraderoofs.co.uk/#organization',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.upgraderoofs.co.uk/logo.png',
+        url: 'https://www.upgraderoofs.co.uk/images/upgrade_logo.jpeg',
+        width: 112,
+        height: 112,
       },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },

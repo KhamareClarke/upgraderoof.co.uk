@@ -4,9 +4,10 @@ interface TownLocalBusinessSchemaProps {
   slug: string;
   lat: number;
   lng: number;
+  addressRegion?: string;
 }
 
-export function TownLocalBusinessSchema({ town, postcode, slug, lat, lng }: TownLocalBusinessSchemaProps) {
+export function TownLocalBusinessSchema({ town, postcode, slug, lat, lng, addressRegion = 'Cheshire' }: TownLocalBusinessSchemaProps) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'RoofingContractor'],
@@ -21,11 +22,26 @@ export function TownLocalBusinessSchema({ town, postcode, slug, lat, lng }: Town
     },
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '20 Crewe Road',
       addressLocality: town,
       postalCode: postcode,
-      addressRegion: 'Cheshire',
+      addressRegion,
       addressCountry: 'GB',
     },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '09:00',
+        closes: '16:00',
+      },
+    ],
     geo: {
       '@type': 'GeoCoordinates',
       latitude: lat,

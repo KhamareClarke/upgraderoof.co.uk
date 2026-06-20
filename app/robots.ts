@@ -38,6 +38,16 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/admin/', '/thank-you'],
       },
+      {
+        userAgent: 'OAI-SearchBot',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/thank-you'],
+      },
+      {
+        userAgent: 'OAI-SearchBot-Extended',
+        allow: '/',
+        disallow: ['/api/', '/admin/', '/thank-you'],
+      },
     ],
     sitemap: 'https://www.upgraderoofs.co.uk/sitemap.xml',
     host: 'https://www.upgraderoofs.co.uk',

@@ -150,6 +150,22 @@ export function Footer() {
             <span className="text-white/70">·</span>
             <Link href="/roofers-holmes-chapel" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Holmes Chapel</Link>
             <span className="text-white/70">·</span>
+            <Link href="/roofers-winsford" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Winsford</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-northwich" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Northwich</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-macclesfield" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Macclesfield</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-knutsford" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Knutsford</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-tarporley" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Tarporley</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-biddulph" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Biddulph</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-newcastle-under-lyme" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Newcastle-under-Lyme</Link>
+            <span className="text-white/70">·</span>
+            <Link href="/roofers-wilmslow" className="text-white/70 hover:text-brand-orange transition-colors duration-300">Roofers Wilmslow</Link>
+            <span className="text-white/70">·</span>
             <Link href="/service-areas" className="text-white/70 hover:text-brand-orange transition-colors duration-300">All Service Areas</Link>
           </div>
         </div>
